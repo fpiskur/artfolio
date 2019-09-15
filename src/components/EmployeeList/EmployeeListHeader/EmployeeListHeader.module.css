@@ -1,0 +1,141 @@
+.EmployeeListHeader {
+    margin-bottom: 2em;
+}
+
+.EmployeeListHeader button {
+    border: none;
+    padding: .2em 1em;
+    cursor: pointer;
+}
+
+.topBar {
+    display: flex;
+    justify-content: space-between;
+    height: 2.6em;
+    background-color: #313B43;
+}
+
+.homeBtn {
+    background: transparent;
+    font-weight: 600;
+    font-size: 1.4em;
+    color: #EBEBEC;
+}
+
+.addNewBtn {
+    background-color: #1985A1;
+    color: #EBEBEC;
+}
+
+.search {
+    display: flex;
+    height: 2.6em;
+}
+
+.search input {
+    flex: 1 0 auto;
+    padding-left: 1em;
+    color: #B4B2B4;
+}
+
+.search button {
+    background-color: #B4B2B4;
+}
+
+.activeFilter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    padding: 0 1em;
+}
+
+.activeFilter button {
+    background: transparent;
+    padding: 0 .3em;
+    margin: 0 1.2em;
+}
+
+.activeFilter button:focus,
+.activeFilter button:hover {
+    box-shadow: inset 0px -2px 0px 0px #141415;
+}
+
+.activeFilter .active {
+    box-shadow: inset 0px -2px 0px 0px #141415;
+}
+
+.showSkillsBtn {
+    width: 100%;
+    height: 3em;
+    padding: 0 1em;
+    background-color: #EBEBEC;
+    display: flex;
+    justify-content: space-between;
+}
+
+.showSkillsBtn span:first-child {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.showSkillsBtn span > small {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.arrow {
+    padding: 0 .9em;
+}
+
+.skillsMenu {
+    background-color: #B4B2B4;
+    padding: 0 .4em .4em .4em;
+    text-align: right;
+}
+
+.skillsMenu button {
+    margin: .5em 0;
+    background: transparent;
+    text-decoration: underline;
+}
+
+.skillsList {
+    display: grid;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: .4em;
+}
+
+.skillsList li {
+    text-align: center;
+}
+
+.skillsList li input {
+    display: none;
+}
+
+.skillsList li label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: .7em .5em;
+    background-color: transparent;
+    border: 1px solid #EBEBEC;
+    cursor: pointer;
+}
+
+.skillsList li input:checked ~ label {
+    background-color: #EBEBEC;
+    font-weight: 600;
+}
+
+.skillsList li label:hover,
+.skillsList li label:focus {
+    background-color: #D5D8D9;
+}
