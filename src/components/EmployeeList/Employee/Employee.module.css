@@ -1,0 +1,33 @@
+.Employee {
+    display: flex;
+    padding: 1em;
+    border: 1px solid #B4B2B4;
+}
+
+.employeePortrait {
+    flex: 1 0 6em;
+    margin-right: 1em;
+}
+
+.employeeInfo {
+    flex: 1 1 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header h3 {
+    margin: 0;
+}
+
+.header .profession {
+    font-style: italic;
+    color: #313B43;
+}
+
+.header .availability {
+    font-weight: 600;
+    color: #AC1700;
+}

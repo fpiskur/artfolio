@@ -1,9 +1,12 @@
 import React from 'react';
 import Employee from './Employee/Employee';
+import styles from './EmployeeList.module.css';
 
 function EmployeeList() {
     return (
-        <Employee />
+        <div className={ styles.EmployeeList }>
+            <Employee />
+        </div>
     );
 }
 
