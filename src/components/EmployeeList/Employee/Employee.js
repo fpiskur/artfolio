@@ -1,11 +1,12 @@
 import React from 'react';
 import styles from './Employee.module.css';
+import userPlaceholder from '../../../images/blank-profile.png'
 
 function Employee() {
     return (
         <div className={ styles.Employee }>
             <div className={ styles.employeePortrait }>
-                <img alt="Bill Burr portrait" />
+                <img src={ userPlaceholder } alt="Bill Burr portrait" />
             </div>
             <div className={ styles.employeeInfo }>
                 <div className={ styles.header }>
