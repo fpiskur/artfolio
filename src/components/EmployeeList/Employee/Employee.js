@@ -1,25 +1,22 @@
 import React from 'react';
 import styles from './Employee.module.css';
-import userPlaceholder from '../../../images/blank-profile.png'
 
-function Employee() {
+function Employee (props) {
     return (
         <div className={ styles.Employee }>
             <div className={ styles.employeePortrait }>
-                <img src={ userPlaceholder } alt="Bill Burr portrait" />
+                <img src={ props.profilePhoto } alt={ props.name + ' portrait' } />
             </div>
             <div className={ styles.employeeInfo }>
                 <div className={ styles.header }>
                     <div>
-                        <h3 className="employee-name">Bill Burr</h3>
-                        <span className={ styles.profession }>Stand-up comedian, actor</span>
+                        <h3>{ props.name }</h3>
+                        <span className={ styles.profession }>{ props.profession }</span>
                     </div>
-                    <div className={ styles.availability }>Not available</div>
+                    <div className={ styles.availability }>{ props.availability }</div>
                 </div>
-                <div className="employee-details">
-                    <p className="about-short">
-                        Non leo adipiscing nascetur vestibulum elit aliquam fermentum justo lacus condimentum aliquam torquent fermentum nullam tellus fringilla enim ullamcorper vestibulum a.
-                    </p>
+                <div>
+                    <p>{ props.aboutShort }</p>
                     {/* <div className="skills">
                         <span>SKILLS:</span>&nbsp;
                         <span>contemporary, beatboxing, triangle, drama, comedy, action</span>

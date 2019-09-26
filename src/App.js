@@ -1,35 +1,37 @@
 import React, { Component } from 'react';
-import EmployeeList from './components/EmployeeList/EmployeeList';
-import EmployeeListHeader from './components/EmployeeList/EmployeeListHeader/EmployeeListHeader';
 import './App.css';
 import axios from './axios';
+
+import EmployeeList from './components/EmployeeList/EmployeeList';
+import EmployeeListHeader from './components/EmployeeList/EmployeeListHeader/EmployeeListHeader';
+import Spinner from './components/UI/Spinner';
 
 
 class App extends Component {
 
-  state = {
-    comedians: []
-  };
+    state = {
+        comedians: [],
+        error: false
+    };
 
-  componentDidMount () {
-    axios.get('/comedians.json')
-      .then(response => {
-        console.log(response.data);
-        this.setState({ comedians: response.data });
-      })
-      .catch(error => {
-        console.log(error.message);
-      });
-  }
+    componentDidMount () {
+        axios.get('/comedians.json')
+        .then(response => {
+            this.setState({ comedians: response.data });
+        })
+        .catch(error => {
+            this.setState({ error: true });
+        });
+    }
 
-  render () {
-    return (
-      <div className="App">
-        <EmployeeListHeader />
-        <EmployeeList />
-      </div>
-    );
-  }
+    render () {  
+        return (
+            <div className="App">
+                <EmployeeListHeader />
+                { this.state.comedians[0] ? <EmployeeList comedians={ this.state.comedians } /> : <Spinner /> }
+            </div>
+        );
+    }
 }
 
 export default App;

@@ -1,11 +1,24 @@
 import React from 'react';
-import Employee from './Employee/Employee';
 import styles from './EmployeeList.module.css';
 
-function EmployeeList() {
+import Employee from './Employee/Employee';
+
+function EmployeeList (props) {
+
     return (
         <div className={ styles.EmployeeList }>
-            <Employee />
+            {
+                props.comedians.map(comedian => (
+                    <Employee
+                        key={ comedian.name }
+                        name={ comedian.name }
+                        profilePhoto={ comedian.profilePhoto }
+                        profession={ comedian.profession }
+                        availability={ comedian.availability }
+                        aboutShort={ comedian.aboutShort }
+                    />
+                ))
+            }
         </div>
     );
 }
