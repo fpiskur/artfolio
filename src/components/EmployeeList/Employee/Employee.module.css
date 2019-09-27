@@ -1,7 +1,7 @@
 .Employee {
     display: flex;
     padding: 1em;
-    border: 1px solid #B4B2B4;
+    border: 1px solid var(--gray);
     margin-bottom: 1em;
 }
 
@@ -29,15 +29,15 @@
 
 .header .profession {
     font-style: italic;
-    color: #313B43;
+    color: var(--dark);
 }
 
 .header .notAvailable {
     font-weight: 600;
-    color: #AC1700;
+    color: var(--red);
 }
 
 .header .available {
     font-weight: 800;
-    color: #4B7E00;
+    color: var(--green);
 }

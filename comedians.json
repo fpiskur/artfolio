@@ -1,6 +1,7 @@
 {
     "comedians": [
     {
+        "username": "jimjimson",
         "name": "Jim Jimson",
         "profession": "Stand-up comedian, TV host",
         "aboutShort": "Parturient metus rhoncus ullamcorper eu rhoncus erat proin placerat sem elit volutpat bibendum vivamus dui a in curabitur scelerisque a scelerisque tincidunt lobortis.",
@@ -111,6 +112,7 @@
         ]
     },
     {
+        "username": "funnymcfly",
         "name": "Funny McFly",
         "profession": "Stand-up comedian, actor, writer",
         "aboutShort": "Nisi magna in quisque consectetur volutpat per eros orci semper suspendisse porttitor risus scelerisque convallis. Suscipit ano quis ullamcorper leo potenti himenaeos.",
@@ -210,6 +212,7 @@
         "workshops": []
     },
     {
+        "username": "laughryking",
         "name": "Laughry King",
         "profession": "Actor, stand-up comedian",
         "aboutShort": "Pharetra mus ut in fusce dictumst vestibulum tempus nibh senectus a vivamus erat pero adipiscing id ac in curae mus porttitor tempor vestibulum nunc.",
@@ -357,6 +360,7 @@
         ]
     },
     {
+        "username": "commiecomic",
         "name": "Commie the Comedian",
         "profession": "Stand-up comedian, actor",
         "aboutShort": "Dictumst a eget lacinia nam vehicula cras feugiat a a facilisis suspendisse sem et facilisi cum molestie at adipiscing blandit suspendisse blandit pellentesque.",
@@ -432,6 +436,7 @@
         ]
     },
     {
+        "username": "gigglesmiles",
         "name": "Giggleina Smiles",
         "profession": "Actor, stand-up comedian",
         "aboutShort": "Aenean parturient semper parturient parturient lacinia ac rutrum faucibus curae arcu conubia vivamus a ut vestibulum. A mi scelerisque habitasse.",
@@ -570,6 +575,7 @@
         ]
     },
     {
+        "username": "jimjurr",
         "name": "Jim Jurr",
         "profession": "Actor, stand-up comedian",
         "aboutShort": "Interdum proin a cras a id sapien vehicula consectetur parturient mi placerat a velit arcu aliquet nunc vel habitant a habitasse eleifend condimentum.",
@@ -677,6 +683,7 @@
         ]
     },
     {
+        "username": "gerryg",
         "name": "Gerry Geinfeld",
         "profession": "Actor, stand-up comedian",
         "aboutShort": "Ut tempor ultricies mollis parturient parturient vestibulum elementum quis in litora placerat non fames lorem adipiscing adipiscing parturient condimentum malesuada.",
@@ -752,7 +759,7 @@
         "workshops": []
     },
     {
-        "name": "Jon Doe",
+        "name": "jondoe",
         "profession": "Stand-up comedian, actor",
         "aboutShort": "Non leo adipiscing nascetur vestibulum elit aliquam fermentum justo lacus condimentum aliquam torquent fermentum nullam tellus fringilla enim ullamcorper vestibulum a.",
         "website": "http://billburr.com/",
@@ -934,6 +941,7 @@
         ]
     },
     {
+        "username": "amyprop",
         "name": "Amy Propcom",
         "profession": "Stand-up comedian, actor",
         "aboutShort": "Lacinia dis lorem orci neque leo convallis cum suspendisse a euismod augue ad ad a suscipit justo aliquam commodo parturient.",
@@ -1065,6 +1073,7 @@
         ]
     },
     {
+        "username": "jilljurray",
         "name": "Jill Jurray",
         "profession": "Actor, stand-up comedian, musician",
         "aboutShort": "Vel fusce massa vestibulum consequat dapibus ut commodo dapibus inceptos facilisi.",
@@ -1165,6 +1174,7 @@
         ]
     },
     {
+        "username": "thepunchline",
         "name": "Larry the Punchline",
         "profession": "Actor, stand-up comedian, writer",
         "aboutShort": "Gravida donec a in parturient non sociosqu ullamcorper condimentum vestibulum a vel pretium sem a parturient laoreet congue vitae.",
@@ -1270,6 +1280,7 @@
         ]
     },
     {
+        "username": "freddiebliz",
         "name": "Freddie Blizzard",
         "profession": "Stand-up comedian",
         "aboutShort": "Lorem a penatibus torquent orci tristique eleifend dictumst sed ultricies elementum leo molestie ut a per a congue fusce vestibulum iaculis in.",
@@ -1357,6 +1368,7 @@
         ]
     },
     {
+        "username": "breaddyburphy",
         "name": "Breaddy Burphy",
         "profession": "Actor, stand-up comedian",
         "aboutShort": "Tempor cubilia nam viverra porttitor parturient lobortis sapien enim imperdiet varius at in eget a adipiscing id quam a est vehicula nisi interdum ac ridiculus a.",
@@ -1454,6 +1466,7 @@
         "workshops": []
     },
     {
+        "username": "jackjack",
         "name": "Jack Jackson",
         "profession": "Stand-up comedian, actor",
         "aboutShort": "Condimentum parturient eu suspendisse etiam tincidunt ligula rutrum suspendisse urna fames viverra condimentum vestibulum sed commodo a interdum a a luctus a sagittis.",
@@ -1550,6 +1563,7 @@
         ]
     },
     {
+        "username": "jackblabla",
         "name": "Jack Blablafianakis",
         "profession": "Actor, stand-up comedian",
         "aboutShort": "Vestibulum libero a sit nisi at suspendisse vestibulum nisl tincidunt quisque congue sociis a a in at parturient condimentum varius sem laoreet.",
@@ -1657,6 +1671,7 @@
         ]
     },
     {
+        "username": "thehoovy",
         "name": "Pootis Pencer",
         "profession": "Actor, stand-up comedian",
         "aboutShort": "Adipiscing nullam arcu dui senectus arcu suspendisse sociis conubia egestas senectus gravida nibh a vestibulum a parturient dictumst purus bibendum inceptos quam.",

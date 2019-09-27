@@ -3,7 +3,7 @@ import './App.css';
 import axios from './axios';
 
 import EmployeeList from './components/EmployeeList/EmployeeList';
-import EmployeeListHeader from './components/EmployeeList/EmployeeListHeader/EmployeeListHeader';
+import EmployeeListHeader from './containers/EmployeeListHeader/EmployeeListHeader';
 import Spinner from './components/UI/Spinner';
 
 
@@ -29,8 +29,8 @@ class App extends Component {
             <div className="App">
                 <EmployeeListHeader />
                 { this.state.comedians[0] ?
-                    <EmployeeList comedians={ this.state.comedians } /> :
-                    <Spinner /> }
+                <EmployeeList comedians={ this.state.comedians } /> :
+                <Spinner /> }
             </div>
         );
     }

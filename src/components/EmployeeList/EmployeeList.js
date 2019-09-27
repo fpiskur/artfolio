@@ -10,7 +10,7 @@ function EmployeeList (props) {
             {
                 props.comedians.map(comedian => (
                     <Employee
-                        key={ comedian.name }
+                        key={ comedian.username }
                         name={ comedian.name }
                         profilePhoto={ comedian.profilePhoto }
                         profession={ comedian.profession }

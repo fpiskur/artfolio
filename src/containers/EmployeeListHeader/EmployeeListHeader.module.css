@@ -12,19 +12,19 @@
     display: flex;
     justify-content: space-between;
     height: 2.6em;
-    background-color: #313B43;
+    background-color: var(--dark);
 }
 
 .homeBtn {
     background: transparent;
     font-weight: 600;
     font-size: 1.4em;
-    color: #EBEBEC;
+    color: var(--lighter);
 }
 
 .addNewBtn {
-    background-color: #1985A1;
-    color: #EBEBEC;
+    background-color: var(--blue);
+    color: var(--lighter);
 }
 
 .search {
@@ -35,11 +35,11 @@
 .search input {
     flex: 1 0 auto;
     padding-left: 1em;
-    color: #B4B2B4;
+    color: var(--gray);
 }
 
 .search button {
-    background-color: #B4B2B4;
+    background-color: var(--gray);
 }
 
 .activeFilter {
@@ -58,18 +58,18 @@
 
 .activeFilter button:focus,
 .activeFilter button:hover {
-    box-shadow: inset 0px -2px 0px 0px #141415;
+    box-shadow: inset 0px -2px 0px 0px var(--black);
 }
 
 .activeFilter .active {
-    box-shadow: inset 0px -2px 0px 0px #141415;
+    box-shadow: inset 0px -2px 0px 0px var(--black);
 }
 
 .showSkillsBtn {
     width: 100%;
     height: 3em;
     padding: 0 1em;
-    background-color: #EBEBEC;
+    background-color: var(--lighter);
     display: flex;
     justify-content: space-between;
 }
@@ -91,7 +91,7 @@
 }
 
 .skillsMenu {
-    background-color: #B4B2B4;
+    background-color: var(--gray);
     padding: 0 .4em .4em .4em;
     text-align: right;
 }
@@ -126,16 +126,16 @@
     height: 100%;
     padding: .7em .5em;
     background-color: transparent;
-    border: 1px solid #EBEBEC;
+    border: 1px solid var(--lighter);
     cursor: pointer;
 }
 
 .skillsList li input:checked ~ label {
-    background-color: #EBEBEC;
+    background-color: var(--lighter);
     font-weight: 600;
 }
 
 .skillsList li label:hover,
 .skillsList li label:focus {
-    background-color: #D5D8D9;
+    background-color: var(--light);
 }
