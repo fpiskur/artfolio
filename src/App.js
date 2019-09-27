@@ -25,12 +25,32 @@ class App extends Component {
         });
     }
 
-    render () {  
+    handleAvailabilityFilter = (event) => {
+        this.setState({ availabilityFilter: event.target.value });
+    }
+
+    render () {
+
+        let filteredComedians;
+        switch (this.state.availabilityFilter) {
+            case 'All':
+                filteredComedians = this.state.comedians;
+                break;
+            case 'Available':
+                filteredComedians = this.state.comedians.filter(comedian => comedian.availability === 'Available');
+                break;
+            case 'Not available':
+                filteredComedians = this.state.comedians.filter(comedian => comedian.availability === 'Not available');
+                break;
+            default:
+                filteredComedians = this.state.comedians;
+        }
+
         return (
             <div className="App">
-                <EmployeeListHeader />
+                <EmployeeListHeader applyAvailabilityFilter={ this.handleAvailabilityFilter } />
                 { this.state.comedians[0] ?
-                <EmployeeList comedians={ this.state.comedians } /> :
+                <EmployeeList comedians={ filteredComedians } /> :
                 <Spinner /> }
             </div>
         );

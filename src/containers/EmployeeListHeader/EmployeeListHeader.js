@@ -50,9 +50,28 @@ class EmployeeListHeader extends Component {
                     <button>Search</button>
                 </div>
                 <div className={ styles.activeFilter }>
-                    <button className={ styles.active }>All</button>|
-                    <button>Available</button>|
-                    <button>Not Available</button>
+                    <input
+                        type="radio"
+                        name="availability"
+                        id="all"
+                        value="All"
+                        onChange={ this.props.applyAvailabilityFilter }
+                        defaultChecked />
+                    <label htmlFor="all">All</label>|
+                    <input
+                        type="radio"
+                        name="availability"
+                        id="available"
+                        value="Available"
+                        onChange={ this.props.applyAvailabilityFilter } />
+                    <label htmlFor="available">Available</label>|
+                    <input
+                        type="radio"
+                        name="availability"
+                        id="not-available"
+                        value="Not available"
+                        onChange={ this.props.applyAvailabilityFilter } />
+                    <label htmlFor="not-available">Not available</label>
                 </div>
                 <div>
                     <button onClick={ this.toogleMenu } className={ styles.showSkillsBtn }>

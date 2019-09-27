@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './SkillCheckbox.module.css';
 
 function SkillCheckbox (props) {
 
@@ -6,8 +7,8 @@ function SkillCheckbox (props) {
 
     return (
         <React.Fragment>
-            <input onClick={ props.click } value={ props.skill } id={ skillId } type="checkbox" />
-            <label htmlFor={ skillId }>{ props.skill }</label>
+            <input className={ styles.checkboxInput } onClick={ props.click } value={ props.skill } id={ skillId } type="checkbox" />
+            <label className={ styles.checkboxLabel } htmlFor={ skillId }>{ props.skill }</label>
         </React.Fragment>
     );
 }

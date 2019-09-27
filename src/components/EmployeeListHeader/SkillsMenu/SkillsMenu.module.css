@@ -35,28 +35,3 @@
     text-align: center;
     margin-bottom: .5em;
 }
-
-.skillsList li input {
-    display: none;
-}
-
-.skillsList li label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: .7em .5em;
-    background-color: transparent;
-    border: 1px solid var(--lighter);
-    cursor: pointer;
-}
-
-.skillsList li input:checked ~ label {
-    background-color: var(--lighter);
-    font-weight: 600;
-}
-
-.skillsList li label:hover,
-.skillsList li label:focus {
-    background-color: var(--light);
-}

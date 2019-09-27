@@ -1,0 +1,24 @@
+.checkboxInput {
+    display: none;
+}
+
+.checkboxLabel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: .7em .5em;
+    background-color: transparent;
+    border: 1px solid var(--lighter);
+    cursor: pointer;
+}
+
+.checkboxInput:checked ~ label {
+    background-color: var(--lighter);
+    font-weight: 600;
+}
+
+.checkboxLabel:hover,
+.checkboxLabel:focus {
+    background-color: var(--light);
+}

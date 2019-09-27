@@ -50,18 +50,23 @@
     padding: 0 1em;
 }
 
-.activeFilter button {
+.activeFilter input {
+    display: none;
+}
+
+.activeFilter label {
     background: transparent;
     padding: 0 .3em;
     margin: 0 1.2em;
+    cursor: pointer;
 }
 
-.activeFilter button:focus,
-.activeFilter button:hover {
+.activeFilter label:focus,
+.activeFilter label:hover {
     box-shadow: inset 0px -2px 0px 0px var(--black);
 }
 
-.activeFilter .active {
+.activeFilter input:checked + label {
     box-shadow: inset 0px -2px 0px 0px var(--black);
 }
 
