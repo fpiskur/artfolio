@@ -6,7 +6,7 @@ function SkillCheckbox (props) {
 
     return (
         <React.Fragment>
-            <input id={ skillId } type="checkbox" />
+            <input onClick={ props.click } value={ props.skill } id={ skillId } type="checkbox" />
             <label htmlFor={ skillId }>{ props.skill }</label>
         </React.Fragment>
     );

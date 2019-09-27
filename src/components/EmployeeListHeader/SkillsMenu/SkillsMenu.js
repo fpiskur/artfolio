@@ -12,17 +12,17 @@ function SkillsMenu (props) {
     if (props.skills) {
         musicalSkills = props.skills.musical.map(skill => (
             <li key={ skill }>
-                <SkillCheckbox skill={ skill } />
+                <SkillCheckbox click={ props.handleSelectSkill } skill={ skill } />
             </li>
         ));
         actingSkills = props.skills.acting.map(skill => (
             <li key={ skill }>
-                <SkillCheckbox skill={ skill } />
+                <SkillCheckbox click={ props.handleSelectSkill } skill={ skill } />
             </li>
         ));
         dancingSkills = props.skills.dancing.map(skill => (
             <li key={ skill }>
-                <SkillCheckbox skill={ skill } />
+                <SkillCheckbox click={ props.handleSelectSkill } skill={ skill } />
             </li>
         ));
 

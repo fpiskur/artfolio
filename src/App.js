@@ -11,6 +11,7 @@ class App extends Component {
 
     state = {
         comedians: [],
+        availabilityFilter: 'All',
         error: false
     };
 
