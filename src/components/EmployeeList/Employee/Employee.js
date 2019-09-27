@@ -2,6 +2,12 @@ import React from 'react';
 import styles from './Employee.module.css';
 
 function Employee (props) {
+    
+    let availabilityClass = props.availability === 'Available' ?
+        styles.available :
+        styles.notAvailable;
+
+
     return (
         <div className={ styles.Employee }>
             <div className={ styles.employeePortrait }>
@@ -13,7 +19,7 @@ function Employee (props) {
                         <h3>{ props.name }</h3>
                         <span className={ styles.profession }>{ props.profession }</span>
                     </div>
-                    <div className={ styles.availability }>{ props.availability }</div>
+                    <div className={ availabilityClass }>{ props.availability }</div>
                 </div>
                 <div>
                     <p>{ props.aboutShort }</p>

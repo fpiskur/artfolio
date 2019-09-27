@@ -32,7 +32,12 @@
     color: #313B43;
 }
 
-.header .availability {
+.header .notAvailable {
     font-weight: 600;
     color: #AC1700;
+}
+
+.header .available {
+    font-weight: 800;
+    color: #4B7E00;
 }

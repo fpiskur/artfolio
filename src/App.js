@@ -28,7 +28,9 @@ class App extends Component {
         return (
             <div className="App">
                 <EmployeeListHeader />
-                { this.state.comedians[0] ? <EmployeeList comedians={ this.state.comedians } /> : <Spinner /> }
+                { this.state.comedians[0] ?
+                    <EmployeeList comedians={ this.state.comedians } /> :
+                    <Spinner /> }
             </div>
         );
     }
