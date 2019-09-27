@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import styles from './EmployeeListHeader.module.css';
 import axios from '../../axios';
 
+import SkillCheckbox from '../../components/EmployeeListHeader/SkillCheckbox/SkillCheckbox';
+
 class EmployeeListHeader extends Component {
 
     state = {
-        skillsList: {},
+        skillsList: null,
         skillsFilter: [],
         availabilityFilter: "All",
         error: false
@@ -14,7 +16,7 @@ class EmployeeListHeader extends Component {
     componentDidMount () {
         axios.get('/skillsList.json')
             .then(response => {
-                this.setState({ skillsFilter: response.data });
+                this.setState({ skillsList: response.data });
             })
             .catch(error => {
                 this.setState({ error: true });
@@ -22,6 +24,27 @@ class EmployeeListHeader extends Component {
     }
 
     render () {
+
+        let musicalSkills = null, actingSkills = null, dancingSkills = null;
+
+        if (this.state.skillsList) {
+            musicalSkills = this.state.skillsList.musical.map(skill => (
+                <li key={ skill }>
+                    <SkillCheckbox skill={ skill } />
+                </li>
+            ));
+            actingSkills = this.state.skillsList.acting.map(skill => (
+                <li key={ skill }>
+                    <SkillCheckbox skill={ skill } />
+                </li>
+            ));
+            dancingSkills = this.state.skillsList.dancing.map(skill => (
+                <li key={ skill }>
+                    <SkillCheckbox skill={ skill } />
+                </li>
+            ));
+        }
+
         return (
             <div className={ styles.EmployeeListHeader }>
                 <div className={ styles.topBar }>
@@ -44,52 +67,26 @@ class EmployeeListHeader extends Component {
                     </button>
                     <div className={ styles.skillsMenu }>
                         <button>Clear all</button>
-                        <ul className={ styles.skillsList }>
-                            <li>
-                                <input id="contemporary" type="checkbox" />
-                                <label htmlFor="contemporary">contemporary dancing</label>
-                            </li>
-                            <li>
-                                <input id="triangle" type="checkbox" />
-                                <label htmlFor="triangle">triangle</label>
-                            </li>
-                            <li>
-                                <input id="waltz" type="checkbox" />
-                                <label htmlFor="waltz">waltz</label>
-                            </li>
-                            <li>
-                                <input id="beatboxing" type="checkbox" />
-                                <label htmlFor="beatboxing">beat-boxing</label>
-                            </li>
-                            <li>
-                                <input id="action" type="checkbox" />
-                                <label htmlFor="action">action</label>
-                            </li>
-                            <li>
-                                <input id="comedy" type="checkbox" />
-                                <label htmlFor="comedy">comedy</label>
-                            </li>
-                            <li>
-                                <input id="drama" type="checkbox" />
-                                <label htmlFor="drama">drama</label>
-                            </li>
-                            <li>
-                                <input id="guitar" type="checkbox" />
-                                <label htmlFor="guitar">guitar</label>
-                            </li>
-                            <li>
-                                <input id="bass" type="checkbox" />
-                                <label htmlFor="bass">bass</label>
-                            </li>
-                            <li>
-                                <input id="trumpet" type="checkbox" />
-                                <label htmlFor="trumpet">trumpet</label>
-                            </li>
-                            <li>
-                                <input id="ballet" type="checkbox" />
-                                <label htmlFor="ballet">ballet</label>
-                            </li>
-                        </ul>
+                        <div className={ styles.skillsListWrapper }>
+                            <div>
+                                <h3>Musical</h3>
+                                <ul className={ styles.skillsList }>
+                                    { musicalSkills }
+                                </ul>
+                            </div>
+                            <div>
+                                <h3>Acting</h3>
+                                <ul className={ styles.skillsList }>
+                                    { actingSkills }
+                                </ul>
+                            </div>
+                            <div>
+                                <h3>Dancing</h3>
+                                <ul className={ styles.skillsList }>
+                                    { dancingSkills }
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

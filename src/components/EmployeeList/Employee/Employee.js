@@ -7,7 +7,6 @@ function Employee (props) {
         styles.available :
         styles.notAvailable;
 
-
     return (
         <div className={ styles.Employee }>
             <div className={ styles.employeePortrait }>

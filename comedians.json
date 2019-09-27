@@ -759,7 +759,8 @@
         "workshops": []
     },
     {
-        "name": "jondoe",
+        "username": "jondoe",
+        "name": "Jon Doe",
         "profession": "Stand-up comedian, actor",
         "aboutShort": "Non leo adipiscing nascetur vestibulum elit aliquam fermentum justo lacus condimentum aliquam torquent fermentum nullam tellus fringilla enim ullamcorper vestibulum a.",
         "website": "http://billburr.com/",
