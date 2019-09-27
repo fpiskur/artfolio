@@ -8,7 +8,6 @@ class EmployeeListHeader extends Component {
 
     state = {
         skillsList: null,
-        skillsFilter: [],
         menuVisible: false,
         error: false
     }
@@ -25,16 +24,6 @@ class EmployeeListHeader extends Component {
 
     toogleMenu = () => {
         this.setState((prevState) => ({ menuVisible: !prevState.menuVisible }));
-    }
-
-    handleSkillsFilter = (event) => {
-        let skillsList;
-        if (this.state.skillsFilter.includes(event.target.value)) {
-            skillsList = this.state.skillsFilter.filter(skill => skill !== event.target.value);
-        } else {
-            skillsList = this.state.skillsFilter.concat(event.target.value);
-        }
-        this.setState({ skillsFilter: skillsList });
     }
 
     render () {
@@ -76,8 +65,8 @@ class EmployeeListHeader extends Component {
                 <div>
                     <button onClick={ this.toogleMenu } className={ styles.showSkillsBtn }>
                         <span>Chosen skills <small>
-                            { this.state.skillsFilter[0] ?
-                                '(' + this.state.skillsFilter.join(', ') + ')' :
+                            { this.props.skillsFilter[0] ?
+                                '(' + this.props.skillsFilter.join(', ') + ')' :
                                 null }</small></span>
                         {
                         this.state.menuVisible ?
@@ -87,7 +76,11 @@ class EmployeeListHeader extends Component {
                     </button>
                     {
                     this.state.menuVisible ?
-                        <SkillsMenu handleSelectSkill={ this.handleSkillsFilter } skills={ this.state.skillsList } /> :
+                        <SkillsMenu
+                            handleSelectSkill={ this.props.applySkillsFilter }
+                            skills={ this.state.skillsList }
+                            selectedSkills={ this.props.skillsFilter }
+                            clearSkills={ this.props.clearSkillsFilter } /> :
                         null
                     }
                 </div>

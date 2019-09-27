@@ -12,23 +12,32 @@ function SkillsMenu (props) {
     if (props.skills) {
         musicalSkills = props.skills.musical.map(skill => (
             <li key={ skill }>
-                <SkillCheckbox click={ props.handleSelectSkill } skill={ skill } />
+                <SkillCheckbox
+                    isChecked={ props.selectedSkills.includes(skill) ? true : false }
+                    change={ props.handleSelectSkill }
+                    skill={ skill } />
             </li>
         ));
         actingSkills = props.skills.acting.map(skill => (
             <li key={ skill }>
-                <SkillCheckbox click={ props.handleSelectSkill } skill={ skill } />
+                <SkillCheckbox
+                    isChecked={ props.selectedSkills.includes(skill) ? true : false }
+                    change={ props.handleSelectSkill }
+                    skill={ skill } />
             </li>
         ));
         dancingSkills = props.skills.dancing.map(skill => (
             <li key={ skill }>
-                <SkillCheckbox click={ props.handleSelectSkill } skill={ skill } />
+                <SkillCheckbox
+                    isChecked={ props.selectedSkills.includes(skill) ? true : false }
+                    change={ props.handleSelectSkill }
+                    skill={ skill } />
             </li>
         ));
 
         menuContent = (
             <React.Fragment>
-                <button>Clear all</button>
+                <button onClick={ props.clearSkills }>Clear all</button>
                 <div className={ styles.skillsListWrapper }>
                     <div>
                         <h3>Musical</h3>
