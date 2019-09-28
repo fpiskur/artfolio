@@ -4,11 +4,12 @@
 }
 
 .Search input {
-    flex: 1 0 auto;
+    flex: 1;
     padding-left: 1em;
     color: var(--dark);
 }
 
 .Search button {
     background-color: var(--gray);
+    color: var(--black);
 }

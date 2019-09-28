@@ -1,0 +1,59 @@
+.AddNewEmployeeBody {
+    padding: 1.5em 1em 1em;
+}
+
+.AddNewEmployeeBody h2 {
+    margin-top: 0;
+}
+
+.formItem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1.2em;
+}
+
+.formItem label,
+.formItem input {
+    display: block;
+}
+
+.formItem label {
+    margin-bottom: .5em;
+}
+
+.formItem input {
+    width: 100%;
+    padding: .3em .3em .3em .8em;
+}
+
+.profileImage {
+    width: 35%;
+    min-width: 8em;;
+    max-width: 15em;
+    border-radius: 50%;
+    align-self: center;
+    margin-bottom: .5em;
+}
+
+.headerImage {
+    width: 100%;
+    margin-bottom: .5em;
+}
+
+.addImageInput {
+    display: flex;
+    width: 100%;
+}
+
+.addImageInput input {
+    flex: 1;
+}
+
+.addImageInput button {
+    background-color: var(--gray);
+    color: var(--black);
+    border: none;
+    padding: .2em 1em;
+    cursor: pointer;
+}
