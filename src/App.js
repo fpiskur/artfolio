@@ -3,7 +3,7 @@ import './App.css';
 import axios from './axios';
 
 import EmployeeList from './components/EmployeeList/EmployeeList';
-import EmployeeListHeader from './containers/EmployeeListHeader/EmployeeListHeader';
+import EmployeeListHeader from './components/EmployeeListHeader/EmployeeListHeader';
 import Spinner from './components/UI/Spinner';
 
 
@@ -103,7 +103,7 @@ class App extends Component {
                     applyAvailabilityFilter={ this.handleAvailabilityFilter }
                     applySkillsFilter={ this.handleSkillsFilter }
                     clearSkillsFilter={ this.clearSkillsFilter }
-                    skillsFilter={ this.state.skillsFilter } />
+                    selectedSkills={ this.state.skillsFilter } />
                 { this.state.comedians[0] ?
                 <EmployeeList comedians={ filteredComedians } /> :
                 <Spinner /> }

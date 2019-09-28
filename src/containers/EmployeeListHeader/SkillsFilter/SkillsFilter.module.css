@@ -1,0 +1,24 @@
+.showSkillsBtn {
+    width: 100%;
+    height: 3em;
+    padding: 0 1em;
+    background-color: var(--lighter);
+    display: flex;
+    justify-content: space-between;
+}
+
+.showSkillsBtn span:first-child {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.showSkillsBtn span > small {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.arrow {
+    padding: 0 .9em;
+}

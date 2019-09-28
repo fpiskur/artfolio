@@ -1,0 +1,9 @@
+.EmployeeListHeader {
+    margin-bottom: 1em;
+}
+
+.EmployeeListHeader button {
+    border: none;
+    padding: .2em 1em;
+    cursor: pointer;
+}

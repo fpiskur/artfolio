@@ -1,0 +1,18 @@
+.topBar {
+    display: flex;
+    justify-content: space-between;
+    height: 2.6em;
+    background-color: var(--dark);
+}
+
+.homeBtn {
+    background: transparent;
+    font-weight: 600;
+    font-size: 1.4em;
+    color: var(--lighter);
+}
+
+.addNewBtn {
+    background-color: var(--blue);
+    color: var(--lighter);
+}
