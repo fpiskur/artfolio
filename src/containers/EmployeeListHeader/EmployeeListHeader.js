@@ -3,6 +3,7 @@ import styles from './EmployeeListHeader.module.css';
 import axios from '../../axios';
 
 import SkillsMenu from '../../components/EmployeeListHeader/SkillsMenu/SkillsMenu';
+import Search from './Search/Search';
 
 class EmployeeListHeader extends Component {
 
@@ -34,10 +35,7 @@ class EmployeeListHeader extends Component {
                     <button className={ styles.homeBtn }>HOME</button>
                     <button className={ styles.addNewBtn }>Add New Employee</button>
                 </div>
-                <div className={ styles.search }>
-                    <input type="text" placeholder="Search by name or event" />
-                    <button>Search</button>
-                </div>
+                <Search submitSearch={ this.props.submitSearch } />
                 <div className={ styles.activeFilter }>
                     <input
                         type="radio"
@@ -67,7 +65,7 @@ class EmployeeListHeader extends Component {
                         <span>Chosen skills <small>
                             { this.props.skillsFilter[0] ?
                                 '(' + this.props.skillsFilter.join(', ') + ')' :
-                                null }</small></span>
+                                '(none)' }</small></span>
                         {
                         this.state.menuVisible ?
                             <span className={ styles.arrow }>&#9650;</span> : // up arrow

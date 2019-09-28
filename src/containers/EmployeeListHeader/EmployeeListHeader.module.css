@@ -27,21 +27,6 @@
     color: var(--lighter);
 }
 
-.search {
-    display: flex;
-    height: 2.6em;
-}
-
-.search input {
-    flex: 1 0 auto;
-    padding-left: 1em;
-    color: var(--gray);
-}
-
-.search button {
-    background-color: var(--gray);
-}
-
 .activeFilter {
     display: flex;
     justify-content: center;

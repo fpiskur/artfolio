@@ -11,6 +11,7 @@ class App extends Component {
 
     state = {
         comedians: [],
+        searchTerm: '',
         availabilityFilter: 'All',
         skillsFilter: [],
         error: false
@@ -24,6 +25,10 @@ class App extends Component {
         .catch(error => {
             this.setState({ error: true });
         });
+    }
+
+    handleSearchSubmit = (searchTerm) => {
+        this.setState({ searchTerm: searchTerm, availabilityFilter: 'All', skillsFilter: [] });
     }
 
     handleAvailabilityFilter = (event) => {
@@ -48,6 +53,7 @@ class App extends Component {
 
         let filteredComedians;
 
+        // Availability filter
         switch (this.state.availabilityFilter) {
             case 'All':
                 filteredComedians = this.state.comedians;
@@ -62,6 +68,7 @@ class App extends Component {
                 filteredComedians = this.state.comedians;
         }
 
+        // Skills filter
         if (this.state.skillsFilter.length) {
             this.state.skillsFilter.forEach(skill => {
                 filteredComedians = filteredComedians.filter(comedian => {
@@ -75,10 +82,24 @@ class App extends Component {
             });
         }
 
+        // Search filter
+        if (this.state.searchTerm) {
+            filteredComedians = filteredComedians.filter(comedian => {
+                if (
+                    comedian.name.toLowerCase().includes(this.state.searchTerm.toLowerCase()) ||
+                    comedian.profession.toLowerCase().includes(this.state.searchTerm.toLowerCase())
+                    ) {
+                    return true;
+                } else {
+                    return false;
+                }
+            });
+        }
 
         return (
             <div className="App">
                 <EmployeeListHeader
+                    submitSearch={ this.handleSearchSubmit }
                     applyAvailabilityFilter={ this.handleAvailabilityFilter }
                     applySkillsFilter={ this.handleSkillsFilter }
                     clearSkillsFilter={ this.clearSkillsFilter }
