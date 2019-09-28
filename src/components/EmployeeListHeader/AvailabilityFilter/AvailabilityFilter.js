@@ -10,21 +10,23 @@ function AvailabilityFilter (props) {
                 id="all"
                 value="All"
                 onChange={ props.applyAvailabilityFilter }
-                defaultChecked />
+                checked={ props.availabilityChecked === 'All' ? true : false } />
             <label htmlFor="all">All</label>|
             <input
                 type="radio"
                 name="availability"
                 id="available"
                 value="Available"
-                onChange={ props.applyAvailabilityFilter } />
+                onChange={ props.applyAvailabilityFilter }
+                checked={ props.availabilityChecked === 'Available' ? true : false } />
             <label htmlFor="available">Available</label>|
             <input
                 type="radio"
                 name="availability"
                 id="not-available"
                 value="Not available"
-                onChange={ props.applyAvailabilityFilter } />
+                onChange={ props.applyAvailabilityFilter }
+                checked={ props.availabilityChecked === 'Not available' ? true : false } />
             <label htmlFor="not-available">Not available</label>
         </div>
     );

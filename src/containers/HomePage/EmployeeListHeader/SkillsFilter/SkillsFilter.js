@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import styles from './SkillsFilter.module.css';
-import axios from '../../../axios';
+import axios from '../../../../axios';
 
-import SkillsMenu from '../../../components/EmployeeListHeader/SkillsMenu/SkillsMenu';
+import SkillsMenu from '../../../../components/EmployeeListHeader/SkillsMenu/SkillsMenu';
 
 class SkillsFilter extends Component {
 

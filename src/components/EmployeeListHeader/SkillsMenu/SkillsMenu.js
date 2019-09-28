@@ -2,12 +2,11 @@ import React from 'react';
 import styles from './SkillsMenu.module.css';
 
 import SkillCheckbox from './SkillCheckbox/SkillCheckbox';
-import Spinner from '../../UI/Spinner';
 
 function SkillsMenu (props) {
 
     let musicalSkills = null, actingSkills = null, dancingSkills = null;
-    let menuContent = <Spinner />;
+    let menuContent = <p className={ styles.loading }>loading skills...</p>;
 
     if (props.skills) {
         musicalSkills = props.skills.musical.map(skill => (
