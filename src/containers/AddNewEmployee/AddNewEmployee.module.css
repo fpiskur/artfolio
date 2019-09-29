@@ -100,13 +100,15 @@
 }
 
 .skills .skillsList > span {
-    padding: .1em .5em;
+    display: inline-block;
+    padding: .2em .7em;
     border-radius: 1em;
     background-color: var(--gray);
+    margin-bottom: .5em;
 }
 
 .skills .skillsList > span:not(:last-child) {
-    margin-right: .5em;
+    margin-right: .3em;
 }
 
 .skills .skillsList {
