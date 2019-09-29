@@ -13,18 +13,39 @@
     margin-bottom: 1.2em;
 }
 
-.formItem label,
-.formItem input {
-    display: block;
+.directionRow {
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.directionRow label {
+    margin-right: 2em;
 }
 
 .formItem label {
     margin-bottom: .5em;
 }
 
-.formItem input {
+.formItem input,
+.formItem textarea {
     width: 100%;
     padding: .3em .3em .3em .8em;
+}
+
+.formItem label[for="short-description"] ~ textarea {
+    resize: none;
+}
+
+.formItem button {
+    background-color: var(--gray);
+    color: var(--black);
+    border: none;
+    padding: .2em 1em;
+    cursor: pointer;
+}
+
+.formItem select {
+    padding: .2em .5em;
 }
 
 .profileImage {
@@ -50,10 +71,44 @@
     flex: 1;
 }
 
-.addImageInput button {
+.rightFloat {
+    align-self: flex-end;
+}
+
+.addSkill {
+    display: flex;
+    width: 100%;
+}
+
+.addSkill input {
+    flex: 1 1 10em;
+}
+
+.skills {
+    margin-top: 1em;
+}
+
+.skills > div {
+    display: flex;
+}
+
+.skills .skillsHeading {
+    color: var(--dark);
+    width: 5em;
+    text-align: right;
+    margin-right: 1em;
+}
+
+.skills .skillsList > span {
+    padding: .1em .5em;
+    border-radius: 1em;
     background-color: var(--gray);
-    color: var(--black);
-    border: none;
-    padding: .2em 1em;
-    cursor: pointer;
+}
+
+.skills .skillsList > span:not(:last-child) {
+    margin-right: .5em;
+}
+
+.skills .skillsList {
+    flex: 0 1 100%;
 }
