@@ -24,6 +24,7 @@
 
 .formItem label {
     margin-bottom: .5em;
+    font-size: 1.2em;
 }
 
 .formItem input,
@@ -134,6 +135,14 @@
     border-radius: 50%;
 }
 
+.projectsList {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    border-left: .5em solid var(--gray);
+}
+
 .projectItem {
     display: flex;
     align-items: center;
@@ -148,8 +157,14 @@
 }
 
 .projectItem .event h3 {
-    margin: 0 0 .3em 0;
+    margin: 0;
     color: var(--dark);
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.projectItem .event h3:not(:only-child) {
+    margin-bottom: .3em;
 }
 
 .projectItem .event p {
