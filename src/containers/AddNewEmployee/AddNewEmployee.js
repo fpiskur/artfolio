@@ -31,6 +31,10 @@ class AddNewEmployee extends Component {
                                 <label htmlFor="employee-profession">Profession</label>
                                 <input id="employee-profession" type="text" placeholder="Employee profession" />
                             </div>
+                            <div className={ styles.formItem }>
+                                <label htmlFor="personal-website">Personal website</label>
+                                <input id="personal-website" type="text" placeholder="Website URL" />
+                            </div>
                         </div>
                         <div className={ styles.colRight }>
                             <div className={ styles.formItem }>
@@ -55,10 +59,6 @@ class AddNewEmployee extends Component {
                                 <label htmlFor="short-description">Short description</label>
                                 <textarea id="short-description" rows="6" maxLength="167" placeholder="Description (max 167 characters)"></textarea>
                                 <span className={ styles.rightFloat }>characters left: <strong>{ this.state.charCount }</strong></span>
-                            </div>
-                            <div className={ styles.formItem }>
-                                <label htmlFor="personal-website">Personal website</label>
-                                <input id="personal-website" type="text" placeholder="Website URL" />
                             </div>
                             <div className={ `${styles.formItem} ${styles.directionRow}` }>
                                 <label htmlFor="availability">Availability:</label>
@@ -107,8 +107,109 @@ class AddNewEmployee extends Component {
                                     </div>
                                 </div>
                             </div>
+                            <div className={ styles.formItem }>
+                                <div className={ styles.labelInline }>
+                                    <label>Specials</label>
+                                    <button className={ styles.addItemBtn }><i className="fas fa-plus"></i></button>
+                                </div>
+                                <div className={ styles.projectItem }>
+                                    <div className={ styles.event }>
+                                        <h3>The Thing!</h3>
+                                        <p>@ York</p>
+                                    </div>
+                                    <div className={ styles.date }>
+                                        25.11.2019.
+                                    </div>
+                                    <button className={ styles.editBtn }>
+                                        <i className="far fa-edit"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div className={ styles.formItem }>
+                                <div className={ styles.labelInline }>
+                                    <label>TV Shows</label>
+                                    <button className={ styles.addItemBtn }><i className="fas fa-plus"></i></button>
+                                </div>
+                                <div className={ styles.projectItem }>
+                                    <div className={ styles.event }>
+                                        <h3>Late Night With Conan O'Brien</h3>
+                                    </div>
+                                    <div className={ styles.date }>
+                                        15.05.2002.
+                                    </div>
+                                    <button className={ styles.editBtn }>
+                                        <i className="far fa-edit"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div className={ styles.formItem }>
+                                <div className={ styles.labelInline }>
+                                    <label>Education</label>
+                                    <button className={ styles.addItemBtn }><i className="fas fa-plus"></i></button>
+                                </div>
+                                <div className={ styles.projectItem }>
+                                    <div className={ styles.event }>
+                                        <h3>Burger High</h3>
+                                        <p>mime</p>
+                                    </div>
+                                    <div className={ styles.date }>
+                                        1960. - 1964.
+                                    </div>
+                                    <button className={ styles.editBtn }>
+                                        <i className="far fa-edit"></i>
+                                    </button>
+                                </div>
+                                <div className={ styles.projectItem }>
+                                    <div className={ styles.event }>
+                                        <h3>Burger Elementary</h3>
+                                        <p>elementary diploma</p>
+                                    </div>
+                                    <div className={ styles.date }>
+                                        1952. - 1960.
+                                    </div>
+                                    <button className={ styles.editBtn }>
+                                        <i className="far fa-edit"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div className={ styles.formItem }>
+                                <div className={ styles.labelInline }>
+                                    <label>Workshops</label>
+                                    <button className={ styles.addItemBtn }><i className="fas fa-plus"></i></button>
+                                </div>
+                                <div className={ styles.projectItem }>
+                                    <div className={ styles.event }>
+                                        <h3>Acting for comedians</h3>
+                                        <p>with Bill Cosby</p>
+                                    </div>
+                                    <div className={ styles.date }>
+                                        January 1977.
+                                    </div>
+                                    <button className={ styles.editBtn }>
+                                        <i className="far fa-edit"></i>
+                                    </button>
+                                </div>
+                                <div className={ styles.projectItem }>
+                                    <div className={ styles.event }>
+                                        <h3>TV show hosting for newbs</h3>
+                                        <p>with David Letterman</p>
+                                    </div>
+                                    <div className={ styles.date }>
+                                        November 1985.
+                                    </div>
+                                    <button className={ styles.editBtn }>
+                                        <i className="far fa-edit"></i>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <div className={ styles.colRight }></div>
+                        <div className={ styles.colRight }>
+                            <div className={ styles.formItem }>
+                                <label htmlFor="about">About</label>
+                                <textarea id="about" rows="12" placeholder="About"></textarea>
+                            </div>
+                        </div>
+                        <button className={ styles.addEmployeeBtn }>Add Employee</button>
                     </form>
                 </div>
             </React.Fragment>

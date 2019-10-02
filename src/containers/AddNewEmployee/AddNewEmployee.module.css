@@ -1,5 +1,5 @@
 .AddNewEmployeeBody {
-    padding: 1.5em 1em 1em;
+    padding: 1.5em 1em;
 }
 
 .AddNewEmployeeBody h2 {
@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 1.2em;
+    margin-bottom: 1.5em;
 }
 
 .directionRow {
@@ -113,4 +113,72 @@
 
 .skills .skillsList {
     flex: 0 1 100%;
+}
+
+.labelInline {
+    display: flex;
+    width: 100%;
+    padding-bottom: .5em;
+    align-items: baseline;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gray);
+}
+
+.labelInline .addItemBtn {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    width: 2em;
+    height: 2em;
+    font-size: 1.2em;
+    border-radius: 50%;
+}
+
+.projectItem {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: .7em 0 .7em .5em;
+    border-bottom: 1px solid var(--gray);
+}
+
+.projectItem .event {
+    flex: 1;
+    padding-right: 1em;
+}
+
+.projectItem .event h3 {
+    margin: 0 0 .3em 0;
+    color: var(--dark);
+}
+
+.projectItem .event p {
+    margin: 0;
+}
+
+.projectItem .date {
+    font-size: 1.15em;
+    font-weight: 600;
+    color: var(--darker);
+}
+
+.projectItem .editBtn {
+    background-color: transparent;
+    margin-left: 2em;
+    padding: .5em;
+}
+
+.formItem label[for="about-me"] ~ textarea {
+    resize: vertical;
+}
+
+.addEmployeeBtn {
+    background-color: var(--blue);
+    color: var(--lighter);
+    border: none;
+    padding: .5em 1.2em;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 600;
+    width: 100%
 }
