@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import styles from './AddNewEmployee.module.css';
+import axios from '../../axios';
 
 import TopBar from '../../components/UI/TopBar/TopBar';
 import FormItemText from '../../components/AddNewEmployee/FormItems/FormItemText/FormItemText';
 import FormItemImage from '../../components/AddNewEmployee/FormItems/FormItemImage/FormItemImage';
 import FormItemTextarea from './FormItems/FormItemTextarea/FormItemTextarea';
 import FormItemSelect from '../../components/AddNewEmployee/FormItems/FormItemSelect/FormItemSelect';
+import FormItemNestedList from '../../components/AddNewEmployee/FormItems/FormItemNestedList/FormItemNestedList';
 import FormItemList from '../../components/AddNewEmployee/FormItems/FormItemList/FormItemList';
 
 class AddNewEmployee extends Component {
@@ -30,6 +32,16 @@ class AddNewEmployee extends Component {
         ui: {
             charCount: 167
         }
+    }
+
+    componentDidMount () {
+        axios.get('/comedians/0.json')
+            .then(response => {
+                this.setState({ form: response.data })
+            })
+            .catch(error => {
+                console.log(error.message);
+            });
     }
 
     render () {
@@ -77,158 +89,25 @@ class AddNewEmployee extends Component {
                                 id="availability"
                                 label="Availability:"
                                 options={[ 'Available', 'Not available' ]} />
-                            <div className={ styles.formItem }>
-                                <label htmlFor="skills">Skills</label>
-                                <div className={ styles.addSkill }>
-                                    <input id="skills" type="text" placeholder="New skill" />
-                                    <select>
-                                        <option value="">--category--</option>
-                                        <option value="musical">musical</option>
-                                        <option value="acting">acting</option>
-                                        <option value="dancing">dancing</option>
-                                    </select>
-                                    <button>Add skill</button>
-                                </div>
-                                <div className={ styles.skills }>
-                                    <div>
-                                        <div className={ styles.skillsHeading }><small>MUSICAL:</small></div>
-                                        <div className={ styles.skillsList }>
-                                            <span>guitar</span>
-                                            <span>drums</span>
-                                            <span>triangle</span>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div className={ styles.skillsHeading }><small>ACTING:</small></div>
-                                        <div className={ styles.skillsList }>
-                                            <span>comedy</span>
-                                            <span>drama</span>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div className={ styles.skillsHeading }><small>DANCING:</small></div>
-                                        <div className={ styles.skillsList }>
-                                            <span>contemporary</span>
-                                            <span>waltz</span>
-                                            <span>tap dance</span>
-                                            <span>salsa</span>
-                                            <span>silly dancing</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* <div className={ styles.formItem }>
-                                <div className={ styles.labelInline }>
-                                    <label>Specials</label>
-                                    <button className={ styles.addItemBtn }><i className="fas fa-plus"></i></button>
-                                </div>
-                                <ul className={ styles.projectsList }>
-                                    <li className={ styles.projectItem }>
-                                        <div className={ styles.event }>
-                                            <h3>The Thing!</h3>
-                                            <p>@ York</p>
-                                        </div>
-                                        <div className={ styles.date }>
-                                            25.11.2019.
-                                        </div>
-                                        <button className={ styles.editBtn }>
-                                            <i className="far fa-edit"></i>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div> */}
+                            <FormItemNestedList
+                                id="skills"
+                                label="Skills"
+                                placeholder="New skill"
+                                items={ this.state.form.skills } />
                             <FormItemList
                                 label="Specials"
-                                items="" />
-                            <div className={ styles.formItem }>
-                                <div className={ styles.labelInline }>
-                                    <label>TV Shows</label>
-                                    <button className={ styles.addItemBtn }><i className="fas fa-plus"></i></button>
-                                </div>
-                                <ul className={ styles.projectsList }>
-                                    <li className={ styles.projectItem }>
-                                        <div className={ styles.event }>
-                                            <h3>Late Night With Conan O'Brien</h3>
-                                        </div>
-                                        <div className={ styles.date }>
-                                            15.05.2002.
-                                        </div>
-                                        <button className={ styles.editBtn }>
-                                            <i className="far fa-edit"></i>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className={ styles.formItem }>
-                                <div className={ styles.labelInline }>
-                                    <label>Education</label>
-                                    <button className={ styles.addItemBtn }><i className="fas fa-plus"></i></button>
-                                </div>
-                                <ul className={ styles.projectsList }>
-                                    <li className={ styles.projectItem }>
-                                        <div className={ styles.event }>
-                                            <h3>Burger High</h3>
-                                            <p>mime</p>
-                                        </div>
-                                        <div className={ styles.date }>
-                                            1960. - 1964.
-                                        </div>
-                                        <button className={ styles.editBtn }>
-                                            <i className="far fa-edit"></i>
-                                        </button>
-                                    </li>
-                                    <li className={ styles.projectItem }>
-                                        <div className={ styles.event }>
-                                            <h3>Burger Elementary</h3>
-                                            <p>elementary diploma</p>
-                                        </div>
-                                        <div className={ styles.date }>
-                                            1952. - 1960.
-                                        </div>
-                                        <button className={ styles.editBtn }>
-                                            <i className="far fa-edit"></i>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className={ styles.formItem }>
-                                <div className={ styles.labelInline }>
-                                    <label>Workshops</label>
-                                    <button className={ styles.addItemBtn }><i className="fas fa-plus"></i></button>
-                                </div>
-                                <ul className={ styles.projectsList }>
-                                    <li className={ styles.projectItem }>
-                                        <div className={ styles.event }>
-                                            <h3>Acting for comedians</h3>
-                                            <p>with Bill Cosby</p>
-                                        </div>
-                                        <div className={ styles.date }>
-                                            January 1977.
-                                        </div>
-                                        <button className={ styles.editBtn }>
-                                            <i className="far fa-edit"></i>
-                                        </button>
-                                    </li>
-                                    <li className={ styles.projectItem }>
-                                        <div className={ styles.event }>
-                                            <h3>TV show hosting for newbs</h3>
-                                            <p>with David Letterman</p>
-                                        </div>
-                                        <div className={ styles.date }>
-                                            November 1985.
-                                        </div>
-                                        <button className={ styles.editBtn }>
-                                            <i className="far fa-edit"></i>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
+                                items={ this.state.form.specials } />
+                            <FormItemList
+                                label="TV Shows"
+                                items={ this.state.form.tvShows } />
+                            <FormItemList
+                                label="Education"
+                                items={ this.state.form.education } />
+                            <FormItemList
+                                label="Workshops"
+                                items={ this.state.form.workshops } />
                         </div>
                         <div className={ styles.colRight }>
-                            {/* <div className={ styles.formItem }>
-                                <label htmlFor="about">About</label>
-                                <textarea id="about" rows="12" placeholder="About"></textarea>
-                            </div> */}
                             <FormItemTextarea
                                 id="about"
                                 label="About"

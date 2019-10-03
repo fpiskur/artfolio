@@ -44,46 +44,6 @@
     align-self: flex-end;
 } */
 
-.addSkill {
-    display: flex;
-    width: 100%;
-}
-
-.addSkill input {
-    flex: 1 1 10em;
-}
-
-.skills {
-    margin-top: 1em;
-}
-
-.skills > div {
-    display: flex;
-}
-
-.skills .skillsHeading {
-    color: var(--dark);
-    width: 5em;
-    text-align: right;
-    margin-right: 1em;
-}
-
-.skills .skillsList > span {
-    display: inline-block;
-    padding: .2em .7em;
-    border-radius: 1em;
-    background-color: var(--gray);
-    margin-bottom: .5em;
-}
-
-.skills .skillsList > span:not(:last-child) {
-    margin-right: .3em;
-}
-
-.skills .skillsList {
-    flex: 0 1 100%;
-}
-
 .addEmployeeBtn {
     background-color: var(--blue);
     color: var(--lighter);

@@ -1,0 +1,33 @@
+.skillsHeading {
+    color: var(--dark);
+    width: 5em;
+    text-align: right;
+    margin-right: 1em;
+}
+
+.listItem {
+    display: inline-block;
+    border-radius: 1em;
+    background-color: var(--light);
+    margin-bottom: .5em;
+}
+
+.listItem:not(:last-child) {
+    margin-right: .3em;
+}
+
+.listItem > span {
+    display: inline-block;
+    padding: .2em .5em .2em .7em;
+}
+
+.skillsList {
+    flex: 0 1 100%;
+}
+
+.listItem .delBtn {
+    padding: .2em .3em .2em 0;
+    line-height: 1;
+    background-color: transparent;
+    color: var(--darker);
+}

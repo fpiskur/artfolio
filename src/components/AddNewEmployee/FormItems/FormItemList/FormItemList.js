@@ -5,6 +5,37 @@ import styles from './FormItemList.module.css';
 import ListItem from './ListItem/ListItem';
 
 function FormItemList (props) {
+
+    const listItems = props.items.map(item => {
+        let itemKey, itemTitle, itemSubtitle, itemDate;
+        if ( props.label === 'Specials' ) {
+            itemKey = item.name + item.date;
+            itemTitle = item.name;
+            itemSubtitle = '@ ' + item.place;
+            itemDate = item.date;
+        } else if ( props.label === 'TV Shows' ) {
+            itemKey = item.name + item.date;
+            itemTitle = item.name;
+            itemSubtitle = null;
+            itemDate = item.date;
+        } else if ( props.label === 'Education' ) {
+            itemKey = item.institution + item.endYear;
+            itemTitle = item.institution;
+            itemSubtitle = item.title;
+            itemDate = item.startYear + '. - ' + item.endYear + '.';
+        } else if ( props.label === 'Workshops' ) {
+            itemKey = item.workshop + item.monts + item.year;
+            itemTitle = item.workshop;
+            itemSubtitle = 'with ' + item.teacher;
+            itemDate = item.month + '. ' + item.year + '.';
+        } else return null;
+        return <ListItem
+            key={ itemKey }
+            title={ itemTitle }
+            subtitle={ itemSubtitle }
+            date={ itemDate } />;
+    });
+
     return (
         <div className={ itemStyles.formItem }>
             <div className={ styles.labelInline }>
@@ -24,10 +55,7 @@ function FormItemList (props) {
                         <i className="far fa-edit"></i>
                     </button>
                 </li> */}
-                <ListItem
-                    title="The Thing!"
-                    subtitle="@ York"
-                    date="25.11.2019." />
+                { listItems }
             </ul>
         </div>
     );
