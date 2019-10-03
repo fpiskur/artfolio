@@ -32,6 +32,10 @@
     color: var(--dark);
 }
 
+.header div:last-child {
+    margin-left: 1em;
+}
+
 .header .notAvailable {
     font-weight: 600;
     color: var(--red);
@@ -40,5 +44,4 @@
 .header .available {
     font-weight: 800;
     color: var(--green);
-    margin-left: 1em;
 }

@@ -1,0 +1,20 @@
+import React from 'react';
+import styles from '../formItems.module.css';
+
+function FormItemSelect (props) {
+
+    const options = props.options.map(option => (
+        <option key={ option } value={ option }>{ option }</option>
+    ));
+
+    return (
+        <div className={ styles.formItem } style={{ flexDirection: 'row', alignItems: 'baseline' }}>
+            <label htmlFor={ props.id } style={{ marginRight: '2em' }}>{ props.label }</label>
+            <select id={ props.id }>
+                { options }
+            </select>
+        </div>
+    );
+}
+
+export default FormItemSelect;

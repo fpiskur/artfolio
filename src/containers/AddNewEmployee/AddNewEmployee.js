@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import styles from './AddNewEmployee.module.css';
-import userPlaceholderImage from '../../images/fa-user.png';
-import headerPlaceholderImage from '../../images/header-image.png';
 
 import TopBar from '../../components/UI/TopBar/TopBar';
+import FormItemText from '../../components/AddNewEmployee/FormItems/FormItemText/FormItemText';
+import FormItemImage from '../../components/AddNewEmployee/FormItems/FormItemImage/FormItemImage';
+import FormItemTextarea from './FormItems/FormItemTextarea/FormItemTextarea';
+import FormItemSelect from '../../components/AddNewEmployee/FormItems/FormItemSelect/FormItemSelect';
+import FormItemList from '../../components/AddNewEmployee/FormItems/FormItemList/FormItemList';
 
 class AddNewEmployee extends Component {
 
@@ -32,59 +35,48 @@ class AddNewEmployee extends Component {
     render () {
         return (
             <React.Fragment>
-                <TopBar addNew={ false } />
+                <TopBar />
                 <div className={ styles.AddNewEmployeeBody }>
                     <h2>Add New Employee</h2>
                     <form>
                         <div className={ styles.colLeft }>
-                            <div className={ styles.formItem }>
-                                <label htmlFor="employee-username">Userame</label>
-                                <input id="employee-username" type="text" placeholder="Employee username" />
-                            </div>
-                            <div className={ styles.formItem }>
-                                <label htmlFor="employee-name">Name</label>
-                                <input id="employee-name" type="text" placeholder="Employee name" />
-                            </div>
-                            <div className={ styles.formItem }>
-                                <label htmlFor="employee-profession">Profession</label>
-                                <input id="employee-profession" type="text" placeholder="Employee profession" />
-                            </div>
-                            <div className={ styles.formItem }>
-                                <label htmlFor="personal-website">Personal website</label>
-                                <input id="personal-website" type="text" placeholder="Website URL" />
-                            </div>
+                            <FormItemText
+                                id="employee-username"
+                                label="Username"
+                                placeholder="Employee username" />
+                            <FormItemText
+                                id="employee-name"
+                                label="Name"
+                                placeholder="Employee name" />
+                            <FormItemText
+                                id="employee-profession"
+                                label="Profession"
+                                placeholder="Employee profession" />
+                            <FormItemText
+                                id="personal-website"
+                                label="Personal website"
+                                placeholder="Website URL" />
                         </div>
                         <div className={ styles.colRight }>
-                            <div className={ styles.formItem }>
-                                <label htmlFor="profile-image">Profile image</label>
-                                <img className={ styles.profileImage } src={ userPlaceholderImage } alt="Profile image" />
-                                <div className={ styles.addImageInput }>
-                                    <input id="profile-image" type="url" placeholder="Image URL" />
-                                    <button>Add image</button>
-                                </div>
-                            </div>
-                            <div className={ styles.formItem }>
-                                <label htmlFor="header-image">Header image</label>
-                                <img className={ styles.headerImage } src={ headerPlaceholderImage } alt="Header image" />
-                                <div className={ styles.addImageInput }>
-                                    <input id="header-image" type="url" placeholder="Image URL" />
-                                    <button>Add image</button>
-                                </div>
-                            </div>
+                            <FormItemImage
+                                type="profile"
+                                id="profile-image"
+                                label="Profile image" />
+                            <FormItemImage
+                                type="header"
+                                id="header-image"
+                                label="Header image" />
                         </div>
                         <div className={ styles.colLeft }>
-                            <div className={ styles.formItem }>
-                                <label htmlFor="short-description">Short description</label>
-                                <textarea id="short-description" rows="6" maxLength="167" placeholder="Description (max 167 characters)"></textarea>
-                                <span className={ styles.rightFloat }>characters left: <strong>{ this.state.ui.charCount }</strong></span>
-                            </div>
-                            <div className={ `${styles.formItem} ${styles.directionRow}` }>
-                                <label htmlFor="availability">Availability:</label>
-                                <select id="availability">
-                                    <option value="Available">Available</option>
-                                    <option value="Not available">Not available</option>
-                                </select>
-                            </div>
+                            <FormItemTextarea
+                                type="short"
+                                id="short-description"
+                                label="Short description"
+                                placeholder="Description (max 167 characters)" />
+                            <FormItemSelect
+                                id="availability"
+                                label="Availability:"
+                                options={[ 'Available', 'Not available' ]} />
                             <div className={ styles.formItem }>
                                 <label htmlFor="skills">Skills</label>
                                 <div className={ styles.addSkill }>
@@ -125,7 +117,7 @@ class AddNewEmployee extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className={ styles.formItem }>
+                            {/* <div className={ styles.formItem }>
                                 <div className={ styles.labelInline }>
                                     <label>Specials</label>
                                     <button className={ styles.addItemBtn }><i className="fas fa-plus"></i></button>
@@ -144,7 +136,10 @@ class AddNewEmployee extends Component {
                                         </button>
                                     </li>
                                 </ul>
-                            </div>
+                            </div> */}
+                            <FormItemList
+                                label="Specials"
+                                items="" />
                             <div className={ styles.formItem }>
                                 <div className={ styles.labelInline }>
                                     <label>TV Shows</label>
@@ -230,10 +225,15 @@ class AddNewEmployee extends Component {
                             </div>
                         </div>
                         <div className={ styles.colRight }>
-                            <div className={ styles.formItem }>
+                            {/* <div className={ styles.formItem }>
                                 <label htmlFor="about">About</label>
                                 <textarea id="about" rows="12" placeholder="About"></textarea>
-                            </div>
+                            </div> */}
+                            <FormItemTextarea
+                                id="about"
+                                label="About"
+                                placeholder="About"
+                                type="about" />
                         </div>
                         <button className={ styles.addEmployeeBtn }>Add Employee</button>
                     </form>

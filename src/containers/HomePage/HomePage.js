@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import axios from '../../axios';
 
-import EmployeeList from '../../components/EmployeeList/EmployeeList';
-import EmployeeListHeader from '../../components/EmployeeListHeader/EmployeeListHeader';
+import TopBar from '../../components/UI/TopBar/TopBar';
+import EmployeeList from '../../components/HomePage/EmployeeList/EmployeeList';
+import EmployeeListHeader from '../../components/HomePage/EmployeeListHeader/EmployeeListHeader';
 import Spinner from '../../components/UI/Spinner/Spinner';
 
 
@@ -97,6 +98,7 @@ class HomePage extends Component {
 
         return (
             <div>
+                <TopBar addNew />
                 <EmployeeListHeader
                     availabilityChecked={ this.state.availabilityFilter }
                     submitSearch={ this.handleSearchSubmit }
@@ -104,6 +106,7 @@ class HomePage extends Component {
                     applySkillsFilter={ this.handleSkillsFilter }
                     clearSkillsFilter={ this.clearSkillsFilter }
                     selectedSkills={ this.state.skillsFilter } />
+
                 { this.state.comedians[0] ?
                 <EmployeeList comedians={ filteredComedians } /> :
                 <Spinner /> }

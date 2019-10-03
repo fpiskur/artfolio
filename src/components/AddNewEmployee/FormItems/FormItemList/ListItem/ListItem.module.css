@@ -1,0 +1,39 @@
+.projectItem {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: .7em 0 .7em .7em;
+    border-bottom: 1px solid var(--gray);
+}
+
+.projectItem .event {
+    flex: 1;
+    padding-right: 1em;
+}
+
+.projectItem .event h3 {
+    margin: 0;
+    color: var(--dark);
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.projectItem .event h3:not(:only-child) {
+    margin-bottom: .3em;
+}
+
+.projectItem .event p {
+    margin: 0;
+}
+
+.projectItem .date {
+    font-size: 1.15em;
+    font-weight: 600;
+    color: var(--darker);
+}
+
+.projectItem .editBtn {
+    background-color: transparent;
+    margin-left: 2em;
+    padding: .5em;
+}

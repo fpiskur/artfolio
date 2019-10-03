@@ -1,0 +1,22 @@
+.profileImage {
+    width: 35%;
+    min-width: 8em;;
+    max-width: 15em;
+    border-radius: 50%;
+    align-self: center;
+    margin-bottom: .5em;
+}
+
+.headerImage {
+    width: 100%;
+    margin-bottom: .5em;
+}
+
+.addImageInput {
+    display: flex;
+    width: 100%;
+}
+
+.addImageInput input {
+    flex: 1;
+}

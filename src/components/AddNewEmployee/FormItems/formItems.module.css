@@ -1,0 +1,37 @@
+.formItem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1.5em;
+}
+
+.formItem label {
+    margin-bottom: .5em;
+    font-size: 1.2em;
+}
+
+.formItem label[for="short-description"] ~ textarea {
+    resize: none;
+}
+
+.formItem input,
+.formItem textarea {
+    width: 100%;
+    padding: .3em .3em .3em .8em;
+}
+
+.formItem button {
+    background-color: var(--gray);
+    color: var(--black);
+    border: none;
+    padding: .2em 1em;
+    cursor: pointer;
+}
+
+.formItem select {
+    padding: .2em .5em;
+}
+
+.formItem label[for="about"] ~ textarea {
+    resize: vertical;
+}

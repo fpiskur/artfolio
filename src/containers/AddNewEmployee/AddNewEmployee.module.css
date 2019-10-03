@@ -11,16 +11,7 @@
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 1.5em;
-}
-
-.directionRow {
-    flex-direction: row;
-    align-items: baseline;
-}
-
-.directionRow label {
-    margin-right: 2em;
-}
+}       /* REMOVE WHEN FINISHED WITH FORM ITEMS */
 
 .formItem label {
     margin-bottom: .5em;
@@ -49,32 +40,9 @@
     padding: .2em .5em;
 }
 
-.profileImage {
-    width: 35%;
-    min-width: 8em;;
-    max-width: 15em;
-    border-radius: 50%;
-    align-self: center;
-    margin-bottom: .5em;
-}
-
-.headerImage {
-    width: 100%;
-    margin-bottom: .5em;
-}
-
-.addImageInput {
-    display: flex;
-    width: 100%;
-}
-
-.addImageInput input {
-    flex: 1;
-}
-
-.rightFloat {
+/* .rightFloat {
     align-self: flex-end;
-}
+} */
 
 .addSkill {
     display: flex;
@@ -114,77 +82,6 @@
 
 .skills .skillsList {
     flex: 0 1 100%;
-}
-
-.labelInline {
-    display: flex;
-    width: 100%;
-    padding-bottom: .5em;
-    align-items: baseline;
-    justify-content: space-between;
-    border-bottom: 1px solid var(--gray);
-}
-
-.labelInline .addItemBtn {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    width: 2em;
-    height: 2em;
-    font-size: 1.2em;
-    border-radius: 50%;
-}
-
-.projectsList {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    list-style: none;
-    border-left: .5em solid var(--gray);
-}
-
-.projectItem {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: .7em 0 .7em .5em;
-    border-bottom: 1px solid var(--gray);
-}
-
-.projectItem .event {
-    flex: 1;
-    padding-right: 1em;
-}
-
-.projectItem .event h3 {
-    margin: 0;
-    color: var(--dark);
-    font-size: 1.1em;
-    font-weight: 600;
-}
-
-.projectItem .event h3:not(:only-child) {
-    margin-bottom: .3em;
-}
-
-.projectItem .event p {
-    margin: 0;
-}
-
-.projectItem .date {
-    font-size: 1.15em;
-    font-weight: 600;
-    color: var(--darker);
-}
-
-.projectItem .editBtn {
-    background-color: transparent;
-    margin-left: 2em;
-    padding: .5em;
-}
-
-.formItem label[for="about-me"] ~ textarea {
-    resize: vertical;
 }
 
 .addEmployeeBtn {
