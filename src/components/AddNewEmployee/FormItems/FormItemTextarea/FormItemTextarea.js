@@ -8,7 +8,7 @@ function FormItemTextarea (props) {
     switch (props.type) {
         case 'short':
             properties = {
-                rows: '6',
+                rows: '5',
                 maxLength: '167'
             };
             counter = <span style={{ alignSelf: 'flex-end' }}>

@@ -10,7 +10,7 @@ function FormItemSelect (props) {
     return (
         <div className={ styles.formItem } style={{ flexDirection: 'row', alignItems: 'baseline' }}>
             <label htmlFor={ props.id } style={{ marginRight: '2em' }}>{ props.label }</label>
-            <select id={ props.id }>
+            <select value={ props.value } onChange={ (event) => props.changed(event, props.id) } id={ props.id }>
                 { options }
             </select>
         </div>

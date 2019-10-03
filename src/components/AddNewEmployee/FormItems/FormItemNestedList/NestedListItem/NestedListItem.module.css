@@ -3,6 +3,7 @@
     width: 5em;
     text-align: right;
     margin-right: 1em;
+    padding-top: .4em;
 }
 
 .listItem {
@@ -18,7 +19,7 @@
 
 .listItem > span {
     display: inline-block;
-    padding: .2em .5em .2em .7em;
+    padding: .4em .0 .4em 1em;
 }
 
 .skillsList {
@@ -26,7 +27,7 @@
 }
 
 .listItem .delBtn {
-    padding: .2em .3em .2em 0;
+    padding: .4em .5em .4em .5em;
     line-height: 1;
     background-color: transparent;
     color: var(--darker);

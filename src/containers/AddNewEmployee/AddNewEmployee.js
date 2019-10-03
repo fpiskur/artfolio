@@ -4,7 +4,7 @@ import axios from '../../axios';
 
 import TopBar from '../../components/UI/TopBar/TopBar';
 import FormItemText from '../../components/AddNewEmployee/FormItems/FormItemText/FormItemText';
-import FormItemImage from '../../components/AddNewEmployee/FormItems/FormItemImage/FormItemImage';
+import FormItemImage from './FormItems/FormItemImage/FormItemImage';
 import FormItemTextarea from '../../components/AddNewEmployee/FormItems/FormItemTextarea/FormItemTextarea';
 import FormItemSelect from '../../components/AddNewEmployee/FormItems/FormItemSelect/FormItemSelect';
 import FormItemNestedList from '../../components/AddNewEmployee/FormItems/FormItemNestedList/FormItemNestedList';
@@ -20,7 +20,7 @@ class AddNewEmployee extends Component {
         profilePhoto: '',
         headerImage: '',
         aboutShort: '',
-        availability: '',
+        availability: 'Available',
         skills: [],
         specials: [],
         tvShows: [],
@@ -81,11 +81,15 @@ class AddNewEmployee extends Component {
                             <FormItemImage
                                 type="profile"
                                 id="profilePhoto"
-                                label="Profile image" />
+                                label="Profile image"
+                                value={ this.state.profilePhoto }
+                                changed={ this.inputChangeHandler } />
                             <FormItemImage
                                 type="header"
                                 id="headerImage"
-                                label="Header image" />
+                                label="Header image"
+                                value={ this.state.headerImage }
+                                changed={ this.inputChangeHandler } />
                         </div>
                         <div className={ styles.colLeft }>
                             <FormItemTextarea
@@ -98,7 +102,9 @@ class AddNewEmployee extends Component {
                             <FormItemSelect
                                 id="availability"
                                 label="Availability:"
-                                options={[ 'Available', 'Not available' ]} />
+                                options={[ 'Available', 'Not available' ]}
+                                value={ this.state.availability }
+                                changed={ this.inputChangeHandler } />
                             <FormItemNestedList
                                 id="skills"
                                 label="Skills"
