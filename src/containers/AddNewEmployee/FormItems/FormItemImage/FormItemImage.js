@@ -28,28 +28,35 @@ class FormItemImage extends Component {
         this.setState({ imgURL: url });
     }
 
+    handleInputSubmit = (event) => {
+        event.preventDefault();
+        this.props.changed(this.state.imgURL, this.props.id);
+    }
+
     render () {
         let imageSrc;
         let imageStyle;
 
         switch (this.props.type) {
             case 'profile':
-                imageSrc = userPlaceholderImage;
+                imageSrc = this.props.value || userPlaceholderImage;
                 imageStyle = styles.profileImage;
                 break;
             case 'header':
-                imageSrc = headerPlaceholderImage;
+                imageSrc = this.props.value || headerPlaceholderImage;
                 imageStyle = styles.headerImage;
                 break;
             default:
-                imageSrc = headerPlaceholderImage;
+                imageSrc = this.props.value || headerPlaceholderImage;
                 imageStyle = styles.headerImage;
         }
 
         return (
             <div className={ itemStyles.formItem }>
                 <label htmlFor={ this.props.id }>{ this.props.label }</label>
-                <img className={ imageStyle } src={ imageSrc } alt={ this.props.label } />
+                <div className={ imageStyle }>
+                    <img src={ imageSrc } alt={ this.props.label } />
+                </div>
                 <div className={ styles.addImageInput }>
                     <input
                         id={ this.props.id }
@@ -57,7 +64,7 @@ class FormItemImage extends Component {
                         placeholder="Image URL"
                         value={ this.state.imgURL }
                         onChange={ this.handleInputChange } />
-                    <button>Add image</button>
+                    <button onClick={ this.handleInputSubmit }>Add image</button>
                 </div>
             </div>
         );

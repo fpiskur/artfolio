@@ -10,7 +10,7 @@ function FormItemText (props) {
                 type="text"
                 placeholder={ props.placeholder}
                 value={ props.value }
-                onChange={ (event) => props.changed(event, props.id) } />
+                onChange={ (event) => props.changed(event.target.value, props.id) } />
         </div>
     );
 }

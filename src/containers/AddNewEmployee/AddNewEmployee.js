@@ -39,8 +39,7 @@ class AddNewEmployee extends Component {
             });
     }
 
-    inputChangeHandler = (event, id) => {
-        const value = event.target.value;
+    inputChangeHandler = (value, id) => {
         this.setState({ [id]: value });
     }
 
