@@ -29,6 +29,7 @@ function FormItemList (props) {
             itemSubtitle = 'with ' + item.teacher;
             itemDate = item.month + '. ' + item.year + '.';
         } else return null;
+        
         return <ListItem
             key={ itemKey }
             title={ itemTitle }
@@ -43,18 +44,6 @@ function FormItemList (props) {
                 <button className={ styles.addItemBtn }><i className="fas fa-plus"></i></button>
             </div>
             <ul className={ styles.projectsList }>
-                {/* <li className={ styles.projectItem }>
-                    <div className={ styles.event }>
-                        <h3>The Thing!</h3>
-                        <p>@ York</p>
-                    </div>
-                    <div className={ styles.date }>
-                        25.11.2019.
-                    </div>
-                    <button className={ styles.editBtn }>
-                        <i className="far fa-edit"></i>
-                    </button>
-                </li> */}
                 { listItems }
             </ul>
         </div>

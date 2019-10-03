@@ -6,8 +6,8 @@ function NestedListItem (props) {
     let itemsList = null;
     if(props.items) {
         itemsList = props.items.map(item => (
-            <div className={ styles.listItem }>
-                <span key={ item }>{ item }</span>
+            <div key={ item } className={ styles.listItem }>
+                <span>{ item }</span>
                 <button className={ styles.delBtn }>
                     <i className="far fa-times-circle"></i>
                 </button>

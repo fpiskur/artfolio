@@ -5,7 +5,7 @@ import axios from '../../axios';
 import TopBar from '../../components/UI/TopBar/TopBar';
 import FormItemText from '../../components/AddNewEmployee/FormItems/FormItemText/FormItemText';
 import FormItemImage from '../../components/AddNewEmployee/FormItems/FormItemImage/FormItemImage';
-import FormItemTextarea from './FormItems/FormItemTextarea/FormItemTextarea';
+import FormItemTextarea from '../../components/AddNewEmployee/FormItems/FormItemTextarea/FormItemTextarea';
 import FormItemSelect from '../../components/AddNewEmployee/FormItems/FormItemSelect/FormItemSelect';
 import FormItemNestedList from '../../components/AddNewEmployee/FormItems/FormItemNestedList/FormItemNestedList';
 import FormItemList from '../../components/AddNewEmployee/FormItems/FormItemList/FormItemList';
@@ -13,35 +13,35 @@ import FormItemList from '../../components/AddNewEmployee/FormItems/FormItemList
 class AddNewEmployee extends Component {
 
     state = {
-        form: {
-            username: '',
-            name: '',
-            profession: '',
-            website: '',
-            profilePhoto: '',
-            headerImage: '',
-            aboutShort: '',
-            availability: '',
-            skills: [],
-            specials: [],
-            tvShows: [],
-            education: [],
-            workshops: [],
-            aboutLong: ''
-        },
-        ui: {
-            charCount: 167
-        }
+        username: '',
+        name: '',
+        profession: '',
+        website: '',
+        profilePhoto: '',
+        headerImage: '',
+        aboutShort: '',
+        availability: '',
+        skills: [],
+        specials: [],
+        tvShows: [],
+        education: [],
+        workshops: [],
+        aboutLong: ''
     }
 
     componentDidMount () {
         axios.get('/comedians/0.json')
             .then(response => {
-                this.setState({ form: response.data })
+                this.setState({ ...response.data })
             })
             .catch(error => {
                 console.log(error.message);
             });
+    }
+
+    inputChangeHandler = (event, id) => {
+        const value = event.target.value;
+        this.setState({ [id]: value });
     }
 
     render () {
@@ -53,38 +53,48 @@ class AddNewEmployee extends Component {
                     <form>
                         <div className={ styles.colLeft }>
                             <FormItemText
-                                id="employee-username"
+                                id="username"
                                 label="Username"
-                                placeholder="Employee username" />
+                                placeholder="Employee username"
+                                value={ this.state.username }
+                                changed={ this.inputChangeHandler } />
                             <FormItemText
-                                id="employee-name"
+                                id="name"
                                 label="Name"
-                                placeholder="Employee name" />
+                                placeholder="Employee name"
+                                value={ this.state.name }
+                                changed={ this.inputChangeHandler } />
                             <FormItemText
-                                id="employee-profession"
+                                id="profession"
                                 label="Profession"
-                                placeholder="Employee profession" />
+                                placeholder="Employee profession"
+                                value={ this.state.profession }
+                                changed={ this.inputChangeHandler } />
                             <FormItemText
-                                id="personal-website"
+                                id="website"
                                 label="Personal website"
-                                placeholder="Website URL" />
+                                placeholder="Website URL"
+                                value={ this.state.website }
+                                changed={ this.inputChangeHandler } />
                         </div>
                         <div className={ styles.colRight }>
                             <FormItemImage
                                 type="profile"
-                                id="profile-image"
+                                id="profilePhoto"
                                 label="Profile image" />
                             <FormItemImage
                                 type="header"
-                                id="header-image"
+                                id="headerImage"
                                 label="Header image" />
                         </div>
                         <div className={ styles.colLeft }>
                             <FormItemTextarea
                                 type="short"
-                                id="short-description"
+                                id="aboutShort"
                                 label="Short description"
-                                placeholder="Description (max 167 characters)" />
+                                placeholder="Description (max 167 characters)"
+                                value={ this.state.aboutShort }
+                                changed={ this.inputChangeHandler } />
                             <FormItemSelect
                                 id="availability"
                                 label="Availability:"
@@ -93,26 +103,32 @@ class AddNewEmployee extends Component {
                                 id="skills"
                                 label="Skills"
                                 placeholder="New skill"
-                                items={ this.state.form.skills } />
+                                items={ this.state.skills } />
                             <FormItemList
+                                id="specials"
                                 label="Specials"
-                                items={ this.state.form.specials } />
+                                items={ this.state.specials } />
                             <FormItemList
+                                id="tvShows"
                                 label="TV Shows"
-                                items={ this.state.form.tvShows } />
+                                items={ this.state.tvShows } />
                             <FormItemList
+                                id="education"
                                 label="Education"
-                                items={ this.state.form.education } />
+                                items={ this.state.education } />
                             <FormItemList
+                                id="workshops"
                                 label="Workshops"
-                                items={ this.state.form.workshops } />
+                                items={ this.state.workshops } />
                         </div>
                         <div className={ styles.colRight }>
                             <FormItemTextarea
-                                id="about"
+                                id="aboutLong"
                                 label="About"
                                 placeholder="About"
-                                type="about" />
+                                type="about"
+                                value={ this.state.aboutLong }
+                                changed={ this.inputChangeHandler } />
                         </div>
                         <button className={ styles.addEmployeeBtn }>Add Employee</button>
                     </form>

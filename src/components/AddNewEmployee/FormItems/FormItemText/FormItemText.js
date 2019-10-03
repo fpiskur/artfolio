@@ -5,7 +5,12 @@ function FormItemText (props) {
     return (
         <div className={ itemStyles.formItem }>
             <label htmlFor={ props.id }>{ props.label }</label>
-            <input id={ props.id } type="text" placeholder={ props.placeholder} />
+            <input
+                id={ props.id }
+                type="text"
+                placeholder={ props.placeholder}
+                value={ props.value }
+                onChange={ (event) => props.changed(event, props.id) } />
         </div>
     );
 }
