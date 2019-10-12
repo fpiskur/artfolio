@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import axios from '../../axios';
+import axiosInstance from '../../axios';
 
 import TopBar from '../../components/UI/TopBar/TopBar';
 import EmployeeList from '../../components/HomePage/EmployeeList/EmployeeList';
@@ -18,7 +18,7 @@ class HomePage extends Component {
     };
 
     componentDidMount () {
-        axios.get('/comedians.json')
+        axiosInstance.get('/comedians.json')
         .then(response => {
             this.setState({ comedians: response.data });
         })
@@ -72,8 +72,8 @@ class HomePage extends Component {
         if (this.state.skillsFilter.length) {
             this.state.skillsFilter.forEach(skill => {
                 filteredComedians = filteredComedians.filter(comedian => {
-                    for (let i = 0; i < comedian.skills.length; i++) {
-                        if (comedian.skills[i].skillsList && comedian.skills[i].skillsList.includes(skill)) {
+                    for (const category in comedian.skills) {
+                        if (comedian.skills[category] && comedian.skills[category].includes(skill)) {
                             return true;
                         }
                     }

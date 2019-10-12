@@ -10,20 +10,11 @@
         "headerImage": "https://i.imgur.com/nNxNgae.png",
         "availability": "Not available",
         "aboutLong": "Ut nam pulvinar nam condimentum pulvinar consectetur nisi adipiscing cum rutrum vestibulum ridiculus neque amet habitant ullamcorper at consectetur consequat nibh. Vitae adipiscing mus at volutpat a at condimentum id vestibulum vitae odio hac congue ornare eu libero semper a est dictumst molestie sapien. Eu a fringilla cubilia vulputate torquent eu id a hac non iaculis magna praesent parturient suspendisse fusce a. Eu lacinia at at himenaeos ipsum praesent enim magna elit suscipit ac scelerisque torquent parturient magna mi nulla consequat ullamcorper felis class magnis blandit a mus sem eleifend. Euismod a scelerisque duis mi himenaeos est ad vestibulum felis tempor metus suspendisse a adipiscing sed at hendrerit sit vivamus ullamcorper vestibulum consectetur natoque.",
-        "skills": [
-            {
-                "category": "dancing",
-                "skillsList": ["tap dancing", "waltz", "tango"]
-            },
-            {
-                "category": "musical",
-                "skillsList": []
-            },
-            {
-                "category": "acting",
-                "skillsList": ["drama", "comedy"]
-            }
-        ],
+        "skills": {
+            "dancing": ["tap dancing", "waltz", "tango"],
+            "musical": [],
+            "acting": ["drama", "comedy"]
+        },
         "specials": [
             {
                 "name": "The Thing!",
@@ -121,20 +112,11 @@
         "headerImage": "https://i.imgur.com/nNxNgae.png",
         "availability": "Available",
         "aboutLong": "A vestibulum imperdiet a vel eros vestibulum cubilia sit fames eros ante ullamcorper id ridiculus convallis mus a consectetur. Leo a condimentum habitasse fringilla a sem condimentum praesent odio tempor facilisi ultrices a enim vestibulum est mus orci a ad imperdiet vivamus vestibulum lobortis fames fames quam. Velit potenti fusce tincidunt integer phasellus senectus mi praesent maecenas a parturient nascetur a himenaeos ad litora. At vel aptent parturient adipiscing nec vulputate non integer ullamcorper per interdum habitasse a est parturient ultricies inceptos suspendisse aenean hendrerit sed mattis orci per. Convallis dis porttitor per dignissim fringilla ullamcorper viverra penatibus mus a mi adipiscing a parturient donec orci turpis arcu a scelerisque.",
-        "skills": [
-            {
-                "category": "dancing",
-                "skillsList": []
-            },
-            {
-                "category": "musical",
-                "skillsList": []
-            },
-            {
-                "category": "acting",
-                "skillsList": ["drama", "comedy", "theater"]
-            }
-        ],
+        "skills": {
+            "dancing": [],
+            "musical": [],
+            "acting": ["drama", "comedy", "theater"]
+        },
         "specials": [
             {
                 "name": "Sarma is Dharma",
@@ -221,20 +203,11 @@
         "headerImage": "https://i.imgur.com/nNxNgae.png",
         "availability": "Not Available",
         "aboutLong": "Cum suspendisse condimentum hendrerit a auctor lorem a nec augue ut consectetur nisi dictum ac est. Elit at volutpat ipsum vestibulum elementum adipiscing in parturient a augue nisl id a fermentum. Curabitur in dictumst a vestibulum a parturient ullamcorper semper nisl a donec fringilla vivamus consectetur eu augue vestibulum lacus odio porta arcu torquent mollis. Mauris ut vestibulum adipiscing at a et nec elit facilisi integer egestas metus condimentum quis augue erat semper imperdiet tempor euismod vestibulum parturient condimentum neque magnis pharetra.",
-        "skills": [
-            {
-                "category": "dancing",
-                "skillsList": ["macarena", "salsa", "cha cha", "tango"]
-            },
-            {
-                "category": "musical",
-                "skillsList": ["drums", "guitar", "trumpet"]
-            },
-            {
-                "category": "acting",
-                "skillsList": ["comedy", "action"]
-            }
-        ],
+        "skills": {
+            "dancing": ["macarena", "salsa", "cha cha", "tango"],
+            "musical": ["drums", "guitar", "trumpet"],
+            "acting": ["comedy", "action"]
+        },
         "specials": [
             {
                 "name": "Cartwheelington",
@@ -369,20 +342,11 @@
         "headerImage": "https://i.imgur.com/nNxNgae.png",
         "availability": "Available",
         "aboutLong": "Taciti quam a primis ac ullamcorper consectetur vestibulum vel per pulvinar consectetur velit dapibus vestibulum in phasellus a posuere magnis bibendum a nostra parturient. Suspendisse scelerisque cum felis parturient sem ullamcorper pharetra condimentum commodo nam elit urna nostra hac orci sagittis lacinia parturient ad. Quis curabitur accumsan elementum aptent ornare cum pulvinar donec suscipit molestie curabitur nec mi congue ridiculus platea lacinia ullamcorper a. Vestibulum dis montes sociosqu odio sed vestibulum facilisis sed hendrerit nullam sed adipiscing turpis ultricies scelerisque eu a scelerisque nibh auctor a leo vel magna nisi at adipiscing. Vivamus nibh vestibulum consectetur lacus faucibus neque odio commodo cum adipiscing a a adipiscing at vivamus.",
-        "skills": [
-            {
-                "category": "dancing",
-                "skillsList": []
-            },
-            {
-                "category": "musical",
-                "skillsList": ["beatboxing"]
-            },
-            {
-                "category": "acting",
-                "skillsList": ["comedy", "sketches"]
-            }
-        ],
+        "skills": {
+            "dancing": [],
+            "musical": ["beatboxing"],
+            "acting": ["comedy", "sketches"]
+        },
         "specials": [
             {
                 "name": "So So Show",
@@ -445,20 +409,11 @@
         "headerImage": "https://i.imgur.com/nNxNgae.png",
         "availability": "Not available",
         "aboutLong": "Imperdiet blandit vulputate nam vivamus platea porta natoque nibh euismod id ad cras vestibulum eu torquent ullamcorper in posuere suspendisse condimentum fames. Conubia a sem sociis netus id parturient mauris habitasse ut volutpat a netus pulvinar vestibulum aenean parturient. Adipiscing bibendum urna a consectetur a facilisis habitasse imperdiet dignissim taciti adipiscing habitant conubia suspendisse. Ante himenaeos quis blandit nascetur amet in sit dignissim potenti orci varius nascetur vel a venenatis vel integer imperdiet sed integer sit. Vestibulum odio feugiat arcu nibh platea auctor phasellus parturient ac magna sapien eu sodales hendrerit parturient a adipiscing dapibus ullamcorper porta tempus rhoncus primis.",
-        "skills": [
-            {
-                "category": "dancing",
-                "skillsList": ["silly dancing", "tango", "cha cha"]
-            },
-            {
-                "category": "musical",
-                "skillsList": ["triangle", "piano", "trumpet", "trobmone"]
-            },
-            {
-                "category": "acting",
-                "skillsList": ["comedy", "action", "drama", "sketches"]
-            }
-        ],
+        "skills": {
+            "dancing": ["silly dancing", "tango", "cha cha"],
+            "musical": ["triangle", "piano", "trumpet", "trobmone"],
+            "acting": ["comedy", "action", "drama", "sketches"]
+        },
         "specials": [
             {
                 "name": "Way Too Big",
@@ -584,20 +539,11 @@
         "headerImage": "https://i.imgur.com/nNxNgae.png",
         "availability": "Available",
         "aboutLong": "A urna tempus felis eget dolor arcu ullamcorper id leo sed tristique eget feugiat nascetur aliquet sociis habitant consectetur mi nam gravida id a auctor erat vulputate. Torquent erat a dictum eleifend curabitur et a suspendisse penatibus dis facilisi dapibus aptent accumsan a erat vestibulum a a adipiscing ac erat netus et phasellus vestibulum. A class a augue a feugiat nec a dictumst suspendisse a condimentum vestibulum nulla condimentum vestibulum ut orci. Ad vulputate nullam ac vestibulum montes elit pulvinar integer blandit vestibulum dis mattis bibendum fusce a adipiscing. Fermentum suscipit suspendisse pulvinar potenti ultrices sit parturient dis vivamus velit mauris pretium scelerisque praesent sociosqu lacus placerat vestibulum duis malesuada cras magnis tortor diam.",
-        "skills": [
-            {
-                "category": "dancing",
-                "skillsList": ["drunk dancing"]
-            },
-            {
-                "category": "musical",
-                "skillsList": ["guitar", "vocals"]
-            },
-            {
-                "category": "acting",
-                "skillsList": ["comedy", "physical comedy"]
-            }
-        ],
+        "skills": {
+            "dancing": ["drunk dancing"],
+            "musical": ["guitar", "vocals"],
+            "acting": ["comedy", "physical comedy"]
+        },
         "specials": [
             {
                 "name": "Holiday Spirit",
@@ -692,20 +638,11 @@
         "headerImage": "https://i.imgur.com/nNxNgae.png",
         "availability": "Not available",
         "aboutLong": "Elementum cubilia sed montes viverra accumsan class congue odio rutrum ridiculus facilisi dis suspendisse et metus netus erat conubia iaculis. Torquent condimentum per justo in aptent mi penatibus a sodales ultricies eu ut habitant ad odio gravida cursus tempus orci convallis euismod. Venenatis congue dapibus ullamcorper eget a dolor a class morbi a adipiscing odio mi montes porta id pulvinar sapien a ullamcorper in amet consequat risus natoque. Blandit amet dui ut ultrices urna parturient ad adipiscing leo a a nunc sed id egestas vestibulum per habitasse consectetur at cubilia malesuada.",
-        "skills": [
-            {
-                "category": "dancing",
-                "skillsList": ["club dancing", "tap dancing"]
-            },
-            {
-                "category": "musical",
-                "skillsList": ["whistle"]
-            },
-            {
-                "category": "acting",
-                "skillsList": ["comedy", "sitcom"]
-            }
-        ],
+        "skills": {
+            "dancing": ["club dancing", "tap dancing"],
+            "musical": ["whistle"],
+            "acting": ["comedy", "sitcom"]
+        },
         "specials": [
             {
                 "name": "Weekend Worker",
@@ -768,20 +705,11 @@
         "headerImage": "https://i.imgur.com/nNxNgae.png",
         "availability": "Not available",
         "aboutLong": "Eu interdum odio laoreet habitant a donec eleifend montes viverra ut in porta ligula dui suspendisse parturient pharetra duis convallis sagittis adipiscing. Nisi dis eget sit sapien a a lorem congue id libero primis vestibulum justo nostra nullam condimentum a parturient mi mollis volutpat vulputate augue cum proin dis dapibus nascetur. Parturient nec aenean montes aliquet class litora primis ullamcorper consectetur ad condimentum risus vivamus condimentum ad cras adipiscing dolor curabitur per augue. Commodo taciti a neque ullamcorper in a vulputate adipiscing purus vehicula ante torquent penatibus non cum porttitor suspendisse potenti a habitant. Elit cursus suspendisse a ut et ultrices imperdiet mollis nullam lacus a penatibus parturient erat senectus parturient nam mi parturient blandit.",
-        "skills": [
-            {
-                "category": "dancing",
-                "skillsList": ["contemporary"]
-            },
-            {
-                "category": "musical",
-                "skillsList": ["beatboxing", "triangle"]
-            },
-            {
-                "category": "acting",
-                "skillsList": ["drama", "comedy", "action"]
-            }
-        ],
+        "skills": {
+            "dancing": ["contemporary"],
+            "musical": ["beatboxing", "triangle"],
+            "acting": ["drama", "comedy", "action"]
+        },
         "specials": [
             {
                 "name": "Who is What?",
@@ -951,20 +879,11 @@
         "headerImage": "https://i.imgur.com/nNxNgae.png",
         "availability": "Not available",
         "aboutLong": "Nec mauris nascetur netus luctus faucibus metus dignissim varius neque curabitur ullamcorper cursus taciti tellus turpis scelerisque dictumst curabitur. Eu posuere parturient a a per a adipiscing semper a vestibulum facilisi rutrum scelerisque dis molestie. Sociosqu gravida parturient parturient curae eu rhoncus augue adipiscing sed pulvinar sagittis arcu magna a adipiscing pulvinar nisl mi vel nam vestibulum ut et porta lacus.",
-        "skills": [
-            {
-                "category": "dancing",
-                "skillsList": []
-            },
-            {
-                "category": "musical",
-                "skillsList": []
-            },
-            {
-                "category": "acting",
-                "skillsList": ["comedy", "drama"]
-            }
-        ],
+        "skills": {
+            "dancing": [],
+            "musical": [],
+            "acting": ["comedy", "drama"]
+        },
         "specials": [
             {
                 "name": "Have You Seen my Props?",
@@ -1083,20 +1002,11 @@
         "headerImage": "https://i.imgur.com/nNxNgae.png",
         "availability": "Available",
         "aboutLong": "A non laoreet hendrerit suscipit donec vivamus lacus consectetur parturient scelerisque felis natoque orci ullamcorper facilisi curabitur vestibulum. Adipiscing nisi a dictumst vestibulum hac vehicula purus auctor a ipsum risus ad fusce nulla turpis duis tortor felis ut a ullamcorper justo eleifend. Urna donec vestibulum id vestibulum potenti ut eu tristique odio nostra placerat inceptos parturient dapibus mi sapien nulla consectetur ante ligula ullamcorper ante eu pharetra. Vehicula aliquam quis nam magna placerat mus scelerisque parturient litora placerat ullamcorper ullamcorper facilisis a in a condimentum leo a felis cum sem mi ultricies id. Cum nascetur vulputate cras pretium tellus ullamcorper enim suspendisse a imperdiet mollis a augue vitae lacus ridiculus per donec turpis mus vestibulum a rhoncus eu sit libero.",
-        "skills": [
-            {
-                "category": "dancing",
-                "skillsList": ["tango", "waltz", "break dance"]
-            },
-            {
-                "category": "musical",
-                "skillsList": ["djembe", "guitar"]
-            },
-            {
-                "category": "acting",
-                "skillsList": ["comedy", "sci-fi", "drama"]
-            }
-        ],
+        "skills": {
+            "dancing": ["tango", "waltz", "break dance"],
+            "musical": ["djembe", "guitar"],
+            "acting": ["comedy", "sci-fi", "drama"]
+        },
         "specials": [
             {
                 "name": "Lorem Ipsum Show",
@@ -1184,20 +1094,11 @@
         "headerImage": "https://i.imgur.com/nNxNgae.png",
         "availability": "Available",
         "aboutLong": "Felis ac felis a litora ullamcorper at orci vulputate blandit luctus orci hac a tellus et aliquet feugiat viverra ligula senectus diam a vehicula interdum metus ultricies ullamcorper. Adipiscing fames ullamcorper a dolor nisl tristique ad vitae suspendisse a a sed a ad ullamcorper lorem adipiscing lectus ante sit ullamcorper a adipiscing parturient consequat. Laoreet ultricies scelerisque adipiscing suspendisse vestibulum nisi neque lacinia ut feugiat ac a auctor et a dolor nisl lacinia habitant torquent aliquam et fermentum arcu. Est a auctor a placerat lacinia nec vel at tincidunt parturient hac condimentum a mauris condimentum id dictum sem leo. Vivamus hendrerit mi ut in a proin vestibulum ad congue per condimentum a in nulla ut mi cum fermentum aptent ullamcorper cum a consectetur est ultrices pharetra ullamcorper at.",
-        "skills": [
-            {
-                "category": "dancing",
-                "skillsList": ["robo dance", "salsa"]
-            },
-            {
-                "category": "musical",
-                "skillsList": []
-            },
-            {
-                "category": "acting",
-                "skillsList": ["comedy", "action"]
-            }
-        ],
+        "skills": {
+            "dancing": ["robo dance", "salsa"],
+            "musical": [],
+            "acting": ["comedy", "action"]
+        },
         "specials": [
             {
                 "name": "Dusk Till Dough",
@@ -1290,20 +1191,11 @@
         "headerImage": "https://i.imgur.com/nNxNgae.png",
         "availability": "Available",
         "aboutLong": "Et a nisl primis laoreet placerat dui vestibulum curabitur egestas mollis condimentum rutrum a a iaculis venenatis ut suspendisse adipiscing vestibulum ad eu aptent imperdiet ultrices. Nunc ut ullamcorper a consectetur commodo nulla metus a cras libero nisi vestibulum senectus litora ullamcorper parturient sagittis molestie urna morbi hendrerit dolor eu scelerisque vivamus leo faucibus at. Nisl sed at adipiscing suspendisse scelerisque adipiscing scelerisque scelerisque hac nullam nec leo malesuada conubia. Hac integer praesent dolor enim sem blandit a ligula consectetur arcu adipiscing lacinia a aliquet.",
-        "skills": [
-            {
-                "category": "dancing",
-                "skillsList": ["tap dancing"]
-            },
-            {
-                "category": "musical",
-                "skillsList": ["vocals"]
-            },
-            {
-                "category": "acting",
-                "skillsList": ["comedy"]
-            }
-        ],
+        "skills": {
+            "dancing": ["tap dancing"],
+            "musical": ["vocals"],
+            "acting": ["comedy"]
+        },
         "specials": [
             {
                 "name": "Code of Conduct",
@@ -1378,20 +1270,11 @@
         "headerImage": "https://i.imgur.com/nNxNgae.png",
         "availability": "Not available",
         "aboutLong": "A enim ullamcorper ridiculus condimentum enim accumsan habitant pretium vestibulum dui eget a fusce per cursus ridiculus suspendisse posuere fames a tempus aenean a curabitur. A ullamcorper dictumst suspendisse scelerisque adipiscing a ipsum suspendisse porttitor feugiat laoreet adipiscing eros lacinia penatibus ipsum himenaeos. Habitasse vestibulum pretium rhoncus aenean viverra faucibus interdum et ante inceptos a interdum in nam scelerisque vestibulum ipsum a adipiscing condimentum dictumst adipiscing volutpat scelerisque. Curabitur a morbi ultricies primis a ultricies himenaeos vestibulum fusce mi porta a suspendisse at mi adipiscing eros ac habitant adipiscing mus id a. Augue dis erat nec urna ad velit platea vestibulum vestibulum condimentum hac ullamcorper fusce non semper.",
-        "skills": [
-            {
-                "category": "dancing",
-                "skillsList": []
-            },
-            {
-                "category": "musical",
-                "skillsList": ["vocals", "trombone"]
-            },
-            {
-                "category": "acting",
-                "skillsList": ["comedy", "action", "sci-fi"]
-            }
-        ],
+        "skills": {
+            "dancing": [],
+            "musical": ["vocals", "trombone"],
+            "acting": ["comedy", "action", "sci-fi"]
+        },
         "specials": [
             {
                 "name": "Streamline",
@@ -1476,20 +1359,11 @@
         "headerImage": "https://i.imgur.com/nNxNgae.png",
         "availability": "Not available",
         "aboutLong": "Parturient vitae vivamus in a in mi ac adipiscing hac dui placerat in commodo adipiscing consectetur gravida adipiscing sociosqu parturient. Sapien auctor suspendisse id quisque in consectetur vitae class vulputate adipiscing risus dapibus adipiscing faucibus facilisis. Vitae parturient nibh dui ac ad viverra at laoreet aptent sit commodo dolor a nisl blandit id primis a ac cubilia felis eget iaculis parturient. Parturient eleifend maecenas est elit et viverra purus parturient nam non condimentum natoque magnis metus potenti turpis quam ullamcorper condimentum duis rhoncus a ad fermentum metus id. Per purus euismod adipiscing condimentum potenti aenean a eu adipiscing cubilia sapien congue ac condimentum eleifend vestibulum sodales laoreet suspendisse a.",
-        "skills": [
-            {
-                "category": "dancing",
-                "skillsList": ["crazy dance", "show dance"]
-            },
-            {
-                "category": "musical",
-                "skillsList": ["shaker", "finger snapping"]
-            },
-            {
-                "category": "acting",
-                "skillsList": ["comedy"]
-            }
-        ],
+        "skills": {
+            "dancing": ["crazy dance", "show dance"],
+            "musical": ["shaker", "finger snapping"],
+            "acting": ["comedy"]
+        },
         "specials": [
             {
                 "name": "Broken Record",
@@ -1573,20 +1447,11 @@
         "headerImage": "https://i.imgur.com/nNxNgae.png",
         "availability": "Available",
         "aboutLong": "Augue feugiat leo est bibendum litora feugiat vel a auctor a himenaeos eros in condimentum sem amet. Ac a a a a odio eu maecenas fermentum ullamcorper praesent curae aliquet erat massa adipiscing adipiscing senectus a. A accumsan nostra vel aliquam fermentum adipiscing lorem a a vestibulum primis pharetra sit himenaeos sodales neque sociosqu scelerisque auctor blandit dapibus suspendisse tincidunt a. Faucibus nam leo vehicula ante vestibulum facilisis fermentum velit risus ad interdum fringilla facilisis vel lobortis lacus aenean lobortis tellus primis a parturient scelerisque quis netus commodo potenti.",
-        "skills": [
-            {
-                "category": "dancing",
-                "skillsList": ["salsa", "club dancing", "crazy dance"]
-            },
-            {
-                "category": "musical",
-                "skillsList": ["vocals"]
-            },
-            {
-                "category": "acting",
-                "skillsList": ["comedy", "action"]
-            }
-        ],
+        "skills": {
+            "dancing": ["salsa", "club dancing", "crazy dance"],
+            "musical": ["vocals"],
+            "acting": ["comedy", "action"]
+        },
         "specials": [
             {
                 "name": "Just a Couple More",
@@ -1681,20 +1546,11 @@
         "headerImage": "https://i.imgur.com/nNxNgae.png",
         "availability": "Available",
         "aboutLong": "Feugiat mus suspendisse a odio a a a curabitur adipiscing nulla velit ut iaculis tincidunt eu. Consectetur egestas cras iaculis habitant ac a rhoncus posuere a id massa neque adipiscing enim condimentum ullamcorper nulla scelerisque accumsan. Sociis amet at in massa dapibus ullamcorper blandit a neque parturient a enim consectetur mi luctus lectus suspendisse facilisis litora condimentum vel ac. Parturient lacinia nascetur turpis himenaeos a venenatis odio arcu ad a metus in consectetur adipiscing a vestibulum varius phasellus adipiscing a consectetur. Pulvinar viverra platea eu a justo hac consequat mus integer viverra habitasse ullamcorper a vestibulum dignissim accumsan in at dui ante arcu in fames. Fames duis primis cras quis ullamcorper erat ullamcorper congue vehicula adipiscing leo congue fringilla molestie parturient lacinia vivamus nunc sem nisl per vestibulum vestibulum quis parturient nostra.",
-        "skills": [
-            {
-                "category": "dancing",
-                "skillsList": ["belly dance", "break dance", "cha cha", "silly dancing"]
-            },
-            {
-                "category": "musical",
-                "skillsList": ["saxophone", "beatboxing"]
-            },
-            {
-                "category": "acting",
-                "skillsList": ["comedy"]
-            }
-        ],
+        "skills": {
+            "dancing": ["belly dance", "break dance", "cha cha", "silly dancing"],
+            "musical": ["saxophone", "beatboxing"],
+            "acting": ["comedy"]
+        },
         "specials": [
             {
                 "name": "Finally!",

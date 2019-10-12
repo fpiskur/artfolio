@@ -7,7 +7,7 @@ import FormItemText from '../../components/AddNewEmployee/FormItems/FormItemText
 import FormItemImage from './FormItems/FormItemImage/FormItemImage';
 import FormItemTextarea from '../../components/AddNewEmployee/FormItems/FormItemTextarea/FormItemTextarea';
 import FormItemSelect from '../../components/AddNewEmployee/FormItems/FormItemSelect/FormItemSelect';
-import FormItemNestedList from '../../components/AddNewEmployee/FormItems/FormItemNestedList/FormItemNestedList';
+import FormItemNestedList from './FormItems/FormItemNestedList/FormItemNestedList';
 import FormItemList from '../../components/AddNewEmployee/FormItems/FormItemList/FormItemList';
 
 class AddNewEmployee extends Component {
@@ -108,7 +108,8 @@ class AddNewEmployee extends Component {
                                 id="skills"
                                 label="Skills"
                                 placeholder="New skill"
-                                items={ this.state.skills } />
+                                items={ this.state.skills }
+                                changed={ this.inputChangeHandler } />
                             <FormItemList
                                 id="specials"
                                 label="Specials"

@@ -10,14 +10,18 @@
     font-size: 1.2em;
 }
 
-.formItem label[for="short-description"] ~ textarea {
-    resize: none;
-}
-
 .formItem input,
 .formItem textarea {
     width: 100%;
     padding: .3em .3em .3em .8em;
+}
+
+.formItem label[for="aboutShort"] ~ textarea {
+    resize: none;
+}
+
+.formItem label[for="aboutLong"] ~ textarea {
+    resize: vertical;
 }
 
 .formItem button {
@@ -30,8 +34,4 @@
 
 .formItem select {
     padding: .2em .5em;
-}
-
-.formItem label[for="about"] ~ textarea {
-    resize: vertical;
 }

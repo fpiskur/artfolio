@@ -22,14 +22,6 @@ function Employee (props) {
                 </div>
                 <div>
                     <p>{ props.aboutShort }</p>
-                    {/* <div className="skills">
-                        <span>SKILLS:</span>&nbsp;
-                        <span>contemporary, beatboxing, triangle, drama, comedy, action</span>
-                    </div>
-                    <div className="specials">
-                        <span>SPECIALS:</span>&nbsp;
-                        <span>Why Do I Do This?, Let It Go, You People Are All the Same, I'm Sorry You Feel That Way, Walk Your Way Out</span>
-                    </div> */}
                 </div>
             </div>
         </div>
