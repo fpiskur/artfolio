@@ -23,11 +23,18 @@ class FormItemNestedList extends Component {
 
     handleSkillSubmit = (event) => {
         event.preventDefault();
-        if (this.props.items[this.state.category].includes(this.state.value)) {
+        // if category exists (has items)(firebase doesn't show propertyes with empty arrays) && includes input value
+        if (this.props.items[this.state.category] && this.props.items[this.state.category].includes(this.state.value) ||
+            // category is not empty ('--category--' option)
+            !this.state.category) {
             return;
         } else {
-            let newSkillsList = this.props.items;
-            newSkillsList[this.state.category].concat(this.state.value);
+            let newSkillsList = {
+                ...this.props.items,
+                [this.state.category]: this.props.items[this.state.category] ?
+                    this.props.items[this.state.category].concat(this.state.value) :
+                    [].concat(this.state.value)
+            };
             this.props.changed(newSkillsList, 'skills');
         }
     }
@@ -40,10 +47,6 @@ class FormItemNestedList extends Component {
                     category={ category.toUpperCase() + ':' }
                     items={ this.props.items[category] } /> :
                 null
-        ));
-
-        const categoryItems = Object.keys(this.props.items).map(category => (
-            <option key={ category } value={ category }>{ category }</option>
         ));
     
         return (
@@ -58,7 +61,9 @@ class FormItemNestedList extends Component {
                         onChange={ this.handleInputChange } />
                     <select value={ this.state.category } onChange={ this.handleSelectChange }>
                         <option value="">--category--</option>
-                        { categoryItems }
+                        <option value="dancing">dancing</option>
+                        <option value="musical">musical</option>
+                        <option value="acting">acting</option>
                     </select>
                     <button onClick={ this.handleSkillSubmit }>Add skill</button>
                 </div>
