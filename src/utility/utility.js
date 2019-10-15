@@ -6,6 +6,7 @@ export const getSkills = (comedians) => {
         "acting": []
     };
 
+    // !!! BROKEN !!! (skills is now an object)
     comedians.forEach(comedian => {
         comedian.skills.forEach(skill => {
             if (skill.skillsList) {
@@ -19,4 +20,8 @@ export const getSkills = (comedians) => {
     });
 
     return allSkills;
+}
+
+export const hasDuplicates = (oldList, newList) => {
+    return (new Set(newList)).size !== newList.length || newList.some(item => oldList.indexOf(item) >= 0);
 }
