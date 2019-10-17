@@ -46,7 +46,7 @@ class FormItemNestedList extends Component {
             this.props.items[category] ?
                 <NestedListItem
                     key={category}
-                    category={category.toUpperCase() + ':'}
+                    category={category + ':'}
                     items={this.props.items[category]} /> :
                 null
         ));

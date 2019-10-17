@@ -6,6 +6,10 @@
     padding-top: .4em;
 }
 
+.skillsHeading small {
+    text-transform: uppercase;
+}
+
 .listItem {
     display: inline-block;
     border-radius: 1em;

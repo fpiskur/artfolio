@@ -6,6 +6,11 @@ import ListItem from './ListItem/ListItem';
 
 function FormItemList (props) {
 
+    const handleAddNew = (event, label) => {
+        event.preventDefault();
+        props.showModal(label);
+    }
+
     const listItems = props.items.map(item => {
         let itemKey, itemTitle, itemSubtitle, itemDate;
         if ( props.label === 'Specials' ) {
@@ -41,7 +46,7 @@ function FormItemList (props) {
         <div className={ itemStyles.formItem }>
             <div className={ styles.labelInline }>
                 <label>{ props.label }</label>
-                <button className={ styles.addItemBtn }><i className="fas fa-plus"></i></button>
+                <button className={ styles.addItemBtn } onClick={ (event) => handleAddNew(event, props.label) }><i className="fas fa-plus"></i></button>
             </div>
             <ul className={ styles.projectsList }>
                 { listItems }
