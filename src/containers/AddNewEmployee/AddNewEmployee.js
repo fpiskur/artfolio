@@ -10,6 +10,7 @@ import FormItemSelect from '../../components/AddNewEmployee/FormItems/FormItemSe
 import FormItemNestedList from './FormItems/FormItemNestedList/FormItemNestedList';
 import FormItemList from '../../components/AddNewEmployee/FormItems/FormItemList/FormItemList';
 import Modal from '../../components/UI/Modal/Modal';
+import AddSpecialForm from './AddSpecialForm/AddSpecialForm';
 
 class AddNewEmployee extends Component {
 
@@ -150,21 +151,21 @@ class AddNewEmployee extends Component {
                         </div>
                         <div className={ styles.colRight }>
                             <FormItemTextarea
+                                type="about"
                                 id="aboutLong"
                                 label="About"
                                 placeholder="About"
-                                type="about"
                                 value={ this.state.form.aboutLong }
                                 changed={ this.inputChangeHandler } />
                         </div>
-                        <Modal
-                            show={ this.state.visibleModal === 'Specials' ? true : false }
-                            hideModal={ this.hideModalHandler }>
-                                <div style={{ height: '300px', backgroundColor: 'purple' }}></div>
-                        </Modal>
                         
                         <button className={ styles.addEmployeeBtn }>Add Employee</button>
                     </form>
+                    <Modal
+                        show={ this.state.visibleModal === 'Specials' ? true : false }
+                        hideModal={ this.hideModalHandler }>
+                            <AddSpecialForm />
+                    </Modal>
                 </div>
             </React.Fragment>
         );
