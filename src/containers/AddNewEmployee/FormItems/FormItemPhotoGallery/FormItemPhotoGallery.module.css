@@ -1,0 +1,41 @@
+.addImageInput {
+    display: flex;
+    width: 100%;
+}
+
+.addImageInput input {
+    flex: 1;
+}
+
+.photoGallery {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    margin-top: .5em;
+}
+
+.galleryItem {
+    width: 100%;
+    position: relative;
+}
+
+.galleryItem::before {
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 1px;
+    height: 0;
+    padding-bottom: 100%;
+}
+
+.galleryItem img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    object-fit: cover;
+}

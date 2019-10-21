@@ -31,11 +31,11 @@ class AddNewEmployee extends Component {
             workshops: [],
             aboutLong: ''
         },
-        visibleModal: 'null'
+        visibleModal: null
     }
 
     componentDidMount () {
-        axios.get('/comedians/0.json')
+        axios.get('/comedians/1.json')
             .then(response => {
                 this.setState({ form: {...response.data} })
             })
@@ -62,6 +62,18 @@ class AddNewEmployee extends Component {
     }
 
     render () {
+
+        let modalForm = null;
+        if (this.state.visibleModal) {
+            switch (this.state.visibleModal) {
+                case 'Specials':
+                    modalForm = <AddSpecialForm />;
+                    break;
+                default:
+                    modalForm = null;
+            }
+        }
+
         return (
             <React.Fragment>
                 <TopBar />
@@ -162,9 +174,9 @@ class AddNewEmployee extends Component {
                         <button className={ styles.addEmployeeBtn }>Add Employee</button>
                     </form>
                     <Modal
-                        show={ this.state.visibleModal === 'Specials' ? true : false }
+                        show={ this.state.visibleModal }
                         hideModal={ this.hideModalHandler }>
-                            <AddSpecialForm />
+                            { modalForm }
                     </Modal>
                 </div>
             </React.Fragment>

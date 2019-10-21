@@ -24,7 +24,7 @@
     margin-top: 0;
 }
 
-.Modal button {
+.Modal form > button {
     background: var(--dark);
     color: var(--lighter);
     font-weight: 600;

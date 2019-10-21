@@ -23,5 +23,6 @@ export const getSkills = (comedians) => {
 }
 
 export const hasDuplicates = (oldList, newList) => {
+    if (!newList) return (new Set(oldList)).size !== oldList.length;
     return (new Set(newList)).size !== newList.length || newList.some(item => oldList.indexOf(item) >= 0);
 }

@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 
 import FormItemText from '../../../components/AddNewEmployee/FormItems/FormItemText/FormItemText';
 import FormItemTextarea from '../../../components/AddNewEmployee/FormItems/FormItemTextarea/FormItemTextarea';
+import FormItemImage from '../FormItems/FormItemImage/FormItemImage';
+import FormItemDate from '../../../components/AddNewEmployee/FormItems/FormItemDate/FormItemDate';
+import FormItemPhotoGallery from '../FormItems/FormItemPhotoGallery/FormItemPhotoGallery';
 
 class AddSpecialForm extends Component {
 
@@ -12,6 +15,7 @@ class AddSpecialForm extends Component {
         city: '',
         short: '',
         description: '',
+        headerImage: '',
         images: [],
         videos: [],
         audio: []
@@ -32,7 +36,11 @@ class AddSpecialForm extends Component {
                         placeholder="Name of the Special"
                         value={ this.state.name }
                         changed={ this.inputChangeHandler } />
-                    {/* FormItemDate */}
+                    <FormItemDate
+                        id="date"
+                        label="Date"
+                        value={ this.state.date }
+                        changed={ this.inputChangeHandler } />
                     <FormItemText
                         id="place"
                         label="Place / club"
@@ -59,7 +67,17 @@ class AddSpecialForm extends Component {
                         placeholder="Full description"
                         value={ this.state.description }
                         changed={ this.inputChangeHandler } />
-                    {/* <FormItemPhotoGallery /> */}
+                    <FormItemImage
+                        type="header"
+                        id="headerImage"
+                        label="Header image"
+                        value={ this.state.headerImage }
+                        changed={ this.inputChangeHandler } />
+                    <FormItemPhotoGallery
+                        id="images"
+                        label="Photo Gallery"
+                        value={ this.state.images }
+                        changed={ this.inputChangeHandler } />
                     {/* <FormItemVideoGallery /> */}
                     {/* <FormItemAudioGallery /> */}
                     <button>Add New Special</button>

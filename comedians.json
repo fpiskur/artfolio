@@ -23,6 +23,7 @@
                 "city": "York",
                 "short": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.",
                 "description": "Venenatis commodo non suscipit taciti mi adipiscing dictum ullamcorper faucibus a euismod vestibulum scelerisque a a aliquam faucibus ac nunc bibendum hac torquent quam himenaeos habitant ac eros tristique. Amet hendrerit leo orci elit a ridiculus suspendisse sociosqu dapibus sapien euismod at porttitor ut lorem sodales et rhoncus. A ac.",
+                "headerImage": "https://i.imgur.com/H2SXVuF.png",
                 "images": ["https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png"],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"]
@@ -34,17 +35,19 @@
                 "city": "Krakow",
                 "short": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.",
                 "description": "Venenatis commodo non suscipit taciti mi adipiscing dictum ullamcorper faucibus a euismod vestibulum scelerisque a a aliquam faucibus ac nunc bibendum hac torquent quam himenaeos habitant ac eros tristique. Amet hendrerit leo orci elit a ridiculus suspendisse sociosqu dapibus sapien euismod at porttitor ut lorem sodales et rhoncus. A ac.",
+                "headerImage": "https://i.imgur.com/H2SXVuF.png",
                 "images": ["https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png","https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png"],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q", "https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": []
             },
             {
                 "name": "Trials and Tribulations",
-                "date": "206-05-05",
+                "date": "2006-05-05",
                 "place": "Hot like pockets",
                 "city": "Hellsinki",
                 "short": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.",
                 "description": "Venenatis commodo non suscipit taciti mi adipiscing dictum ullamcorper faucibus a euismod vestibulum scelerisque a a aliquam faucibus ac nunc bibendum hac torquent quam himenaeos habitant ac eros tristique. Amet hendrerit leo orci elit a ridiculus suspendisse sociosqu dapibus sapien euismod at porttitor ut lorem sodales et rhoncus. A ac.",
+                "headerImage": "https://i.imgur.com/H2SXVuF.png",
                 "images": ["https://i.imgur.com/H2SXVuF.png"],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q", "https://www.youtube.com/watch?v=dTOO792r18Q", "https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3", "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"]
@@ -125,6 +128,7 @@
                 "city": "Pula",
                 "short": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.",
                 "description": "Venenatis commodo non suscipit taciti mi adipiscing dictum ullamcorper faucibus a euismod vestibulum scelerisque a a aliquam faucibus ac nunc bibendum hac torquent quam himenaeos habitant ac eros tristique. Amet hendrerit leo orci elit a ridiculus suspendisse sociosqu dapibus sapien euismod at porttitor ut lorem sodales et rhoncus. A ac.",
+                "headerImage": "https://i.imgur.com/H2SXVuF.png",
                 "images": ["https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png"],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"]
@@ -136,6 +140,7 @@
                 "city": "New York",
                 "short": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.",
                 "description": "Venenatis commodo non suscipit taciti mi adipiscing dictum ullamcorper faucibus a euismod vestibulum scelerisque a a aliquam faucibus ac nunc bibendum hac torquent quam himenaeos habitant ac eros tristique. Amet hendrerit leo orci elit a ridiculus suspendisse sociosqu dapibus sapien euismod at porttitor ut lorem sodales et rhoncus. A ac.",
+                "headerImage": "https://i.imgur.com/H2SXVuF.png",
                 "images": ["https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png"],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": []
@@ -216,6 +221,7 @@
                 "city": "Milan",
                 "short": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.",
                 "description": "Venenatis commodo non suscipit taciti mi adipiscing dictum ullamcorper faucibus a euismod vestibulum scelerisque a a aliquam faucibus ac nunc bibendum hac torquent quam himenaeos habitant ac eros tristique. Amet hendrerit leo orci elit a ridiculus suspendisse sociosqu dapibus sapien euismod at porttitor ut lorem sodales et rhoncus. A ac.",
+                "headerImage": "https://i.imgur.com/H2SXVuF.png",
                 "images": ["https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png"],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q", "https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": []
@@ -227,6 +233,7 @@
                 "city": "London",
                 "short": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.",
                 "description": "Venenatis commodo non suscipit taciti mi adipiscing dictum ullamcorper faucibus a euismod vestibulum scelerisque a a aliquam faucibus ac nunc bibendum hac torquent quam himenaeos habitant ac eros tristique. Amet hendrerit leo orci elit a ridiculus suspendisse sociosqu dapibus sapien euismod at porttitor ut lorem sodales et rhoncus. A ac.",
+                "headerImage": "",
                 "images": [],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"]
@@ -238,6 +245,7 @@
                 "city": "Singapore",
                 "short": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.",
                 "description": "Venenatis commodo non suscipit taciti mi adipiscing dictum ullamcorper faucibus a euismod vestibulum scelerisque a a aliquam faucibus ac nunc bibendum hac torquent quam himenaeos habitant ac eros tristique. Amet hendrerit leo orci elit a ridiculus suspendisse sociosqu dapibus sapien euismod at porttitor ut lorem sodales et rhoncus. A ac.",
+                "headerImage": "https://i.imgur.com/H2SXVuF.png",
                 "images": ["https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png"],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"]
@@ -249,6 +257,7 @@
                 "city": "Las Vegas",
                 "short": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.",
                 "description": "Venenatis commodo non suscipit taciti mi adipiscing dictum ullamcorper faucibus a euismod vestibulum scelerisque a a aliquam faucibus ac nunc bibendum hac torquent quam himenaeos habitant ac eros tristique. Amet hendrerit leo orci elit a ridiculus suspendisse sociosqu dapibus sapien euismod at porttitor ut lorem sodales et rhoncus. A ac.",
+                "headerImage": "https://i.imgur.com/H2SXVuF.png",
                 "images": ["https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png"],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q", "https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": []
@@ -355,6 +364,7 @@
                 "city": "Alcatrazville",
                 "short": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.",
                 "description": "Venenatis commodo non suscipit taciti mi adipiscing dictum ullamcorper faucibus a euismod vestibulum scelerisque a a aliquam faucibus ac nunc bibendum hac torquent quam himenaeos habitant ac eros tristique. Amet hendrerit leo orci elit a ridiculus suspendisse sociosqu dapibus sapien euismod at porttitor ut lorem sodales et rhoncus. A ac.",
+                "headerImage": "",
                 "images": ["https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png"],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q", "https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3", "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"]
@@ -422,6 +432,7 @@
                 "city": "Dugo Selo",
                 "short": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.",
                 "description": "Venenatis commodo non suscipit taciti mi adipiscing dictum ullamcorper faucibus a euismod vestibulum scelerisque a a aliquam faucibus ac nunc bibendum hac torquent quam himenaeos habitant ac eros tristique. Amet hendrerit leo orci elit a ridiculus suspendisse sociosqu dapibus sapien euismod at porttitor ut lorem sodales et rhoncus. A ac.",
+                "headerImage": "https://i.imgur.com/H2SXVuF.png",
                 "images": [],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"]
@@ -433,6 +444,7 @@
                 "city": "Every City",
                 "short": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.",
                 "description": "Venenatis commodo non suscipit taciti mi adipiscing dictum ullamcorper faucibus a euismod vestibulum scelerisque a a aliquam faucibus ac nunc bibendum hac torquent quam himenaeos habitant ac eros tristique. Amet hendrerit leo orci elit a ridiculus suspendisse sociosqu dapibus sapien euismod at porttitor ut lorem sodales et rhoncus. A ac.",
+                "headerImage": "https://i.imgur.com/H2SXVuF.png",
                 "images": ["https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png"],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"]
@@ -444,6 +456,7 @@
                 "city": "Seattle",
                 "short": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.",
                 "description": "Venenatis commodo non suscipit taciti mi adipiscing dictum ullamcorper faucibus a euismod vestibulum scelerisque a a aliquam faucibus ac nunc bibendum hac torquent quam himenaeos habitant ac eros tristique. Amet hendrerit leo orci elit a ridiculus suspendisse sociosqu dapibus sapien euismod at porttitor ut lorem sodales et rhoncus. A ac.",
+                "headerImage": "https://i.imgur.com/H2SXVuF.png",
                 "images": ["https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png"],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q", "https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": []
@@ -455,6 +468,7 @@
                 "city": "Louisiana",
                 "short": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.",
                 "description": "Venenatis commodo non suscipit taciti mi adipiscing dictum ullamcorper faucibus a euismod vestibulum scelerisque a a aliquam faucibus ac nunc bibendum hac torquent quam himenaeos habitant ac eros tristique. Amet hendrerit leo orci elit a ridiculus suspendisse sociosqu dapibus sapien euismod at porttitor ut lorem sodales et rhoncus. A ac.",
+                "headerImage": "https://i.imgur.com/H2SXVuF.png",
                 "images": [],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": []
@@ -466,6 +480,7 @@
                 "city": "Toronto",
                 "short": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.",
                 "description": "Venenatis commodo non suscipit taciti mi adipiscing dictum ullamcorper faucibus a euismod vestibulum scelerisque a a aliquam faucibus ac nunc bibendum hac torquent quam himenaeos habitant ac eros tristique. Amet hendrerit leo orci elit a ridiculus suspendisse sociosqu dapibus sapien euismod at porttitor ut lorem sodales et rhoncus. A ac.",
+                "headerImage": "https://i.imgur.com/H2SXVuF.png",
                 "images": ["https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png"],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3", "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3", "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"]
@@ -552,6 +567,7 @@
                 "city": "Reykjavik",
                 "short": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.",
                 "description": "Venenatis commodo non suscipit taciti mi adipiscing dictum ullamcorper faucibus a euismod vestibulum scelerisque a a aliquam faucibus ac nunc bibendum hac torquent quam himenaeos habitant ac eros tristique. Amet hendrerit leo orci elit a ridiculus suspendisse sociosqu dapibus sapien euismod at porttitor ut lorem sodales et rhoncus. A ac.",
+                "headerImage": "",
                 "images": ["https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png"],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"]
@@ -563,6 +579,7 @@
                 "city": "Trollville",
                 "short": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.",
                 "description": "Venenatis commodo non suscipit taciti mi adipiscing dictum ullamcorper faucibus a euismod vestibulum scelerisque a a aliquam faucibus ac nunc bibendum hac torquent quam himenaeos habitant ac eros tristique. Amet hendrerit leo orci elit a ridiculus suspendisse sociosqu dapibus sapien euismod at porttitor ut lorem sodales et rhoncus. A ac.",
+                "headerImage": "https://i.imgur.com/H2SXVuF.png",
                 "images": ["https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png"],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": []
@@ -651,6 +668,7 @@
                 "city": "Babina Greda",
                 "short": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.",
                 "description": "Venenatis commodo non suscipit taciti mi adipiscing dictum ullamcorper faucibus a euismod vestibulum scelerisque a a aliquam faucibus ac nunc bibendum hac torquent quam himenaeos habitant ac eros tristique. Amet hendrerit leo orci elit a ridiculus suspendisse sociosqu dapibus sapien euismod at porttitor ut lorem sodales et rhoncus. A ac.",
+                "headerImage": "https://i.imgur.com/H2SXVuF.png",
                 "images": ["https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png"],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"]
@@ -718,6 +736,7 @@
                 "city": "New York",
                 "short": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.",
                 "description": "Venenatis commodo non suscipit taciti mi adipiscing dictum ullamcorper faucibus a euismod vestibulum scelerisque a a aliquam faucibus ac nunc bibendum hac torquent quam himenaeos habitant ac eros tristique. Amet hendrerit leo orci elit a ridiculus suspendisse sociosqu dapibus sapien euismod at porttitor ut lorem sodales et rhoncus. A ac.",
+                "headerImage": "",
                 "images": [],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": []
@@ -729,6 +748,7 @@
                 "city": "Machu Picchu",
                 "short": "Nam quis nulla. Integer malesuada. In in enim a arcu imperdiet malesuada. Sed vel lectus. Donec odio urna, tempus molestie, porttitor ut ia.",
                 "description": "Proin quam a etiam morbi litora id leo parturient sem penatibus vestibulum a neque scelerisque molestie a nascetur justo ullamcorper phasellus nisl amet parturient laoreet nibh ut parturient a.Vestibulum a aliquam velit dis scelerisque ut vestibulum egestas curabitur nibh consequat parturient tristique feugiat a.Quis gravida maecenas adipiscing nam vestibulum donec.",
+                "headerImage": "https://i.imgur.com/H2SXVuF.png",
                 "images": ["https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png"],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"]
@@ -740,6 +760,7 @@
                 "city": "London",
                 "short": "Cum nam id curae vitae cum a rutrum urna vestibulum condimentum eleifend diam tempus vestibulum a uta. Orci leo a vehicula adipiscing urna.",
                 "description": "Suspendisse arcu dapibus vestibulum vestibulum a pharetra curabitur ut curabitur imperdiet elementum adipiscing vestibulum condimentum condimentum himenaeos dolor sed. Non class nisl a parturient cum duis vivamus cras integer vestibulum cubilia netus faucibus vestibulum pulvinar mi blandit aliquam nibh class condimentum magna proin.",
+                "headerImage": "https://i.imgur.com/H2SXVuF.png",
                 "images": ["https://i.imgur.com/H2SXVuF.png"],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": []
@@ -751,6 +772,7 @@
                 "city": "Everestville",
                 "short": "Sagittis cum dictum nunc a vestibulum parturient pharetra class id ultrices ac mi urna primis urna ac vestibulum aenean hendrerit imperdiet.",
                 "description": "Elementum commodo nam cum ac rutrum adipiscing tellus laoreet adipiscing nam nibh pharetra risus lobortis adipiscing class non. Nulla at a consequat ridiculus leo eros nulla laoreet dapibus magna hac eros feugiat cras id ultricies venenatis suspendisse natoque aenean eros mollis consequat venenatis sapien cursus vestibulum.Mi elit lacinia vestibulum neque eleifend leo leo ultrices dis vel ullamcorper.",
+                "headerImage": "https://i.imgur.com/H2SXVuF.png",
                 "images": ["https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png"],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"]
@@ -762,6 +784,7 @@
                 "city": "Miami Beach",
                 "short": "Bibendum class metus est cum a euismod odio magna neque vivamus suspendisse a sit dolor quis a ut montes rutrum penatibus condimentum porta.",
                 "description": "Justo a nam a fames nostra quisque cubilia faucibus feugiat suspendisse ridiculus sapien ullamcorper viverra parturient a in pretium parturient sociosqu tempor a torquent primis duis phasellus sociis. Nibh dignissim per nulla elit eros eleifend amet auctor leo a ullamcorper vestibulum est vestibulum.",
+                "headerImage": "https://i.imgur.com/H2SXVuF.png",
                 "images": ["https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png"],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q", "https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": []
@@ -892,6 +915,7 @@
                 "city": "Mexico City",
                 "short": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.",
                 "description": "Venenatis commodo non suscipit taciti mi adipiscing dictum ullamcorper faucibus a euismod vestibulum scelerisque a a aliquam faucibus ac nunc bibendum hac torquent quam himenaeos habitant ac eros tristique. Amet hendrerit leo orci elit a ridiculus suspendisse sociosqu dapibus sapien euismod at porttitor ut lorem sodales et rhoncus. A ac.",
+                "headerImage": "https://i.imgur.com/H2SXVuF.png",
                 "images": ["https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png"],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": []
@@ -903,6 +927,7 @@
                 "city": "Santa Monica",
                 "short": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.",
                 "description": "Venenatis commodo non suscipit taciti mi adipiscing dictum ullamcorper faucibus a euismod vestibulum scelerisque a a aliquam faucibus ac nunc bibendum hac torquent quam himenaeos habitant ac eros tristique. Amet hendrerit leo orci elit a ridiculus suspendisse sociosqu dapibus sapien euismod at porttitor ut lorem sodales et rhoncus. A ac.",
+                "headerImage": "https://i.imgur.com/H2SXVuF.png",
                 "images": ["https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png"],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"]
@@ -914,6 +939,7 @@
                 "city": "Manchester",
                 "short": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.",
                 "description": "Venenatis commodo non suscipit taciti mi adipiscing dictum ullamcorper faucibus a euismod vestibulum scelerisque a a aliquam faucibus ac nunc bibendum hac torquent quam himenaeos habitant ac eros tristique. Amet hendrerit leo orci elit a ridiculus suspendisse sociosqu dapibus sapien euismod at porttitor ut lorem sodales et rhoncus. A ac.",
+                "headerImage": "https://i.imgur.com/H2SXVuF.png",
                 "images": ["https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png"],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3", "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"]
@@ -1015,6 +1041,7 @@
                 "city": "Ipsumichigan",
                 "short": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.",
                 "description": "Venenatis commodo non suscipit taciti mi adipiscing dictum ullamcorper faucibus a euismod vestibulum scelerisque a a aliquam faucibus ac nunc bibendum hac torquent quam himenaeos habitant ac eros tristique. Amet hendrerit leo orci elit a ridiculus suspendisse sociosqu dapibus sapien euismod at porttitor ut lorem sodales et rhoncus. A ac.",
+                "headerImage": "https://i.imgur.com/H2SXVuF.png",
                 "images": ["https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png"],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"]
@@ -1026,6 +1053,7 @@
                 "city": "New York",
                 "short": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.",
                 "description": "Venenatis commodo non suscipit taciti mi adipiscing dictum ullamcorper faucibus a euismod vestibulum scelerisque a a aliquam faucibus ac nunc bibendum hac torquent quam himenaeos habitant ac eros tristique. Amet hendrerit leo orci elit a ridiculus suspendisse sociosqu dapibus sapien euismod at porttitor ut lorem sodales et rhoncus. A ac.",
+                "headerImage": "https://i.imgur.com/H2SXVuF.png",
                 "images": ["https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png"],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": []
@@ -1107,6 +1135,7 @@
                 "city": "Springfield",
                 "short": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.",
                 "description": "Venenatis commodo non suscipit taciti mi adipiscing dictum ullamcorper faucibus a euismod vestibulum scelerisque a a aliquam faucibus ac nunc bibendum hac torquent quam himenaeos habitant ac eros tristique. Amet hendrerit leo orci elit a ridiculus suspendisse sociosqu dapibus sapien euismod at porttitor ut lorem sodales et rhoncus. A ac.",
+                "headerImage": "https://i.imgur.com/H2SXVuF.png",
                 "images": ["https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png"],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"]
@@ -1118,6 +1147,7 @@
                 "city": "North Carolina",
                 "short": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.",
                 "description": "Venenatis commodo non suscipit taciti mi adipiscing dictum ullamcorper faucibus a euismod vestibulum scelerisque a a aliquam faucibus ac nunc bibendum hac torquent quam himenaeos habitant ac eros tristique. Amet hendrerit leo orci elit a ridiculus suspendisse sociosqu dapibus sapien euismod at porttitor ut lorem sodales et rhoncus. A ac.",
+                "headerImage": "https://i.imgur.com/H2SXVuF.png",
                 "images": ["https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png"],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"]
@@ -1204,6 +1234,7 @@
                 "city": "Cairo",
                 "short": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.",
                 "description": "Venenatis commodo non suscipit taciti mi adipiscing dictum ullamcorper faucibus a euismod vestibulum scelerisque a a aliquam faucibus ac nunc bibendum hac torquent quam himenaeos habitant ac eros tristique. Amet hendrerit leo orci elit a ridiculus suspendisse sociosqu dapibus sapien euismod at porttitor ut lorem sodales et rhoncus. A ac.",
+                "headerImage": "https://i.imgur.com/H2SXVuF.png",
                 "images": ["https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png"],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": []
@@ -1283,6 +1314,7 @@
                 "city": "Bucharest",
                 "short": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.",
                 "description": "Venenatis commodo non suscipit taciti mi adipiscing dictum ullamcorper faucibus a euismod vestibulum scelerisque a a aliquam faucibus ac nunc bibendum hac torquent quam himenaeos habitant ac eros tristique. Amet hendrerit leo orci elit a ridiculus suspendisse sociosqu dapibus sapien euismod at porttitor ut lorem sodales et rhoncus. A ac.",
+                "headerImage": "https://i.imgur.com/H2SXVuF.png",
                 "images": ["https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png","https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png"],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": []
@@ -1294,6 +1326,7 @@
                 "city": "Louisiana",
                 "short": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.",
                 "description": "Venenatis commodo non suscipit taciti mi adipiscing dictum ullamcorper faucibus a euismod vestibulum scelerisque a a aliquam faucibus ac nunc bibendum hac torquent quam himenaeos habitant ac eros tristique. Amet hendrerit leo orci elit a ridiculus suspendisse sociosqu dapibus sapien euismod at porttitor ut lorem sodales et rhoncus. A ac.",
+                "headerImage": "https://i.imgur.com/H2SXVuF.png",
                 "images": ["https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png"],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"]
@@ -1305,6 +1338,7 @@
                 "city": "Ontario",
                 "short": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.",
                 "description": "Venenatis commodo non suscipit taciti mi adipiscing dictum ullamcorper faucibus a euismod vestibulum scelerisque a a aliquam faucibus ac nunc bibendum hac torquent quam himenaeos habitant ac eros tristique. Amet hendrerit leo orci elit a ridiculus suspendisse sociosqu dapibus sapien euismod at porttitor ut lorem sodales et rhoncus. A ac.",
+                "headerImage": "",
                 "images": [],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3", "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"]
@@ -1372,6 +1406,7 @@
                 "city": "Highland",
                 "short": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.",
                 "description": "Venenatis commodo non suscipit taciti mi adipiscing dictum ullamcorper faucibus a euismod vestibulum scelerisque a a aliquam faucibus ac nunc bibendum hac torquent quam himenaeos habitant ac eros tristique. Amet hendrerit leo orci elit a ridiculus suspendisse sociosqu dapibus sapien euismod at porttitor ut lorem sodales et rhoncus. A ac.",
+                "headerImage": "https://i.imgur.com/H2SXVuF.png",
                 "images": ["https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png"],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q", "https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"]
@@ -1460,6 +1495,7 @@
                 "city": "Zagreb",
                 "short": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.",
                 "description": "Venenatis commodo non suscipit taciti mi adipiscing dictum ullamcorper faucibus a euismod vestibulum scelerisque a a aliquam faucibus ac nunc bibendum hac torquent quam himenaeos habitant ac eros tristique. Amet hendrerit leo orci elit a ridiculus suspendisse sociosqu dapibus sapien euismod at porttitor ut lorem sodales et rhoncus. A ac.",
+                "headerImage": "https://i.imgur.com/H2SXVuF.png",
                 "images": ["https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png"],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": []
@@ -1471,6 +1507,7 @@
                 "city": "Long Beach",
                 "short": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.",
                 "description": "Venenatis commodo non suscipit taciti mi adipiscing dictum ullamcorper faucibus a euismod vestibulum scelerisque a a aliquam faucibus ac nunc bibendum hac torquent quam himenaeos habitant ac eros tristique. Amet hendrerit leo orci elit a ridiculus suspendisse sociosqu dapibus sapien euismod at porttitor ut lorem sodales et rhoncus. A ac.",
+                "headerImage": "https://i.imgur.com/H2SXVuF.png",
                 "images": ["https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png"],
                 "videos": [],
                 "audio": []
@@ -1559,6 +1596,7 @@
                 "city": "Diklo",
                 "short": "Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.",
                 "description": "Venenatis commodo non suscipit taciti mi adipiscing dictum ullamcorper faucibus a euismod vestibulum scelerisque a a aliquam faucibus ac nunc bibendum hac torquent quam himenaeos habitant ac eros tristique. Amet hendrerit leo orci elit a ridiculus suspendisse sociosqu dapibus sapien euismod at porttitor ut lorem sodales et rhoncus. A ac.",
+                "headerImage": "https://i.imgur.com/H2SXVuF.png",
                 "images": ["https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png", "https://i.imgur.com/H2SXVuF.png"],
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q"],
                 "audio": ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"]

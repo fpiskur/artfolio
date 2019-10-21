@@ -28,9 +28,9 @@ class FormItemNestedList extends Component {
         if ( !this.state.category || !this.state.value.trim() ) return;
         let newValue = this.state.value.trim().split(/,\s*/);
         // checking for this.props.items[this.state.category] because Firebase doesn't return keys of empty arrays
-        if ( this.props.items[this.state.category] && hasDuplicates(this.props.items[this.state.category], newValue) ) return;
-            
-        const newList = this.props.items[this.state.category] ?
+        if ( this.props.items && this.props.items[this.state.category] && hasDuplicates(this.props.items[this.state.category], newValue) ) return;
+
+        const newList = this.props.items && this.props.items[this.state.category] ?
             this.props.items[this.state.category].concat(newValue) :
             newValue;
         let newSkillsList = {
@@ -41,15 +41,27 @@ class FormItemNestedList extends Component {
         this.props.changed(newSkillsList, 'skills');
     }
 
+    handleSkillDelete = (category, skill) => {
+        let newSkillsList = {
+            ...this.props.items,
+            [category]: this.props.items[category].filter(item => item !== skill)
+        }
+        this.props.changed(newSkillsList, 'skills');
+    }
+
     render() {
-        let listItems = Object.keys(this.props.items).map(category => (
-            this.props.items[category] ?
-                <NestedListItem
-                    key={category}
-                    category={category + ':'}
-                    items={this.props.items[category]} /> :
-                null
-        ));
+        let listItems = null;
+        if (this.props.items) {
+            listItems = Object.keys(this.props.items).map(category => (
+                this.props.items[category][0] ?
+                    <NestedListItem
+                        key={category}
+                        category={category}
+                        items={this.props.items[category]}
+                        delete={ this.handleSkillDelete } /> :
+                    null
+            ));
+        }
 
         return (
             <div className={itemStyles.formItem}>
