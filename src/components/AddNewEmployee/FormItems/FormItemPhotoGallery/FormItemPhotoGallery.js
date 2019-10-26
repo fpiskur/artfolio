@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import itemStyles from '../../../../components/AddNewEmployee/FormItems/formItems.module.css';
 import styles from './FormItemPhotoGallery.module.css';
 
+import RemoveBtn from '../../../UI/RemoveBtn/RemoveBtn';
+
 import { hasDuplicates } from '../../../../utility/utility';
 
 class FormItemPhotoGallery extends Component {
@@ -16,6 +18,12 @@ class FormItemPhotoGallery extends Component {
         this.props.changed(newList, this.props.id);
     }
 
+    handleRemoveImg = (event, image) => {
+        event.preventDefault();
+        const newList = this.props.value.filter(item => item !== image);
+        this.props.changed(newList, this.props.id)
+    }
+
     render () {
 
         let galleryItems = null;
@@ -25,6 +33,7 @@ class FormItemPhotoGallery extends Component {
             galleryItems = [...uniqueItems].map(image => (
                 <div key={ image } className={ styles.galleryItem }>
                     <img src={ image } alt="gallery item" />
+                    <RemoveBtn remove={ this.handleRemoveImg } image={ image } />
                 </div>
             ));
         }

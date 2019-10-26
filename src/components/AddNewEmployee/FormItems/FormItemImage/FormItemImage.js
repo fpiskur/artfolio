@@ -4,6 +4,7 @@ import styles from './FormItemImage.module.css';
 
 import userPlaceholderImage from '../../../../images/fa-user.png';
 import headerPlaceholderImage from '../../../../images/header-image.png';
+import RemoveBtn from '../../../UI/RemoveBtn/RemoveBtn';
 
 class FormItemImage extends Component {
 
@@ -15,9 +16,15 @@ class FormItemImage extends Component {
         this.imgURL.current.value = '';
     }
 
+    handleRemoveImage = (event) => {
+        event.preventDefault();
+        this.props.changed('', this.props.id);
+    }
+
     render () {
         let imageSrc;
         let imageStyle;
+        let removeBtn = null;
 
         switch (this.props.type) {
             case 'profile':
@@ -33,11 +40,14 @@ class FormItemImage extends Component {
                 imageStyle = styles.headerImage;
         }
 
+        if (imageSrc === this.props.value) removeBtn = <RemoveBtn remove={ this.handleRemoveImage } />;
+
         return (
             <div className={ itemStyles.formItem }>
                 <label htmlFor={ this.props.id }>{ this.props.label }</label>
                 <div className={ imageStyle }>
                     <img src={ imageSrc } alt={ this.props.label } />
+                    { removeBtn }
                 </div>
                 <div className={ styles.addImageInput }>
                     <input

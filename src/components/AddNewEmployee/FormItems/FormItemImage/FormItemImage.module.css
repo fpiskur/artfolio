@@ -3,7 +3,6 @@
     width: 35%;
     min-width: 8em;
     max-width: 15em;
-    border-radius: 50%;
     align-self: center;
     margin-bottom: .5em;
     overflow: hidden;
@@ -24,6 +23,7 @@
     bottom: 0;
     right: 0;
     object-fit: cover;
+    border-radius: 50%;
 }
 
 .headerImage {

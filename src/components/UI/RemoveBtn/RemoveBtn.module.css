@@ -1,0 +1,19 @@
+button.RemoveBtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: .2em .6em;
+    background-color: transparent;
+}
+
+.RemoveBtn i {
+    color: var(--dark);
+    text-shadow: 1px 1px 0 var(--lighter),
+                 1px -1px 0 var(--lighter),
+                 -1px 1px 0 var(--lighter),
+                 -1px -1px 0 var(--lighter),
+                 1px 0px 0 var(--lighter),
+                 0px 1px 0 var(--lighter),
+                 -1px 0px 0 var(--lighter),
+                 0px -1px 0 var(--lighter);
+}
