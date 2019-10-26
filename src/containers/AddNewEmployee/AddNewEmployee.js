@@ -4,7 +4,7 @@ import axios from '../../axios';
 
 import TopBar from '../../components/UI/TopBar/TopBar';
 import FormItemText from '../../components/AddNewEmployee/FormItems/FormItemText/FormItemText';
-import FormItemImage from './FormItems/FormItemImage/FormItemImage';
+import FormItemImage from '../../components/AddNewEmployee/FormItems/FormItemImage/FormItemImage';
 import FormItemTextarea from '../../components/AddNewEmployee/FormItems/FormItemTextarea/FormItemTextarea';
 import FormItemSelect from '../../components/AddNewEmployee/FormItems/FormItemSelect/FormItemSelect';
 import FormItemNestedList from './FormItems/FormItemNestedList/FormItemNestedList';

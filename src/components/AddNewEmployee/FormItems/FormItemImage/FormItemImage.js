@@ -7,30 +7,12 @@ import headerPlaceholderImage from '../../../../images/header-image.png';
 
 class FormItemImage extends Component {
 
-    state = {
-        imgURL: ''
-    }
-
-    static getDerivedStateFromProps (nextProps, prevState) {
-        if (nextProps.value && !prevState.imgURL) {
-            return { imgURL: nextProps.value };
-        } else {
-            return null;
-        }
-    }
-
-    shouldComponentUpdate (nextProps, nextState) {
-        return nextProps.value !== this.props.value || nextState.imgURL !== this.state.imgURL;
-    }
-
-    handleInputChange = (event) => {
-        const url = event.target.value;
-        this.setState({ imgURL: url });
-    }
+    imgURL = React.createRef();
 
     handleInputSubmit = (event) => {
         event.preventDefault();
-        this.props.changed(this.state.imgURL, this.props.id);
+        this.props.changed(this.imgURL.current.value, this.props.id);
+        this.imgURL.current.value = '';
     }
 
     render () {
@@ -61,9 +43,8 @@ class FormItemImage extends Component {
                     <input
                         id={ this.props.id }
                         type="url"
-                        placeholder="Image URL"
-                        value={ this.state.imgURL }
-                        onChange={ this.handleInputChange } />
+                        placeholder={ this.props.value ? this.props.value : 'Image URL' }
+                        ref={ this.imgURL } />
                     <button onClick={ this.handleInputSubmit }>Add image</button>
                 </div>
             </div>

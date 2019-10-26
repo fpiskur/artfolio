@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 import FormItemText from '../../../components/AddNewEmployee/FormItems/FormItemText/FormItemText';
 import FormItemTextarea from '../../../components/AddNewEmployee/FormItems/FormItemTextarea/FormItemTextarea';
-import FormItemImage from '../FormItems/FormItemImage/FormItemImage';
+import FormItemImage from '../../../components/AddNewEmployee/FormItems/FormItemImage/FormItemImage';
 import FormItemDate from '../../../components/AddNewEmployee/FormItems/FormItemDate/FormItemDate';
-import FormItemPhotoGallery from '../FormItems/FormItemPhotoGallery/FormItemPhotoGallery';
+import FormItemPhotoGallery from '../../../components/AddNewEmployee/FormItems/FormItemPhotoGallery/FormItemPhotoGallery';
 
 class AddSpecialForm extends Component {
 

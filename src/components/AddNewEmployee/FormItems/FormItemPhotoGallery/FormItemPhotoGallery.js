@@ -6,44 +6,22 @@ import { hasDuplicates } from '../../../../utility/utility';
 
 class FormItemPhotoGallery extends Component {
 
-    state = {
-        imgURL: '',
-        imgList: []
-    }
-
-    static getDerivedStateFromProps (nextProps, prevState) {
-        if (nextProps.value[0]) {
-            return { imgList: nextProps.value };
-        } else {
-            return null;
-        }
-    }
-
-    shouldComponentUpdate (nextProps, nextState) {
-        return nextProps.value !== this.props.value || nextState.imgURL !== this.state.imgURL;
-    }
-
-    handleInputChange = (event) => {
-        const url = event.target.value;
-        this.setState({ imgURL: url });
-    }
+    imgURL = React.createRef();
 
     handleInputSubmit = (event) => {
         event.preventDefault();
-        const newList = this.state.imgList.concat(this.state.imgURL);
-
-        if (hasDuplicates(this.state.imgList, newList)) return;
-
-        this.setState({ imgURL: '' });
+        const newList = this.props.value.concat(this.imgURL.current.value);
+        if (hasDuplicates(newList)) return;
+        this.imgURL.current.value = '';
         this.props.changed(newList, this.props.id);
     }
 
     render () {
 
         let galleryItems = null;
-        if (this.state.imgList[0]) {
+        if (this.props.value[0]) {
             // Prevent duplicates
-            const uniqueItems = new Set(this.state.imgList);
+            const uniqueItems = new Set(this.props.value);
             galleryItems = [...uniqueItems].map(image => (
                 <div key={ image } className={ styles.galleryItem }>
                     <img src={ image } alt="gallery item" />
@@ -59,8 +37,7 @@ class FormItemPhotoGallery extends Component {
                         id={ this.props.id }
                         type="url"
                         placeholder="Image URL"
-                        value={ this.state.imgURL }
-                        onChange={ this.handleInputChange } />
+                        ref={ this.imgURL } />
                     <button onClick={ this.handleInputSubmit }>Add image</button>
                 </div>
                 <div className={ styles.photoGallery }>
