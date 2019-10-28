@@ -26,3 +26,14 @@ export const hasDuplicates = (oldList, newList) => {
     if (!newList) return (new Set(oldList)).size !== oldList.length;
     return (new Set(newList)).size !== newList.length || newList.some(item => oldList.indexOf(item) >= 0);
 }
+
+export const getUrlParams = (search = '') => {
+    const hashes = search.slice(search.indexOf('?') + 1).split('&');
+    return hashes.reduce((acc, hash) => {
+        const [key, val] = hash.split('=');
+        return {
+            ...acc,
+            [key]: decodeURIComponent(val)
+        };
+    }, {});
+};

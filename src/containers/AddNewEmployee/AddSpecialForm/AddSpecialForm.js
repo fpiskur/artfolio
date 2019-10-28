@@ -5,6 +5,7 @@ import FormItemTextarea from '../../../components/AddNewEmployee/FormItems/FormI
 import FormItemImage from '../../../components/AddNewEmployee/FormItems/FormItemImage/FormItemImage';
 import FormItemDate from '../../../components/AddNewEmployee/FormItems/FormItemDate/FormItemDate';
 import FormItemPhotoGallery from '../../../components/AddNewEmployee/FormItems/FormItemPhotoGallery/FormItemPhotoGallery';
+import FormItemVideoGallery from '../../../components/AddNewEmployee/FormItems/FormItemVideoGallery/FormItemVideoGallery';
 
 class AddSpecialForm extends Component {
 
@@ -78,7 +79,11 @@ class AddSpecialForm extends Component {
                         label="Photo Gallery"
                         value={ this.state.images }
                         changed={ this.inputChangeHandler } />
-                    {/* <FormItemVideoGallery /> */}
+                    <FormItemVideoGallery
+                        id="videos"
+                        label="Video Gallery"
+                        value={ this.state.videos }
+                        changed={ this.inputChangeHandler } />
                     {/* <FormItemAudioGallery /> */}
                     <button>Add New Special</button>
                 </form>

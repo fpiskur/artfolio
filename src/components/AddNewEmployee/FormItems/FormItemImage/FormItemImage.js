@@ -12,12 +12,13 @@ class FormItemImage extends Component {
 
     handleInputSubmit = (event) => {
         event.preventDefault();
+        if (this.imgURL.current.value.trim() === '') return;
+        
         this.props.changed(this.imgURL.current.value, this.props.id);
         this.imgURL.current.value = '';
     }
 
-    handleRemoveImage = (event) => {
-        event.preventDefault();
+    handleRemoveImg = () => {
         this.props.changed('', this.props.id);
     }
 
@@ -40,7 +41,7 @@ class FormItemImage extends Component {
                 imageStyle = styles.headerImage;
         }
 
-        if (imageSrc === this.props.value) removeBtn = <RemoveBtn remove={ this.handleRemoveImage } />;
+        if (imageSrc === this.props.value) removeBtn = <RemoveBtn remove={ this.handleRemoveImg } />;
 
         return (
             <div className={ itemStyles.formItem }>

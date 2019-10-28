@@ -12,16 +12,18 @@ class FormItemPhotoGallery extends Component {
 
     handleInputSubmit = (event) => {
         event.preventDefault();
+        if (this.imgURL.current.value.trim() === '') return;
+
         const newList = this.props.value.concat(this.imgURL.current.value);
         if (hasDuplicates(newList)) return;
-        this.imgURL.current.value = '';
+
         this.props.changed(newList, this.props.id);
+        this.imgURL.current.value = '';
     }
 
-    handleRemoveImg = (event, image) => {
-        event.preventDefault();
+    handleRemoveImg = (image) => {
         const newList = this.props.value.filter(item => item !== image);
-        this.props.changed(newList, this.props.id)
+        this.props.changed(newList, this.props.id);
     }
 
     render () {
@@ -33,7 +35,7 @@ class FormItemPhotoGallery extends Component {
             galleryItems = [...uniqueItems].map(image => (
                 <div key={ image } className={ styles.galleryItem }>
                     <img src={ image } alt="gallery item" />
-                    <RemoveBtn remove={ this.handleRemoveImg } image={ image } />
+                    <RemoveBtn remove={ () => this.handleRemoveImg(image) } />
                 </div>
             ));
         }
@@ -50,7 +52,7 @@ class FormItemPhotoGallery extends Component {
                     <button onClick={ this.handleInputSubmit }>Add image</button>
                 </div>
                 <div className={ styles.photoGallery }>
-                    { galleryItems }                    
+                    { galleryItems }
                 </div>
             </div>
         );

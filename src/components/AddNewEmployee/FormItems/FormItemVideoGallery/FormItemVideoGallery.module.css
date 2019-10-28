@@ -1,0 +1,30 @@
+.addVideoInput {
+    display: flex;
+    width: 100%;
+}
+
+.addVideoInput input {
+    flex: 1;
+}
+
+.videoGallery {
+    display: grid;
+    width: 100%;
+    grid-gap: 1em;
+    margin-top: .5em;
+}
+
+.galleryItem {
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.galleryItem iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
