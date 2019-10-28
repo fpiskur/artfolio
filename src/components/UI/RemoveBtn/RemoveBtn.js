@@ -9,7 +9,7 @@ function RemoveBtn (props) {
     }
 
     return (
-        <button className={ styles.RemoveBtn } onClick={ handleClick }>
+        <button className={ `${styles.RemoveBtn} ${props.overlap ? styles.btnOverlap : null}` } onClick={ handleClick }>
             <i className="fas fa-times"></i>
         </button>
     );

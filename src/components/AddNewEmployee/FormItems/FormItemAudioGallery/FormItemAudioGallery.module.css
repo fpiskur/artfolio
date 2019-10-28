@@ -1,0 +1,28 @@
+.addAudioInput {
+    display: flex;
+    width: 100%;
+}
+
+.addAudioInput input {
+    flex: 1;
+}
+
+.audioGallery {
+    display: grid;
+    width: 100%;
+    grid-gap: 1em;
+    margin-top: .5em;
+}
+
+.galleryItem {
+    display: flex;
+    width: 100%;
+    position: relative;
+    height: 54px;
+}
+
+.galleryItem audio {
+    width: 100%;
+    border: 1px solid var(--gray);
+    margin-right: .5em;
+}

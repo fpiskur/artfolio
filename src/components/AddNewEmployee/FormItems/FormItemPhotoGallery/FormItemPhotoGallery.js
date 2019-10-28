@@ -35,7 +35,7 @@ class FormItemPhotoGallery extends Component {
             galleryItems = [...uniqueItems].map(image => (
                 <div key={ image } className={ styles.galleryItem }>
                     <img src={ image } alt="gallery item" />
-                    <RemoveBtn remove={ () => this.handleRemoveImg(image) } />
+                    <RemoveBtn overlap remove={ () => this.handleRemoveImg(image) } />
                 </div>
             ));
         }

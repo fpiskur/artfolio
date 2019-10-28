@@ -6,6 +6,7 @@ import FormItemImage from '../../../components/AddNewEmployee/FormItems/FormItem
 import FormItemDate from '../../../components/AddNewEmployee/FormItems/FormItemDate/FormItemDate';
 import FormItemPhotoGallery from '../../../components/AddNewEmployee/FormItems/FormItemPhotoGallery/FormItemPhotoGallery';
 import FormItemVideoGallery from '../../../components/AddNewEmployee/FormItems/FormItemVideoGallery/FormItemVideoGallery';
+import FormItemAudioGallery from '../../../components/AddNewEmployee/FormItems/FormItemAudioGallery/FormItemAudioGallery';
 
 class AddSpecialForm extends Component {
 
@@ -84,7 +85,12 @@ class AddSpecialForm extends Component {
                         label="Video Gallery"
                         value={ this.state.videos }
                         changed={ this.inputChangeHandler } />
-                    {/* <FormItemAudioGallery /> */}
+                    <FormItemAudioGallery
+                        id="audio"
+                        label="Audio Gallery"
+                        value={ this.state.audio }
+                        changed={ this.inputChangeHandler } />
+                    
                     <button>Add New Special</button>
                 </form>
             </React.Fragment>

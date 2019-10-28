@@ -41,7 +41,7 @@ class FormItemImage extends Component {
                 imageStyle = styles.headerImage;
         }
 
-        if (imageSrc === this.props.value) removeBtn = <RemoveBtn remove={ this.handleRemoveImg } />;
+        if (imageSrc === this.props.value) removeBtn = <RemoveBtn overlap remove={ this.handleRemoveImg } />;
 
         return (
             <div className={ itemStyles.formItem }>

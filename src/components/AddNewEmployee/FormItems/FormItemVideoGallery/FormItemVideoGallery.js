@@ -42,7 +42,7 @@ class FormItemVideoGallery extends Component {
                         frameBorder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen></iframe>
-                    <RemoveBtn remove={ () => this.handleRemoveVideo(video) } />
+                    <RemoveBtn overlap remove={ () => this.handleRemoveVideo(video) } />
                 </div>
             ));
         }

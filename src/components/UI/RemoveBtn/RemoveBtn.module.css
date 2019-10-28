@@ -1,9 +1,12 @@
 button.RemoveBtn {
+    padding: .2em .6em;
+    background-color: transparent;
+}
+
+button.btnOverlap {
     position: absolute;
     right: 0;
     top: 0;
-    padding: .2em .6em;
-    background-color: transparent;
 }
 
 .RemoveBtn i {
