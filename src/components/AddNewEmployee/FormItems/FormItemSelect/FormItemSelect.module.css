@@ -1,0 +1,8 @@
+.FormItemSelect {
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.FormItemSelect label {
+    margin-right: 1.5em;
+}

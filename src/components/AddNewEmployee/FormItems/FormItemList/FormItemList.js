@@ -29,12 +29,13 @@ function FormItemList (props) {
                 itemKey = item.institution + item.endYear;
                 itemTitle = item.institution;
                 itemSubtitle = item.title;
-                itemDate = item.startYear + '. - ' + item.endYear + '.';
+                const endYear = item.endYear !== 'today' ? item.endYear : item.endYear + '.';
+                itemDate = item.startYear + '. - ' + endYear;
             } else if ( props.label === 'Workshops' ) {
                 itemKey = item.workshop + item.monts + item.year;
                 itemTitle = item.workshop;
                 itemSubtitle = 'with ' + item.teacher;
-                itemDate = item.month + '. ' + item.year + '.';
+                itemDate = item.month + ', ' + item.year + '.';
             } else return null;
             
             return <ListItem

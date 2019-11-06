@@ -4,23 +4,16 @@ import FormItemText from '../../../components/AddNewEmployee/FormItems/FormItemT
 import FormItemTextarea from '../../../components/AddNewEmployee/FormItems/FormItemTextarea/FormItemTextarea';
 import FormItemImage from '../../../components/AddNewEmployee/FormItems/FormItemImage/FormItemImage';
 import FormItemDate from '../../../components/AddNewEmployee/FormItems/FormItemDate/FormItemDate';
-import FormItemPhotoGallery from '../../../components/AddNewEmployee/FormItems/FormItemPhotoGallery/FormItemPhotoGallery';
 import FormItemVideoGallery from '../../../components/AddNewEmployee/FormItems/FormItemVideoGallery/FormItemVideoGallery';
-import FormItemAudioGallery from '../../../components/AddNewEmployee/FormItems/FormItemAudioGallery/FormItemAudioGallery';
 
-class AddSpecialForm extends Component {
+class AddTvShowForm extends Component {
 
     state = {
         name: '',
         date: '',
-        place: '',
-        city: '',
-        short: '',
         description: '',
         headerImage: '',
-        images: [],
-        videos: [],
-        audio: []
+        videos: []
     };
 
     inputChangeHandler = (value, id) => {
@@ -35,12 +28,12 @@ class AddSpecialForm extends Component {
     render () {
         return (
             <React.Fragment>
-                <h3>Add New Special</h3>
+                <h3>Add New TV Show</h3>
                 <form>
                     <FormItemText
                         id="name"
                         label="Name"
-                        placeholder="Name of the Special"
+                        placeholder="Name of the TV Show"
                         value={ this.state.name }
                         changed={ this.inputChangeHandler } />
                     <FormItemDate
@@ -48,30 +41,11 @@ class AddSpecialForm extends Component {
                         label="Date"
                         value={ this.state.date }
                         changed={ this.inputChangeHandler } />
-                    <FormItemText
-                        id="place"
-                        label="Place / club"
-                        placeholder="Place / club"
-                        value={ this.state.place }
-                        changed={ this.inputChangeHandler } />
-                    <FormItemText
-                        id="city"
-                        label="City"
-                        placeholder="City"
-                        value={ this.state.city }
-                        changed={ this.inputChangeHandler } />
                     <FormItemTextarea
                         type="short"
-                        id="short"
+                        id="description"
                         label="Short description"
                         placeholder="Short description (max 167 characters)"
-                        value={ this.state.short }
-                        changed={ this.inputChangeHandler } />
-                    <FormItemTextarea
-                        type="about"
-                        id="description"
-                        label="Full description"
-                        placeholder="Full description"
                         value={ this.state.description }
                         changed={ this.inputChangeHandler } />
                     <FormItemImage
@@ -80,27 +54,17 @@ class AddSpecialForm extends Component {
                         label="Header image"
                         value={ this.state.headerImage }
                         changed={ this.inputChangeHandler } />
-                    <FormItemPhotoGallery
-                        id="images"
-                        label="Photo Gallery"
-                        value={ this.state.images }
-                        changed={ this.inputChangeHandler } />
                     <FormItemVideoGallery
                         id="videos"
                         label="Video Gallery"
                         value={ this.state.videos }
                         changed={ this.inputChangeHandler } />
-                    <FormItemAudioGallery
-                        id="audio"
-                        label="Audio Gallery"
-                        value={ this.state.audio }
-                        changed={ this.inputChangeHandler } />
                     
-                    <button onClick={ this.formSubmitHandler }>Add Special</button>
+                    <button onClick={ this.formSubmitHandler }>Add TV Show</button>
                 </form>
             </React.Fragment>
         );
     }
 }
 
-export default AddSpecialForm;
+export default AddTvShowForm;

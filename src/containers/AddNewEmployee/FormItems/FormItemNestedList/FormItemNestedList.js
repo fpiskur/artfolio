@@ -74,7 +74,7 @@ class FormItemNestedList extends Component {
                         value={this.state.value}
                         onChange={this.handleInputChange} />
                     <select value={this.state.category} onChange={this.handleSelectChange}>
-                        <option value="">--category--</option>
+                        <option value="">-- category --</option>
                         <option value="dancing">dancing</option>
                         <option value="musical">musical</option>
                         <option value="acting">acting</option>

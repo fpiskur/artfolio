@@ -1,0 +1,8 @@
+.date {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.date > div:first-child {
+    margin-right: 2em;
+}

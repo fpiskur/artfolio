@@ -11,6 +11,9 @@ import FormItemNestedList from './FormItems/FormItemNestedList/FormItemNestedLis
 import FormItemList from '../../components/AddNewEmployee/FormItems/FormItemList/FormItemList';
 import Modal from '../../components/UI/Modal/Modal';
 import AddSpecialForm from './AddSpecialForm/AddSpecialForm';
+import AddTvShowForm from './AddTvShowForm/AddTvShowForm';
+import AddEducationForm from './AddEducationForm/AddEducationForm';
+import AddWorkshopForm from './AddWorkshopForm/AddWorkshopForm';
 
 class AddNewEmployee extends Component {
 
@@ -34,15 +37,15 @@ class AddNewEmployee extends Component {
         visibleModal: null
     }
 
-    componentDidMount () {
-        axios.get('/comedians/1.json')
-            .then(response => {
-                this.setState({ form: {...response.data} })
-            })
-            .catch(error => {
-                console.log(error.message);
-            });
-    }
+    // componentDidMount () {
+    //     axios.get('/comedians/1.json')
+    //         .then(response => {
+    //             this.setState({ form: {...response.data} })
+    //         })
+    //         .catch(error => {
+    //             console.log(error.message);
+    //         });
+    // }
 
     inputChangeHandler = (value, id) => {
         this.setState(state => ({
@@ -51,6 +54,19 @@ class AddNewEmployee extends Component {
                 [id]: value
             }
         }));
+    }
+
+    submitModalFormHandler = (value, id) => {
+        this.setState(state => ({
+            form: {
+                ...state.form,
+                [id]: [
+                    ...this.state.form[id],
+                    value
+                ]
+            }
+        }));
+        this.hideModalHandler();
     }
 
     hideModalHandler = () => {
@@ -67,7 +83,16 @@ class AddNewEmployee extends Component {
         if (this.state.visibleModal) {
             switch (this.state.visibleModal) {
                 case 'Specials':
-                    modalForm = <AddSpecialForm />;
+                    modalForm = <AddSpecialForm id="specials" submitForm={ this.submitModalFormHandler } />;
+                    break;
+                case 'TV Shows':
+                    modalForm = <AddTvShowForm id="tvShows" submitForm={ this.submitModalFormHandler } />;
+                    break;
+                case 'Education':
+                    modalForm = <AddEducationForm id="education" submitForm={ this.submitModalFormHandler } />;
+                    break;
+                case 'Workshops':
+                    modalForm = <AddWorkshopForm id="workshops" submitForm={ this.submitModalFormHandler } />;
                     break;
                 default:
                     modalForm = null;
@@ -141,22 +166,18 @@ class AddNewEmployee extends Component {
                                 items={ this.state.form.skills }
                                 changed={ this.inputChangeHandler } />
                             <FormItemList
-                                id="specials"
                                 label="Specials"
                                 items={ this.state.form.specials }
                                 showModal={ this.showModalHandler } />
                             <FormItemList
-                                id="tvShows"
                                 label="TV Shows"
                                 items={ this.state.form.tvShows }
                                 showModal={ this.showModalHandler } />
                             <FormItemList
-                                id="education"
                                 label="Education"
                                 items={ this.state.form.education }
                                 showModal={ this.showModalHandler } />
                             <FormItemList
-                                id="workshops"
                                 label="Workshops"
                                 items={ this.state.form.workshops }
                                 showModal={ this.showModalHandler } />
