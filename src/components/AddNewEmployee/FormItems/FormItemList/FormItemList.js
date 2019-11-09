@@ -29,7 +29,7 @@ function FormItemList (props) {
                 itemKey = item.institution + item.endYear;
                 itemTitle = item.institution;
                 itemSubtitle = item.title;
-                const endYear = item.endYear !== 'today' ? item.endYear : item.endYear + '.';
+                const endYear = item.endYear === 'today' ? item.endYear : item.endYear + '.';
                 itemDate = item.startYear + '. - ' + endYear;
             } else if ( props.label === 'Workshops' ) {
                 itemKey = item.workshop + item.monts + item.year;
