@@ -60,11 +60,6 @@
 
 .availability {
     align-self: flex-end;
-}
-
-.availability select {
-    background: transparent;
-    border: none;
     font-weight: 600;
     color: var(--green);
 }
@@ -117,6 +112,7 @@ main {
 
 .navigation {
     display: flex;
+    margin-bottom: 1em;
 }
 
 .navigation button {
@@ -130,9 +126,10 @@ main {
     border-bottom: 1px solid var(--dark);
 }
 
-.projects {
+/*  PROJECTS  */
+/* .projects {
     padding-top: 1em;
-}
+} */
 
 .projects article {
     border: 1px solid var(--gray);
@@ -183,9 +180,97 @@ main {
 
 .place {
     margin: 0;
+    color: var(--dark);
 }
 
 .articleFooter {
     display: flex;
     justify-content: flex-end;
+}
+
+.moreDetailsBtn {
+    background-color: var(--gray);
+    color: var(--black);
+    border: none;
+    padding: .2em 1em;
+    cursor: pointer;
+}
+
+/*-----------------------------------------*/
+/*  ABOUT ME  */
+
+.aboutLong {
+    padding: 1em 1em 1.5em;
+    border: 1px solid var(--gray);
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 0;
+}
+
+.aboutLong p {
+    margin-bottom: 0;
+}
+
+.skills {
+    padding: 1em;
+}
+
+.skills h4 {
+    font-weight: 600;
+    margin: .5em 0;
+}
+
+.skills > p {
+    margin: 0;
+}
+
+.skills span {
+    display: inline-block;
+    border-radius: 1em;
+    background-color: var(--light);
+    margin-bottom: .5em;
+    padding: .4em 1em;
+}
+
+.skills span:not(:last-child) {
+    margin-right: .3em;
+}
+
+.list {
+    padding: 1em 1em 0;
+    border: 1px solid var(--gray);
+    margin-bottom: 1.5em;
+}
+
+.listItem {
+    display: flex;
+    padding: 1em 0;
+    align-items: center;
+    /* width: 100%; */
+}
+
+.listItem:not(:last-child) {
+    border-bottom: 1px solid var(--gray);
+}
+
+.listItem .listInfo {
+    flex: 1 1;
+    padding-right: 1em;
+}
+
+.listItem .listDate {
+    font-size: 1.15em;
+    font-weight: 600;
+    color: var(--darker);
+}
+
+.listItem h4 {
+    margin: 0;
+}
+
+.listItem p {
+    margin: 0;
 }
