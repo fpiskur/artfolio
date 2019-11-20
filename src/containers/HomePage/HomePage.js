@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import axiosInstance from '../../axios';
+import { artfoliodb } from '../../firebase';
 
 import TopBar from '../../components/UI/TopBar/TopBar';
 import EmployeeList from '../../components/HomePage/EmployeeList/EmployeeList';
 import EmployeeListHeader from '../../components/HomePage/EmployeeListHeader/EmployeeListHeader';
 import Spinner from '../../components/UI/Spinner/Spinner';
-
 
 class HomePage extends Component {
 
@@ -18,13 +18,22 @@ class HomePage extends Component {
     };
 
     componentDidMount () {
-        axiosInstance.get('/comedians.json')
-        .then(response => {
-            this.setState({ comedians: response.data });
-        })
-        .catch(error => {
-            this.setState({ error: true });
-        });
+        // axiosInstance.get('/comedians.json')
+        // .then(response => {
+        //     this.setState({ comedians: response.data });
+        // })
+        // .catch(error => {
+        //     this.setState({ error: true });
+        // });
+
+        artfoliodb.collection('comedians-snippets').get()
+            .then(snapshot => {
+                let comedians = [];
+                snapshot.forEach(doc => {
+                    comedians.push({ username: doc.id, ...doc.data() });
+                });
+                this.setState({ comedians: comedians });
+            })
     }
 
     handleSearchSubmit = (searchTerm) => {

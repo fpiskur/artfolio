@@ -45,7 +45,7 @@ class ProfilePage extends Component {
                     </div>
 
                     {/* Projects component */}
-                    {/* <section className={ styles.projects }>
+                    <section className={ styles.projects }>
                         <article>
                             <div className={ styles.articleHeaderImg }>
                                 <img src={ specialImage } alt="Project header" />
@@ -62,7 +62,7 @@ class ProfilePage extends Component {
                                 </div>
                             </div>
                         </article>
-                    </section> */}
+                    </section>
                     
                     {/* About me component */}
                     <section className={ styles.aboutMe }>

@@ -10,7 +10,7 @@ function Employee (props) {
     return (
         <div className={ styles.Employee }>
             <div className={ styles.employeePortrait }>
-                <img src={ props.profilePhoto } alt={ props.name + ' portrait' } />
+                <img src={ props.profileImage } alt={ props.name + ' portrait' } />
             </div>
             <div className={ styles.employeeInfo }>
                 <div className={ styles.header }>

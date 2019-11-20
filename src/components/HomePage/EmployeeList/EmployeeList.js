@@ -12,7 +12,7 @@ function EmployeeList (props) {
                     <Employee
                         key={ comedian.username }
                         name={ comedian.name }
-                        profilePhoto={ comedian.profilePhoto }
+                        profileImage={ comedian.profileImage }
                         profession={ comedian.profession }
                         availability={ comedian.availability }
                         aboutShort={ comedian.aboutShort }

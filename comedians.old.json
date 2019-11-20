@@ -421,7 +421,7 @@
         "aboutLong": "Imperdiet blandit vulputate nam vivamus platea porta natoque nibh euismod id ad cras vestibulum eu torquent ullamcorper in posuere suspendisse condimentum fames. Conubia a sem sociis netus id parturient mauris habitasse ut volutpat a netus pulvinar vestibulum aenean parturient. Adipiscing bibendum urna a consectetur a facilisis habitasse imperdiet dignissim taciti adipiscing habitant conubia suspendisse. Ante himenaeos quis blandit nascetur amet in sit dignissim potenti orci varius nascetur vel a venenatis vel integer imperdiet sed integer sit. Vestibulum odio feugiat arcu nibh platea auctor phasellus parturient ac magna sapien eu sodales hendrerit parturient a adipiscing dapibus ullamcorper porta tempus rhoncus primis.",
         "skills": {
             "dancing": ["silly dancing", "tango", "cha cha"],
-            "musical": ["triangle", "piano", "trumpet", "trombone"],
+            "musical": ["triangle", "piano", "trumpet", "trobmone"],
             "acting": ["comedy", "action", "drama", "sketches"]
         },
         "specials": [
@@ -677,7 +677,7 @@
         "tvShows": [
             {
                 "name": "Late Show with David Letterman",
-                "date": "2010-07-11",
+                "date": "2010-07-011",
                 "description": "Dui inceptos ante condimentum pulvinar in porta parturient ac mi a consectetur eget sociis odio ante eu nunc. Vestibulum scelerisque suscipit proin senectus taciti urna montes leo vestibulum elit at condimentum parturient dapibus porta eros commodo nullam curabitur vestibulum a cras. Dignissim.",
                 "headerImage": "https://i.imgur.com/uJD6dXO.png",
                 "videos": ["https://www.youtube.com/watch?v=dTOO792r18Q", "https://www.youtube.com/watch?v=dTOO792r18Q"]
@@ -880,7 +880,7 @@
                 "institution": "Boston Elementary",
                 "title": "just a kid",
                 "startYear": "1964",
-                "endYear": " "
+                "endYear": "1972"
             }
         ],
         "workshops": [
@@ -1573,7 +1573,6 @@
             }
         ]
     },
-    // ------------------------------------------------------------------------- //
     {
         "username": "thehoovy",
         "name": "Pootis Pencer",
@@ -1646,7 +1645,7 @@
 
     "skillsList": {
         "dancing": ["tap dancing","waltz","tango","macarena","salsa","cha cha","silly dancing","drunk dancing","club dancing","contemporary","break dance","robo dance","crazy dance","show dance","belly dance"],
-        "musical": ["drums","guitar","trumpet","beatboxing","triangle","piano","vocals","whistle","djembe","trombone","shaker","finger snapping","saxophone"],
+        "musical": ["drums","guitar","trumpet","beatboxing","triangle","piano","trobmone","vocals","whistle","djembe","trombone","shaker","finger snapping","saxophone"],
         "acting": ["drama","comedy","theater","action","sketches","physical comedy","sitcom","sci-fi"]
     }
 
