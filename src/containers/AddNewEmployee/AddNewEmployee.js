@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styles from './AddNewEmployee.module.css';
-import axios from '../../axios';
 
 import TopBar from '../../components/UI/TopBar/TopBar';
 import FormItemText from '../../components/AddNewEmployee/FormItems/FormItemText/FormItemText';
@@ -36,16 +35,6 @@ class AddNewEmployee extends Component {
         },
         visibleModal: null
     }
-
-    // componentDidMount () {
-    //     axios.get('/comedians/1.json')
-    //         .then(response => {
-    //             this.setState({ form: {...response.data} })
-    //         })
-    //         .catch(error => {
-    //             console.log(error.message);
-    //         });
-    // }
 
     inputChangeHandler = (value, id) => {
         this.setState(state => ({

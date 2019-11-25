@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './EmployeeListHeader.module.css';
 
-import Search from '../../../containers/HomePage/EmployeeListHeader/Search/Search';
+import Search from './Search/Search';
 import AvailabilityFilter from './AvailabilityFilter/AvailabilityFilter';
 import SkillsFilter from '../../../containers/HomePage/EmployeeListHeader/SkillsFilter/SkillsFilter';
 

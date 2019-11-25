@@ -5,11 +5,19 @@ import SkillCheckbox from './SkillCheckbox/SkillCheckbox';
 
 function SkillsMenu (props) {
 
-    let musicalSkills = null, actingSkills = null, dancingSkills = null;
+    let musicalSkillsList = null, actingSkillsList = null, dancingSkillsList = null;
     let menuContent = <p className={ styles.loading }>loading skills...</p>;
 
     if (props.skills) {
-        musicalSkills = props.skills.musical.map(skill => (
+
+        let musicalSkills = [], actingSkills = [], dancingSkills = [];
+        let skillsList = Object.entries(props.skills);
+        skillsList.forEach(skill => {
+            if (skill[1] === 'musical') musicalSkills.push(skill[0]);
+            if (skill[1] === 'acting') actingSkills.push(skill[0]);
+            if (skill[1] === 'dancing') dancingSkills.push(skill[0]);
+        });
+        musicalSkillsList = musicalSkills.map(skill => (
             <li key={ skill }>
                 <SkillCheckbox
                     isChecked={ props.selectedSkills.includes(skill) ? true : false }
@@ -17,7 +25,7 @@ function SkillsMenu (props) {
                     skill={ skill } />
             </li>
         ));
-        actingSkills = props.skills.acting.map(skill => (
+        actingSkillsList = actingSkills.map(skill => (
             <li key={ skill }>
                 <SkillCheckbox
                     isChecked={ props.selectedSkills.includes(skill) ? true : false }
@@ -25,7 +33,7 @@ function SkillsMenu (props) {
                     skill={ skill } />
             </li>
         ));
-        dancingSkills = props.skills.dancing.map(skill => (
+        dancingSkillsList = dancingSkills.map(skill => (
             <li key={ skill }>
                 <SkillCheckbox
                     isChecked={ props.selectedSkills.includes(skill) ? true : false }
@@ -41,19 +49,19 @@ function SkillsMenu (props) {
                     <div>
                         <h3>Musical</h3>
                         <ul className={ styles.skillsList }>
-                            { musicalSkills }
+                            { musicalSkillsList }
                         </ul>
                     </div>
                     <div>
                         <h3>Acting</h3>
                         <ul className={ styles.skillsList }>
-                            { actingSkills }
+                            { actingSkillsList }
                         </ul>
                     </div>
                     <div>
                         <h3>Dancing</h3>
                         <ul className={ styles.skillsList }>
-                            { dancingSkills }
+                            { dancingSkillsList }
                         </ul>
                     </div>
                 </div>

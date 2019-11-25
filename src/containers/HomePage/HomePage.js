@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import axiosInstance from '../../axios';
 import { artfoliodb } from '../../firebase';
 
 import TopBar from '../../components/UI/TopBar/TopBar';
@@ -18,19 +17,13 @@ class HomePage extends Component {
     };
 
     componentDidMount () {
-        // axiosInstance.get('/comedians.json')
-        // .then(response => {
-        //     this.setState({ comedians: response.data });
-        // })
-        // .catch(error => {
-        //     this.setState({ error: true });
-        // });
-
         artfoliodb.collection('comedians-snippets').get()
             .then(snapshot => {
                 let comedians = [];
                 snapshot.forEach(doc => {
-                    comedians.push({ username: doc.id, ...doc.data() });
+                    if (doc && doc.exists) {
+                        comedians.push({ username: doc.id, ...doc.data() });
+                    }
                 });
                 this.setState({ comedians: comedians });
             })
@@ -80,14 +73,7 @@ class HomePage extends Component {
         // Skills filter
         if (this.state.skillsFilter.length) {
             this.state.skillsFilter.forEach(skill => {
-                filteredComedians = filteredComedians.filter(comedian => {
-                    for (const category in comedian.skills) {
-                        if (comedian.skills[category] && comedian.skills[category].includes(skill)) {
-                            return true;
-                        }
-                    }
-                    return false;
-                });
+                filteredComedians = filteredComedians.filter(comedian => comedian.skills.hasOwnProperty(skill));
             });
         }
 

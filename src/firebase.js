@@ -2,8 +2,8 @@ import * as firebase from "firebase/app";
 import "firebase/firestore";
 
 // Your web app's Firebase configuration
-var firebaseConfig = {
-    apiKey: "AIzaSyCqYnDFg7-JE-vKdooy305GWHk_HNNiW3I",
+const firebaseConfig = {
+    apiKey: "AIzaSyDM_DkJRLN-Ae13w6zDhCGcDpkN3gm6SVY", // old = AIzaSyCqYnDFg7-JE-vKdooy305GWHk_HNNiW3I
     authDomain: "artfoliodb.firebaseapp.com",
     databaseURL: "https://artfoliodb.firebaseio.com",
     projectId: "artfoliodb",

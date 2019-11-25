@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styles from './SkillsFilter.module.css';
-import axios from '../../../../axios';
+// import axios from '../../../../axios';
+import { artfoliodb } from '../../../../firebase';
 
 import SkillsMenu from '../../../../components/HomePage/EmployeeListHeader/SkillsMenu/SkillsMenu';
 
@@ -13,12 +14,19 @@ class SkillsFilter extends Component {
     }
 
     componentDidMount () {
-        axios.get('/skillsList.json')
-            .then(response => {
-                this.setState({ skillsList: response.data });
-            })
-            .catch(error => {
-                this.setState({ error: true });
+        // axios.get('/skillsList.json')
+        //     .then(response => {
+        //         this.setState({ skillsList: response.data });
+        //     })
+        //     .catch(error => {
+        //         this.setState({ error: true });
+        //     });
+
+        artfoliodb.collection('skills-list').doc('skills-list').get()
+            .then(snapshot => {
+                if (snapshot && snapshot.exists) {
+                    this.setState({ skillsList: snapshot.data() })
+                }
             });
     }
 
