@@ -51,6 +51,10 @@ class HomePage extends Component {
         this.setState({ skillsFilter: [] })
     }
 
+    handleEmployeeClick = (username) => {
+        this.props.history.push({ pathname: '/employees/' + username });
+    }
+
     render () {
 
         let filteredComedians;
@@ -103,7 +107,7 @@ class HomePage extends Component {
                     selectedSkills={ this.state.skillsFilter } />
 
                 { this.state.comedians[0] ?
-                <EmployeeList comedians={ filteredComedians } /> :
+                <EmployeeList comedians={ filteredComedians } clicked={ this.handleEmployeeClick } /> :
                 <Spinner /> }
             </div>
         );

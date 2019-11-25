@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { hasDuplicates } from '../../../../utility/utility';
-import itemStyles from '../../../../components/AddNewEmployee/FormItems/formItems.module.css';
+import itemStyles from '../../../../components/EmployeeForm/FormItems/formItems.module.css';
 import styles from './FormItemNestedList.module.css';
 
-import NestedListItem from '../../../../components/AddNewEmployee/FormItems/NestedListItem/NestedListItem';
+import NestedListItem from '../../../../components/EmployeeForm/FormItems/NestedListItem/NestedListItem';
 
 class FormItemNestedList extends Component {
 

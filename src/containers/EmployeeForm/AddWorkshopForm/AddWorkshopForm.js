@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import styles from './AddWorkshopForm.module.css';
 
-import FormItemText from '../../../components/AddNewEmployee/FormItems/FormItemText/FormItemText';
-import FormItemSelect from '../../../components/AddNewEmployee/FormItems/FormItemSelect/FormItemSelect';
+import FormItemText from '../../../components/EmployeeForm/FormItems/FormItemText/FormItemText';
+import FormItemSelect from '../../../components/EmployeeForm/FormItems/FormItemSelect/FormItemSelect';
 
 class AddWorkshopForm extends Component {
 

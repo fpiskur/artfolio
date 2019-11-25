@@ -1,8 +1,8 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 
 import HomePage from './containers/HomePage/HomePage';
-import AddNewEmployee from './containers/AddNewEmployee/AddNewEmployee';
+import EmployeeForm from './containers/EmployeeForm/EmployeeForm';
 import ProfilePage from './containers/ProfilePage/ProfilePage';
 
 function App () {
@@ -11,9 +11,12 @@ function App () {
         <div>
             <BrowserRouter>
                 <Switch>
-                    <Route path="/add-new-employee" component={ AddNewEmployee } />
-                    <Route path="/employee" component={ ProfilePage } />  {/* TEMPORARY ROUTE */}
-                    <Route exact path="/" component={ HomePage } />
+                    <Route path="/add-new-employee" component={ EmployeeForm } />
+                    <Route path="/employees/edit/:username" component={ EmployeeForm } />
+                    <Redirect from="/employees/edit" to="/employees" />
+                    <Route path="/employees/:username" component={ ProfilePage } />
+                    <Route exact path="/employees" component={ HomePage } />
+                    <Redirect from="/" to="/employees" />
                 </Switch>
             </BrowserRouter>
         </div>

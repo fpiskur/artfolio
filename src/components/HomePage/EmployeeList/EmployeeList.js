@@ -10,7 +10,9 @@ function EmployeeList (props) {
             {
                 props.comedians.map(comedian => (
                     <Employee
+                        clicked={ props.clicked }
                         key={ comedian.username }
+                        username={ comedian.username }
                         name={ comedian.name }
                         profileImage={ comedian.profileImage }
                         profession={ comedian.profession }

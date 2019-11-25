@@ -37,3 +37,7 @@ export const getUrlParams = (search = '') => {
         };
     }, {});
 };
+
+export const prettyUrl = (url) => {
+    return url.slice(url.indexOf('://') + 3).replace(/\/$/, "");
+};

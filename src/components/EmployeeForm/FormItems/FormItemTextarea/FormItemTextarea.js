@@ -1,5 +1,5 @@
 import React from 'react';
-import itemStyles from '../../../../components/AddNewEmployee/FormItems/formItems.module.css';
+import itemStyles from '../../../../components/EmployeeForm/FormItems/formItems.module.css';
 
 function FormItemTextarea (props) {
 

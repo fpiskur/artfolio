@@ -1,12 +1,12 @@
-.AddNewEmployeeBody {
+.EmployeeFormBody {
     padding: 1.5em 1em;
 }
 
-.AddNewEmployeeBody h2 {
+.EmployeeFormBody h2 {
     margin-top: 0;
 }
 
-.addEmployeeBtn {
+.submitEmployeeBtn {
     background-color: var(--blue);
     color: var(--lighter);
     border: none;

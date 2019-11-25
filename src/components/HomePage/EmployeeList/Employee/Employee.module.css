@@ -3,6 +3,7 @@
     padding: 1em;
     border: 1px solid var(--gray);
     margin-bottom: 1em;
+    cursor: pointer;
 }
 
 .employeePortrait {

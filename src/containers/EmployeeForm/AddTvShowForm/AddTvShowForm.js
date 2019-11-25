@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-import FormItemText from '../../../components/AddNewEmployee/FormItems/FormItemText/FormItemText';
-import FormItemTextarea from '../../../components/AddNewEmployee/FormItems/FormItemTextarea/FormItemTextarea';
-import FormItemImage from '../../../components/AddNewEmployee/FormItems/FormItemImage/FormItemImage';
-import FormItemDate from '../../../components/AddNewEmployee/FormItems/FormItemDate/FormItemDate';
-import FormItemVideoGallery from '../../../components/AddNewEmployee/FormItems/FormItemVideoGallery/FormItemVideoGallery';
+import FormItemText from '../../../components/EmployeeForm/FormItems/FormItemText/FormItemText';
+import FormItemTextarea from '../../../components/EmployeeForm/FormItems/FormItemTextarea/FormItemTextarea';
+import FormItemImage from '../../../components/EmployeeForm/FormItems/FormItemImage/FormItemImage';
+import FormItemDate from '../../../components/EmployeeForm/FormItems/FormItemDate/FormItemDate';
+import FormItemVideoGallery from '../../../components/EmployeeForm/FormItems/FormItemVideoGallery/FormItemVideoGallery';
 
 class AddTvShowForm extends Component {
 

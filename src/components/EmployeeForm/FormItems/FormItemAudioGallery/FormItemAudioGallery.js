@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import itemStyles from '../../../../components/AddNewEmployee/FormItems/formItems.module.css';
+import itemStyles from '../../../../components/EmployeeForm/FormItems/formItems.module.css';
 import styles from './FormItemAudioGallery.module.css';
 
 import RemoveBtn from '../../../UI/RemoveBtn/RemoveBtn';

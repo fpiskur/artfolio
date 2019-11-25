@@ -1,20 +1,21 @@
 import React, { Component } from 'react';
-import styles from './AddNewEmployee.module.css';
+import styles from './EmployeeForm.module.css';
+import { artfoliodb } from '../../firebase';
 
 import TopBar from '../../components/UI/TopBar/TopBar';
-import FormItemText from '../../components/AddNewEmployee/FormItems/FormItemText/FormItemText';
-import FormItemImage from '../../components/AddNewEmployee/FormItems/FormItemImage/FormItemImage';
-import FormItemTextarea from '../../components/AddNewEmployee/FormItems/FormItemTextarea/FormItemTextarea';
-import FormItemSelect from '../../components/AddNewEmployee/FormItems/FormItemSelect/FormItemSelect';
+import FormItemText from '../../components/EmployeeForm/FormItems/FormItemText/FormItemText';
+import FormItemImage from '../../components/EmployeeForm/FormItems/FormItemImage/FormItemImage';
+import FormItemTextarea from '../../components/EmployeeForm/FormItems/FormItemTextarea/FormItemTextarea';
+import FormItemSelect from '../../components/EmployeeForm/FormItems/FormItemSelect/FormItemSelect';
 import FormItemNestedList from './FormItems/FormItemNestedList/FormItemNestedList';
-import FormItemList from '../../components/AddNewEmployee/FormItems/FormItemList/FormItemList';
+import FormItemList from '../../components/EmployeeForm/FormItems/FormItemList/FormItemList';
 import Modal from '../../components/UI/Modal/Modal';
 import AddSpecialForm from './AddSpecialForm/AddSpecialForm';
 import AddTvShowForm from './AddTvShowForm/AddTvShowForm';
 import AddEducationForm from './AddEducationForm/AddEducationForm';
 import AddWorkshopForm from './AddWorkshopForm/AddWorkshopForm';
 
-class AddNewEmployee extends Component {
+class EmployeeForm extends Component {
 
     state = {
         form: {
@@ -34,6 +35,18 @@ class AddNewEmployee extends Component {
             aboutLong: ''
         },
         visibleModal: null
+    }
+
+    componentDidMount () {
+        if (this.props.match.params.username) {
+            let username = this.props.match.params.username;
+            artfoliodb.collection('comedians-data').doc(username).get()
+                .then(snapshot => {
+                    if (snapshot && snapshot.exists) {
+                        this.setState({ form: snapshot.data() });
+                    }
+                });
+        }
     }
 
     inputChangeHandler = (value, id) => {
@@ -91,7 +104,7 @@ class AddNewEmployee extends Component {
         return (
             <React.Fragment>
                 <TopBar />
-                <div className={ styles.AddNewEmployeeBody }>
+                <div className={ styles.EmployeeFormBody }>
                     <h2>Add New Employee</h2>
                     <form>
                         <div className={ styles.colLeft }>
@@ -125,7 +138,7 @@ class AddNewEmployee extends Component {
                                 type="profile"
                                 id="profilePhoto"
                                 label="Profile image"
-                                value={ this.state.form.profilePhoto }
+                                value={ this.state.form.profileImage }
                                 changed={ this.inputChangeHandler } />
                             <FormItemImage
                                 type="header"
@@ -194,4 +207,4 @@ class AddNewEmployee extends Component {
     }
 }
 
-export default AddNewEmployee;
+export default EmployeeForm;

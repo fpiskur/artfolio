@@ -8,7 +8,7 @@ function Employee (props) {
         styles.notAvailable;
 
     return (
-        <div className={ styles.Employee }>
+        <div className={ styles.Employee } onClick={ () => props.clicked(props.username) }>
             <div className={ styles.employeePortrait }>
                 <img src={ props.profileImage } alt={ props.name + ' portrait' } />
             </div>

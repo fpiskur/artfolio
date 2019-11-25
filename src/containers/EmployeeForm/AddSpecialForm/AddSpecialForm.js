@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
-import FormItemText from '../../../components/AddNewEmployee/FormItems/FormItemText/FormItemText';
-import FormItemTextarea from '../../../components/AddNewEmployee/FormItems/FormItemTextarea/FormItemTextarea';
-import FormItemImage from '../../../components/AddNewEmployee/FormItems/FormItemImage/FormItemImage';
-import FormItemDate from '../../../components/AddNewEmployee/FormItems/FormItemDate/FormItemDate';
-import FormItemPhotoGallery from '../../../components/AddNewEmployee/FormItems/FormItemPhotoGallery/FormItemPhotoGallery';
-import FormItemVideoGallery from '../../../components/AddNewEmployee/FormItems/FormItemVideoGallery/FormItemVideoGallery';
-import FormItemAudioGallery from '../../../components/AddNewEmployee/FormItems/FormItemAudioGallery/FormItemAudioGallery';
+import FormItemText from '../../../components/EmployeeForm/FormItems/FormItemText/FormItemText';
+import FormItemTextarea from '../../../components/EmployeeForm/FormItems/FormItemTextarea/FormItemTextarea';
+import FormItemImage from '../../../components/EmployeeForm/FormItems/FormItemImage/FormItemImage';
+import FormItemDate from '../../../components/EmployeeForm/FormItems/FormItemDate/FormItemDate';
+import FormItemPhotoGallery from '../../../components/EmployeeForm/FormItems/FormItemPhotoGallery/FormItemPhotoGallery';
+import FormItemVideoGallery from '../../../components/EmployeeForm/FormItems/FormItemVideoGallery/FormItemVideoGallery';
+import FormItemAudioGallery from '../../../components/EmployeeForm/FormItems/FormItemAudioGallery/FormItemAudioGallery';
 
 class AddSpecialForm extends Component {
 
