@@ -1,0 +1,19 @@
+.navigation {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.navigation button {
+    flex: 1 0 auto;
+    background: transparent;
+    border: none;
+    color: var(--dark);
+    font-weight: 600;
+    padding: .5em 0;
+    cursor: pointer;
+    outline: none;
+}
+
+button.active {
+    box-shadow: 0px 1px 0px 0px var(--dark);
+}

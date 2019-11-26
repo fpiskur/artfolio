@@ -32,7 +32,7 @@ const ProfileHeader = (props) => {
                 </div>
                 <div className={ `${styles.bioFooter} ${props.website ? styles.website : null}` }>
                     { props.website
-                        ? <a href={ props.website } target="_blank">{ prettyUrl(props.website) }</a>
+                        ? <a href={ props.website } target="_blank" rel="noopener noreferrer">{ prettyUrl(props.website) }</a>
                         : null }
                     <button onClick={ props.edit }>edit</button>
                 </div>

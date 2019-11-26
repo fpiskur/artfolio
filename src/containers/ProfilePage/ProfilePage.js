@@ -2,17 +2,18 @@ import React, { Component } from 'react';
 import styles from './ProfilePage.module.css';
 import { artfoliodb } from '../../firebase';
 
-import specialImage from '../../images/special-image.png';
-import tvShowImage from '../../images/tv-header-image.png';
 import Spinner from '../../components/UI/Spinner/Spinner';
 import TopBar from '../../components/UI/TopBar/TopBar';
 import ProfileHeader from '../../components/ProfilePage/ProfileHeader/ProfileHeader';
+import ProfileNavigation from '../../components/ProfilePage/ProfileNavigation/ProfileNavigation';
+import ProjectsList from '../../components/ProfilePage/ProjectsList/ProjectsList';
 
 class ProfilePage extends Component {
 
     state = {
         employee: {},
-        loading: true
+        loading: true,
+        activeNav: 'about'
     };
 
     username = this.props.match.params.username;
@@ -28,6 +29,11 @@ class ProfilePage extends Component {
 
     handleEmployeeEdit = (username) => {
         this.props.history.push({ pathname: '/employees/edit/' + username });
+    };
+
+    handleNavigationChange = (event) => {
+        let activeNav = event.target.value;
+        this.setState({ activeNav: activeNav });
     };
 
     render () {
@@ -47,38 +53,14 @@ class ProfilePage extends Component {
                         aboutShort={ this.state.employee.aboutShort }
                         website={ this.state.employee.website }
                         edit={ () => this.handleEmployeeEdit(this.username) } />
-                    {/* <header>
-                        <div className={ styles.images }>
-                            <div className={ styles.headerImage }>
-                                <img src={ headerImage } alt="Header" />
-                            </div>
-                            <div className={ styles.profileImage }>
-                                <img src={ profileImage } alt="Profile" />
-                            </div>
-                        </div>
-                        <div className={ styles.info }>
-                            <div className={ styles.availability }>
-                                Available
-                            </div>
-                            <div className={ styles.bio }>
-                                <h2>Jim Jimson</h2>
-                                <p className={ styles.profession }>Actor, stand-up comedian</p>
-                                <p className={ styles.short }>Parturient metus rhoncus ullamcorper eu rhoncus erat proin placerat sem elit volutpat bibendum vivamus dui a in curabitur scelerisque a scelerisque tincidunt lobortis.</p>
-                            </div>
-                            <div className={ styles.bioFooter }>
-                                <a href="#" target="_blank">www.mywebsite.com</a>
-                                <button>edit</button>
-                            </div>
-                        </div>
-                    </header> */}
+
                     <main>
-                        <div className={ styles.navigation }>
-                            <button>Projects</button>
-                            <button>About me</button>
-                        </div>
+
+                        <ProfileNavigation active={ this.state.activeNav } change={ this.handleNavigationChange } />
 
                         {/* Projects component */}
-                        <section className={ styles.projects }>
+                        <ProjectsList projects={ this.state.employee.projectsShort } />
+                        {/* <section className={ styles.projects }>
                             <article>
                                 <div className={ styles.articleHeaderImg }>
                                     <img src={ specialImage } alt="Project header" />
@@ -95,7 +77,7 @@ class ProfilePage extends Component {
                                     </div>
                                 </div>
                             </article>
-                        </section>
+                        </section> */}
                         
                         {/* About me component */}
                         <section className={ styles.aboutMe }>
