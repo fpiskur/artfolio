@@ -42,22 +42,6 @@ const ProjectsList = (props) => {
     return (
         <section className={ styles.projects }>
             { projectsList }
-            {/* <article>
-                <div className={ styles.articleHeaderImg }>
-                    <img src={ specialImage } alt="Project header" />
-                </div>
-                <div className={ styles.articleBody }>
-                    <div className={ styles.inline }>
-                        <h3 className={ styles.articleHeading }>Sticks and Stones</h3>
-                        <div className={ styles.date }>2018-07-12</div>
-                    </div>
-                    <p className={ styles.place }>@ Purgeraj, Zagreb</p>
-                    <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma.</p>
-                    <div className={ styles.articleFooter }>
-                        <button className={ styles.moreDetailsBtn }>More details</button>
-                    </div>
-                </div>
-            </article> */}
         </section>
     );
 };
