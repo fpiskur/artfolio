@@ -5,6 +5,7 @@
     background-color: var(--lighter);
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .showSkillsBtn span:first-child {
